@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .sl-container {
+    @apply xl:max-w-[1140px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto;
+  }
+  .sl-container-wrap {
+    @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
+  }
+  .sl-flex-center {
+    @apply flex items-center justify-center;
+  }
+  .sl-animated {
+    @apply transition duration-500;
+  }
+  .sl-animated-fade {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  .sl-animated-slide {
+    @apply transition-all duration-700 ease-in-out;
+  }
+}
+
+@layer base {
+  a {
+    @apply inline-block cursor-pointer;
+  }
+  button {
+    @apply inline-block cursor-pointer;
+  }
+  input,
+  select {
+    @apply outline-none bg-transparent;
+  }
+}
+
+@layer utilities {
+}
