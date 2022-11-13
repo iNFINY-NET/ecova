@@ -20,22 +20,37 @@
      <link href="assets/css/output.css" rel="stylesheet">
 </head>
 
-<body class="bg-slate-900 text-white text-base font-normal">
+<body class="bg-slate-800 text-white text-base font-normal">
 
      <!-- HEADER STARTS -->
      <header class="bg-green-900">
           <div class="w-full flex items-center lg:flex-nowrap flex-wrap lg:justify-start justify-between">
                <a href="index.html" class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img src="assets/images/h2logo.png" alt="logo" class="mx-auto"></a>
                <button onclick="headerToggle(this)" class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i class="fa-solid fa-bars"></i></button>
-               <nav id="mainNav" class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
+               <nav id="mainNav"
+                    class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
                     <ul class="w-full flex lg:flex-row flex-col mr-auto">
-                         <li><a href="index.html" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a></li>
-                         <li><a href="about.html" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a></li>
-                         <li><a href="events" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a></li>
-                         <li><a href="causes.html" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a></li>
-                         <li><a href="blogs.html" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a></li>
-                         <li><a href="" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a></li>
-                         <li><a href="contact.html" class="relative w-full py-5 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a></li>
+                         <li><a href="index.html"
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
+                         </li>
+                         <li><a href="about.html"
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a>
+                         </li>
+                         <li><a href="events"
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a>
+                         </li>
+                         <li><a href="causes.html"
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a>
+                         </li>
+                         <li><a href="blogs.html"
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a>
+                         </li>
+                         <li><a href=""
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a>
+                         </li>
+                         <li><a href="contact.html"
+                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
+                         </li>
                     </ul>
                </nav>
           </div>
@@ -46,16 +61,72 @@
      <section>
           <div class="relative">
                <img src="assets/images/banner/h2-slide1.jpg" alt="hero plant">
-               <div class="absolute inset-0 pt-20 sl-container">
-                    <strong class="block text-[2.5rem] mb-6">Ecova <span class="font-normal">is the best</span></strong>
-                    <h1 class="font-bold text-[5.6rem] leading-[4.4rem] mb-4 uppercase">eco friendly</h1>
-                    <p class="w-3/5 text-4xl mb-9">Nonprofit WordPress Theme</p>
-                    <a href="" class="bg-green-500 font-medium rounded-md h-14 leading-[3.5rem] px-10 mr-4 uppercase">Find Out More</a>
-                    <a href="" class="bg-white text-neutral-800 hover:bg-green-500 hover:text-white font-medium rounded-md h-14 leading-[3.5rem] px-10 mr-4 uppercase sl-animated">Join Us Now</a>
+               <div class="absolute sl-container sm:block hidden inset-0 pt-20 lg:text-left text-center">
+                    <strong class="block lg:text-[2.5rem] text-3xl lg:mb-6 mb-3">Ecova <span class="font-normal">is the best</span></strong>
+                    <h1 class="font-bold lg:text-[5.6rem] text-[2.5rem] lg:leading-[4.4rem] leading-[2.5rem] lg:mb-4 mb-2 uppercase">eco friendly</h1>
+                    <h2 class="lg:w-3/5 w-full lg:text-4xl text-3xl mb-9">Nonprofit WordPress Theme</h2>
+                    <div class="lg:block hidden">
+                         <a href="" class="bg-green-500 font-medium rounded-md h-14 leading-[3.5rem] px-10 mr-4 uppercase">Find Out More</a>
+                         <a href="" class="bg-white text-neutral-800 hover:bg-green-500 hover:text-white font-medium rounded-md h-14 leading-[3.5rem] px-10 mr-4 uppercase sl-animated">Join Us Now</a>
+                    </div>
                </div>
           </div>
      </section>
      <!-- HERO ENDS -->
+
+     <!-- SERVICE STARTS -->
+     <section class="relative xl:-mt-[6.5rem] z-40">
+          <div class="sl-container ">
+               <div class="flex flex-wrap justify-center items-center shadow-lg rounded bg-slate-900">
+                    <div
+                         class="group relative md:basis-1/5 basis-full py-5 text-center before:absolute before:h-0 hover:before:h-[15.5rem] before:w-full before:opacity-0 hover:before:opacity-100 lg:before:-top-5 before:-top-4 before:left-0 before:bg-green-600 before:rounded before:transition-all before:duration-700 before:z-10">
+                         <div class="relative px-2 group-hover:text-slate-900 py-5 md:border-r border-green-600 z-20 sl-animated">
+                              <img src="assets/images/item/recyclable.png" alt="" class="mx-auto w-">
+                              <h2 class="font-semibold text-xl mt-5 mb-2">Recycling</h2>
+                              <p class="text-sm">Waste Management</p>
+                         </div>
+                    </div>
+                    <div
+                         class="group relative md:basis-1/5 basis-full py-5 text-center before:absolute before:h-0 hover:before:h-[15.5rem] before:w-full before:opacity-0 hover:before:opacity-100 lg:before:-top-5 before:-top-4 before:left-0 before:bg-green-600 before:rounded before:transition-all before:duration-700 before:z-10">
+                         <div class="relative px-2 group-hover:text-slate-900 py-5 md:border-r border-green-600 z-20 sl-animated">
+                              <img src="assets/images/item/recyclable.png" alt="" class="mx-auto w-">
+                              <h2 class="font-semibold text-xl mt-5 mb-2">Recycling</h2>
+                              <p class="text-sm">Waste Management</p>
+                         </div>
+                    </div>
+                    <div
+                         class="group relative md:basis-1/5 basis-full py-5 text-center before:absolute before:h-0 hover:before:h-[15.5rem] before:w-full before:opacity-0 hover:before:opacity-100 lg:before:-top-5 before:-top-4 before:left-0 before:bg-green-600 before:rounded before:transition-all before:duration-700 before:z-10">
+                         <div class="relative px-2 group-hover:text-slate-900 py-5 md:border-r border-green-600 z-20 sl-animated">
+                              <img src="assets/images/item/recyclable.png" alt="" class="mx-auto w-">
+                              <h2 class="font-semibold text-xl mt-5 mb-2">Recycling</h2>
+                              <p class="text-sm">Waste Management</p>
+                         </div>
+                    </div>
+                    <div
+                         class="group relative md:basis-1/5 basis-full py-5 text-center before:absolute before:h-0 hover:before:h-[15.5rem] before:w-full before:opacity-0 hover:before:opacity-100 lg:before:-top-5 before:-top-4 before:left-0 before:bg-green-600 before:rounded before:transition-all before:duration-700 before:z-10">
+                         <div class="relative px-2 group-hover:text-slate-900 py-5 md:border-r border-green-600 z-20 sl-animated">
+                              <img src="assets/images/item/recyclable.png" alt="" class="mx-auto w-">
+                              <h2 class="font-semibold text-xl mt-5 mb-2">Recycling</h2>
+                              <p class="text-sm">Waste Management</p>
+                         </div>
+                    </div>
+                    <div
+                         class="group relative md:basis-1/5 basis-full py-5 text-center before:absolute before:h-0 hover:before:h-[15.5rem] before:w-full before:opacity-0 hover:before:opacity-100 lg:before:-top-5 before:-top-4 before:left-0 before:bg-green-600 before:rounded before:transition-all before:duration-700 before:z-10">
+                         <div class="relative group-hover:text-slate-900 py-5 z-20 sl-animated">
+                              <img src="assets/images/item/recyclable.png" alt="" class="mx-auto w-">
+                              <h2 class="font-semibold text-xl mt-5 mb-2">Recycling</h2>
+                              <p class="text-sm">Waste Management</p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- SERVICE ENDS -->
+
+     <!-- ABOUT STARTS -->
+     <section class="py-28"></section>
+     <!-- ABOUT ENDS -->
+
 
      <!-- SCRIPT LINKS -->
      <script src="assets/js/app.js"></script>
