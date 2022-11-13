@@ -15,6 +15,9 @@
   .sl-flex-center {
     @apply flex items-center justify-center;
   }
+  .sl-bg-cover{
+    @apply bg-cover bg-no-repeat bg-center;
+  }
   .sl-animated {
     @apply transition duration-500;
   }
