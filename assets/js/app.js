@@ -26,3 +26,11 @@ function headerToggle(activeBtn) {
      //      activeBtn.classList.remove("hidden");
      //      activeBtn.classList.add("block");
 }
+
+// ------- Counter Start ------- //
+$('.counter').counterUp({
+     delay: 20,
+     time: 2000
+});
+
+ // ------- Counter End ------- // 
