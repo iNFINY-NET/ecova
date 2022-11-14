@@ -18,6 +18,7 @@
   .sl-bg-cover{
     @apply bg-cover bg-no-repeat bg-center;
   }
+  /* ANIMATION */
   .sl-animated {
     @apply transition duration-500;
   }
@@ -26,6 +27,9 @@
   }
   .sl-animated-slide {
     @apply transition-all duration-700 ease-in-out;
+  }
+  .radio-box input[type="radio"]:checked+label {
+    @apply bg-green-500 text-white
   }
 }
 
@@ -43,4 +47,9 @@
 }
 
 @layer utilities {
+  /* SLIDER BUTTON STYLE RESET */
+  .swiper-button-next::after,
+  .swiper-button-prev::after{
+    content: '';
+  }
 }
