@@ -4,7 +4,7 @@
 
 @layer components {
   .sl-container {
-    @apply xl:max-w-[1140px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto;
+    @apply xl:max-w-[1140px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
   }
   .sl-container-wrap {
     @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
@@ -39,15 +39,27 @@
   .sl-section-title h2 {
     @apply font-bold lg:text-4xl md:text-3xl text-2xl my-3;
   }
-  .sl-bg-cover {
-    @apply bg-cover bg-no-repeat bg-center;
+  /* BACKGROUND IMAGE */
+  .sl-bg-img {
+    @apply absolute top-0 left-0 w-full h-full mix-blend-multiply z-0;
   }
+  .sl-bg-cover {
+    @apply bg-cover bg-center bg-no-repeat;
+  }
+  /* INPUT */
   .radio-box input[type="radio"]:checked + label {
     @apply bg-green-500 text-white;
+  }
+  /* BUTTON */
+  .sl-btn {
+    @apply bg-green-500 hover:bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;
   }
 }
 
 @layer base {
+  section {
+    @apply relative w-full;
+  }
   a {
     @apply inline-block cursor-pointer;
   }
@@ -65,5 +77,10 @@
   .swiper-button-next::after,
   .swiper-button-prev::after {
     content: "";
+  }
+  /* SELF MADE CSS */
+  .bg-center-bottom {
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
   }
 }
