@@ -954,6 +954,10 @@ input,
   width: 56%;
 }
 
+.w-3\/4 {
+  width: 75%;
+}
+
 .max-w-\[15rem\] {
   max-width: 15rem;
 }
@@ -1186,6 +1190,11 @@ input,
   padding-right: 0.625rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1264,6 +1273,16 @@ input,
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.\!text-base {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
 }
 
 .font-normal {
@@ -1511,6 +1530,11 @@ input,
   height: 50%;
 }
 
+.after\:h-0::after {
+  content: var(--tw-content);
+  height: 0px;
+}
+
 .after\:w-0::after {
   content: var(--tw-content);
   width: 0px;
@@ -1612,6 +1636,11 @@ input,
 
 .hover\:text-white\/80:hover {
   color: rgb(255 255 255 / 0.8);
+}
+
+.hover\:\!text-white:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:before\:h-\[15\.5rem\]:hover::before {
