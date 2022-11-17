@@ -33,7 +33,7 @@ function currentProjectSwiper() {
      var swiper = new Swiper(".current-project", {
           slidesPerView: 1,
           spaceBetween: 1,
-          loop: true,
+          loop: false,
           pagination: {
                el: ".swiper-pagination",
                clickable: true,
@@ -48,6 +48,10 @@ function currentProjectSwiper() {
                1024: {
                     slidesPerView: 4,
                },
+          },
+          navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
           },
      });
 }
