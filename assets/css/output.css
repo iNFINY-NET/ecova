@@ -567,6 +567,12 @@ input,
 
 /* FLEX */
 
+.sl-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .sl-flex-start {
   display: flex;
   align-items: center;
@@ -760,16 +766,8 @@ input,
   top: 0px;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
 .-top-\[125\%\] {
   top: -125%;
-}
-
-.top-\[125\%\] {
-  top: 125%;
 }
 
 .z-40 {
@@ -889,6 +887,30 @@ input,
   margin-bottom: 5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-3\.5 {
+  margin-bottom: 0.875rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-2\.5 {
+  margin-left: 0.625rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-3\.5 {
+  margin-top: 0.875rem;
+}
+
 .block {
   display: block;
 }
@@ -950,14 +972,6 @@ input,
   width: 75%;
 }
 
-.w-5\/12 {
-  width: 41.666667%;
-}
-
-.w-\[14\.25\%\] {
-  width: 14.25%;
-}
-
 .max-w-\[15rem\] {
   max-width: 15rem;
 }
@@ -998,10 +1012,6 @@ input,
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-cols-1 {
@@ -1064,6 +1074,10 @@ input,
   border-bottom-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-green-900 {
   --tw-border-opacity: 1;
   border-color: rgb(20 83 45 / var(--tw-border-opacity));
@@ -1082,34 +1096,13 @@ input,
   border-color: rgb(255 255 255 / 0.8);
 }
 
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.border-slate-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(203 213 225 / var(--tw-border-opacity));
-}
-
-.border-slate-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity));
-}
-
-.border-slate-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(30 41 59 / var(--tw-border-opacity));
-}
-
 .border-slate-700 {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
-.border-slate-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(15 23 42 / var(--tw-border-opacity));
+.border-white\/30 {
+  border-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-slate-800 {
@@ -1279,6 +1272,10 @@ input,
   padding-top: 1.25rem;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1408,16 +1405,13 @@ input,
   color: rgb(0 0 0 / 0.7);
 }
 
-.text-white\/70 {
-  color: rgb(255 255 255 / 0.7);
-}
-
 .text-white\/50 {
   color: rgb(255 255 255 / 0.5);
 }
 
-.text-white\/60 {
-  color: rgb(255 255 255 / 0.6);
+.text-lime-500 {
+  --tw-text-opacity: 1;
+  color: rgb(132 204 22 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1602,11 +1596,6 @@ input,
   height: 0px;
 }
 
-.after\:h-full::after {
-  content: var(--tw-content);
-  height: 100%;
-}
-
 .after\:w-0::after {
   content: var(--tw-content);
   width: 0px;
@@ -1629,25 +1618,9 @@ input,
   background-color: rgb(220 252 231 / var(--tw-bg-opacity));
 }
 
-.after\:bg-green-500::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
-}
-
-.after\:bg-green-500\/30::after {
-  content: var(--tw-content);
-  background-color: rgb(34 197 94 / 0.3);
-}
-
 .after\:bg-green-500\/50::after {
   content: var(--tw-content);
   background-color: rgb(34 197 94 / 0.5);
-}
-
-.after\:bg-green-500\/40::after {
-  content: var(--tw-content);
-  background-color: rgb(34 197 94 / 0.4);
 }
 
 .after\:bg-gradient-to-b::after {
@@ -1682,11 +1655,6 @@ input,
 .after\:duration-500::after {
   content: var(--tw-content);
   transition-duration: 500ms;
-}
-
-.after\:duration-300::after {
-  content: var(--tw-content);
-  transition-duration: 300ms;
 }
 
 .hover\:border-lime-500:hover {
@@ -1835,9 +1803,17 @@ input,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:text-right {
+    text-align: right;
   }
 
   .sm\:text-end {
@@ -1889,6 +1865,10 @@ input,
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:border-r {
