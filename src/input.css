@@ -10,6 +10,9 @@
     @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
   }
   /* FLEX */
+  .sl-flex-between {
+    @apply flex items-center justify-between;
+  }
   .sl-flex-start {
     @apply flex items-center justify-start;
   }
