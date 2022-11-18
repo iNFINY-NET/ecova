@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,42 +19,91 @@
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <!-- TAILWIND CSS -->
-    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="assets/css/output.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
-        <!--Header-->
-        <header class=" bg-green-900">
-            <nav class="w-full flex flex-row items-center justify-between">
-                <div>
-                    <a href="" class="p-5 border border-white m-auto block">
-                        <img src="./assets//images/h2logo.png" class="" alt="">
-                    </a>
+        <!--Start Header Section here-->
+        <header class="bg-[#33691e] xl:bg-transparent w-full h-[100px] border-b border-solid border-[gray]">
+            <nav class="flex w-full h-full items-center justify-between">
+                <div class="flex w-full h-full">
+                    <!--Start Navbar Logo image -->
+                    <div class="basis-[14%] h-full border-r py-4 border-gray-500">
+                        <a href="" class="w-full">
+                            <img src="./assets/images/logo/logo.png" class="m-auto block" alt="">
+                        </a>
+                    </div>
+                    <!--End Navbar Logo image -->
+
+                    <!--Start Navbar Menu list item -->
+                    <div class="flex basis-[72%]">
+                        <div class="w-full sl-flex-between">
+                            <div class="hidden basis-3/4 md:flex">
+                                <ul class="flex items-center ml-9 justify-center w-full text-white xl:text-black text-lg 2xl:text-xl font-medium font-roboto capitalize cursor-pointer">
+                                    <li class="mx-5 sl-flex-between">Home<i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                                    <li class="mx-5 sl-flex-between">about</li>
+                                    <li class="mx-5 sl-flex-between">event<i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                                    <li class="mx-5 sl-flex-between">causes <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                                    <li class="mx-5 sl-flex-between">blogs <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                                    <li class="mx-5 sl-flex-between">pages <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                                    <li class="mx-5 sl-flex-between">contact <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                                </ul>
+                            </div>
+                            <!--Start Navbar Button for xl display only-->
+                            <div class="hidden xl:flex h-full basis-1/4 xl:border-solid xl:border-r xl:border-[gray]">
+                                <ul class="w-full sl-flex-end mr-[26px] text-white text-base font-medium font-roboto capitalize">
+                                    <li><a href="" class="bg-[#689f38] inline-block border border-[#689f38] rounded-full px-5 2xl:px-10 py-2 xl:hover:bg-white xl:hover:text-[#689f38] xl:hover:ease-in-out duration-500">Contribute</a></li>
+                                </ul>
+                            </div>
+                            <!--End Navbar Button for xl display only-->
+                        </div>
+                    </div>
+                    <!--End Navbar Menu list item -->
+
+                    <!--Start Navbar Menu and Search button for xl display only-->
+                    <div class="hidden xl:flex xl:basis-[14%] w-full">
+                        <div class="border-r border-solid border-[gray] sl-flex-center px-8">
+                            <a href=""><i class="fas fa-search text-[#689f38]"></i></a></li>
+                        </div>
+                        <div class="sl-flex-center px-8">
+                            <a href="" class="flex text-lg font-semibold text-white hover:text-green-800"><i class="fas fa-bars text-[#689f38] text-lg mr-1"></i>Menu</a>
+                        </div>
+                    </div>
+                    <!--End Navbar Menu and Search button for xl display only-->
+
+                    <div class="md:hidden flex relative p-7">
+                        <button type="button" class="bg-[#66bb6a]  px-4 rounded-md"><i class="fa-solid fa-bars text-white text-2xl"></i></button>
+                    </div>
                 </div>
 
-                <div class="flex flex-end flex-row items-center justify-between">
-                    <div>
-                        <ul class="flex items-center justify-between text-white">
-                            <li>Home</li>
-                            <li>about</li>
-                            <li>event</li>
-                            <li>causes</li>
-                            <li>blogs</li>
-                            <li>pages</li>
-                            <li>contact</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul class="flex items-center justify-end text-white">
-                            <li><a href="">Contribute</a></li>
-                            <li><a href=""><i class="fas fa-search"></i></a></li>
-                            <li><a href=""><i class="fas fa-bars"></i>Menu</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
             </nav>
         </header>
+        <!--End Header Section here-->
+
+        <!--Start Nav Side-Bar Section here-->
+        <div class="hidden xl:flex fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
+            <ul class="text-white list-none capitalize sl-flex-start mt-[120px] flex-col w-full xl:ml-10 2xl:ml-0">
+                <li class="w-[295px] mb-5">
+                    <a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">home</a>
+                </li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">about us</a></li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">event</a></li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">causes</a></li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">projects</a></li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">blog</a></li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">shop</a></li>
+                <li class="w-[295px] mb-5"><a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">contact</a></li>
+            </ul>
+        </div>
+        <!--End Nav Side-Bar Section here-->
+
+        <!--Start Nav Side-Bar overlay Section here-->
+        <div class="hidden w-full h-full fixed left-0 top-0 -z-20 bg-[#517c4b80] to-transparent"></div>
+        <!--End Nav Side-Bar overlay Section here-->
+
+
     </div>
 </body>
+
 </html>
