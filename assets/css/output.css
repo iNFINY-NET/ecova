@@ -734,6 +734,14 @@ input,
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .top-3\.5 {
   top: 0.875rem;
 }
