@@ -398,7 +398,7 @@
                          </div>
                     </div>
                </div>
-
+               <!-- Swiper Slider STARTS -->
                <div class="swiper current-project">
                     <div class="swiper-wrapper relative">
                          <!--Project 1-->
@@ -406,7 +406,7 @@
                               <div
                                    class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                    <img src="assets/images/current-project/current-pro1.jpg"
-                                        alt="Forest & Tree Planting" class="rounded">
+                                        alt="Forest & Tree Planting" class="rounded ">
                                    <h4
                                         class="absolute left-0 bottom-0 p-5 font-semibold lg:text-2xl text-xl opacity-100 group-hover:opacity-0 z-20 sl-animated-fade">
                                         Forest & Tree Planting</h4>
@@ -563,18 +563,20 @@
                                    </div>
                               </div>
                          </div>
-
                     </div>
                     <!--Close Slider-->
-                    <div
-                         class="swiper-button-next w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
-                         <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div
-                         class="swiper-button-prev w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
-                         <i class="fa-solid fa-chevron-left"></i>
-                    </div>
                </div>
+               <div class="sl-flex-center w-full mt-4">
+                    <button type="button"
+                         class="swiper-button-prev relative mt-0 left-0 mr-1 w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
+                         <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button type="button"
+                         class="swiper-button-next relative mt-0 right-0 ml-1 w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
+                         <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+               </div>
+               <!-- Swiper Slider ENDS -->
 
           </div>
      </section>
@@ -892,6 +894,7 @@
                          </ul>
                     </div>
 
+                    <!-- Swiper Slider (Footer) STARTS -->
                     <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12 swiper footerSlider">
                          <div class="swiper footerSlider">
                               <div class="swiper-wrapper">
@@ -922,9 +925,10 @@
 
                               </div>
                               <!--Footer SLider Pagination-->
-                              <div class="swiper-pagination"></div>
+                              <div class="swiper-pagination text-right top-[78%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1"></div>
                          </div>
                     </div>
+                    <!-- Swiper Slider (Footer) ENDS -->
 
                </div>
           </div>
