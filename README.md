@@ -1,11 +1,9 @@
-# Project Name : Ecova
+## Project Name : Ecova
 ### Project Type : Design
 #### Live Link : http://gramotech.net/html/ecova/index.html
-#
+
 ## Project Details 
 > Convert design with Tailwind CSS
-
----
 
 ## Required Technology
 
@@ -14,7 +12,7 @@
 - [x] Jquery Plugins 
     -  Swiper JS
     - Count up
----
+
 ## Team Info
 #### Assign To : Morshed Alam
 #### Team Help : Fayez, Mawn
