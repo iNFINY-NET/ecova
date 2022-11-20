@@ -25,18 +25,24 @@
 
 <body class="bg-slate-800 text-white text-base font-normal">
 
+     <!-- SEARCH STARTS -->
+     <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
+          <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i class="fa-solid fa-xmark"></i></button>
+          <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
+               <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
+               <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+     </div>
+     <!-- SEARCH ENDS -->
+
      <!-- HEADER STARTS -->
      <header class="bg-green-900">
           <div class="w-full flex items-center lg:flex-nowrap flex-wrap lg:justify-start justify-between">
-               <a href="index.html"
-                    class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img
-                         src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
-               <button onclick="headerToggle(this)"
-                    class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i
-                         class="fa-solid fa-bars"></i></button>
+               <a href="index.html" class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
+               <button onclick="hightSlide(mainNav, 'h-[27rem]')" class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i class="fa-solid fa-bars"></i></button>
                <nav id="mainNav"
                     class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
-                    <ul class="w-full flex lg:flex-row flex-col mr-auto">
+                    <ul class="flex lg:flex-row flex-col mr-auto">
                          <li><a href="index.html"
                                    class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
                          </li>
@@ -59,6 +65,17 @@
                                    class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
                          </li>
                     </ul>
+                    <ul class="2xl:flex hidden items-center pr-8">
+                         <li class="mr-3.5">
+                              <a href="" class="sl-btn">Make a Donation</a>
+                         </li>
+                         <li class="mr-3.5"><a onclick="hightSlide(searchDiv, 'h-full')" class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></li>
+                         <li class="mr-3.5"><a href="" class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></li>
+                         <li class="mr-3.5 text-sm leading-10"><a href="" class="text-lime-100 hover:text-lime-500 sl-animated">Login</a> | <a href=""
+                                   class="text-lime-100 hover:text-lime-500 sl-animated">Signup</a></li>
+                    </ul>
                </nav>
           </div>
      </header>
@@ -73,10 +90,8 @@
                     <div class="swiper-slide relative">
                          <img src="assets/images/hero/h2-slide1.jpg" alt="hero plant">
                          <div class="absolute sl-container sm:block hidden inset-0 pt-20 lg:text-left text-center">
-                              <strong class="block lg:text-[2.5rem] md:text-3xl text-xl lg:mb-6 mb-3">Ecova <span
-                                        class="font-normal">is the best</span></strong>
-                              <h1
-                                   class="font-bold lg:text-[5.6rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 uppercase">
+                              <strong class="block lg:text-[2.5rem] md:text-3xl text-xl lg:mb-6 mb-3">Ecova <span class="font-normal">is the best</span></strong>
+                              <h1 class="font-bold lg:text-[5.6rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 uppercase">
                                    eco friendly</h1>
                               <h2 class="lg:w-3/5 w-full lg:text-4xl md:text-3xl text-xl mb-9">Nonprofit WordPress Theme
                               </h2>
@@ -93,10 +108,8 @@
                     <div class="swiper-slide relative">
                          <img src="assets/images/hero/h2-slide2.jpg" alt="hero plant">
                          <div class="absolute sl-container sm:block hidden inset-0 pt-20 lg:text-left text-center">
-                              <strong class="block lg:text-[2.5rem] md:text-3xl text-xl lg:mb-6 mb-3">Please <span
-                                        class="font-normal">Stop Hunting &</span></strong>
-                              <h1
-                                   class="font-bold lg:text-[5.6rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 uppercase">
+                              <strong class="block lg:text-[2.5rem] md:text-3xl text-xl lg:mb-6 mb-3">Please <span class="font-normal">Stop Hunting &</span></strong>
+                              <h1 class="font-bold lg:text-[5.6rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 uppercase">
                                    Save Wildlife</h1>
                               <h2 class="lg:w-3/5 w-full lg:text-4xl md:text-3xl text-xl mb-9">of <strong>endangered
                                         animals</strong> in the world
@@ -114,8 +127,7 @@
                     <div class="swiper-slide relative">
                          <img src="assets/images/hero/h2-slide3.jpg" alt="hero plant">
                          <div class="absolute sl-container sm:block hidden inset-0 pt-20 lg:text-left text-center">
-                              <strong class="block lg:text-[2.5rem] md:text-3xl text-xl lg:mb-6 mb-3">Save <span
-                                        class="font-normal"> & don’t waste our life</span></strong>
+                              <strong class="block lg:text-[2.5rem] md:text-3xl text-xl lg:mb-6 mb-3">Save <span class="font-normal"> & don’t waste our life</span></strong>
                               partner
                               <h1
                                    class="font-bold lg:text-[5.6rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 uppercase">
@@ -918,9 +930,8 @@
           </div>
           <div class="border-t border-white/30 py-5">
                <div class="sl-container sl-flex-between sm:flex-row flex-col">
-                    <img src="assets/images/logo/logo.png" alt="" class="">
-                    <p class="text-sm sm:text-right text-center text-white/80 mt-3.5"> All Rights Reserved of Ecova ©
-                         2018, Design & Developed By: GramoTech </p>
+                         <img src="assets/images/logo/logo.png" alt="" class="">
+                         <p class="text-sm sm:text-right text-center text-white/80 mt-3.5"> All Rights Reserved of Ecova © 2018, Design & Developed By: GramoTech </p>
                </div>
           </div>
      </footer>

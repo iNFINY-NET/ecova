@@ -8,24 +8,6 @@ function hightSlide(id, hSize) {
           id.classList.remove(`${hSize}`, "opacity-100", "visible");
      }
 }
-// HEADER TOGGLE
-function headerToggle(activeBtn) {
-     const mainNav = document.getElementById('mainNav');
-     // const items = document.querySelectorAll(`[data-role="accordionIcon"]`);
-     // TOGGLE HEADER BACKGROUND
-     hightSlide(mainNav, "h-[27rem]")
-     // HIDDEN ALL BUTTON
-     // for (let i = 0; i < items.length; i++) {
-     //      const item = items[i];
-     //      if (item.classList.contains("block")) {
-     //           item.classList.remove("block");
-     //           item.classList.add("hidden");
-     //      }
-     // }
-     // ACTIVE ITEM SHOW
-     //      activeBtn.classList.remove("hidden");
-     //      activeBtn.classList.add("block");
-}
 
 // ------- Counter Start ------- //
 $('.counter').counterUp({
