@@ -8,6 +8,7 @@ module.exports = {
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'roboto': ['Roboto', 'ui-sans-serif', 'system-ui'],
+      'robotoSlab':['Roboto Slab', 'serif'],
     },
     screens: {
       'xs': '380px',

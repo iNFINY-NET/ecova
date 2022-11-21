@@ -12,9 +12,10 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="./assets/ventors/swiper/swiper-bundle.min.css">
 
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -22,37 +23,46 @@
     <link href="assets/css/output.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="wrapper">
+<body class="bg-slate-800 text-white text-base font-normal">
+    <section class="xl:absolute xl:z-10">
         <!--Start Header Section here-->
         <header class="bg-[#33691e] xl:bg-transparent w-full h-[100px] border-b border-solid border-[gray]">
             <nav class="flex w-full h-full items-center justify-between">
                 <div class="flex w-full h-full">
-                    <!--Start Navbar Logo image -->
-                    <div class="basis-[14%] h-full border-r py-4 border-gray-500">
-                        <a href="" class="w-full">
-                            <img src="./assets/images/logo/logo.png" class="m-auto block" alt="">
-                        </a>
-                    </div>
-                    <!--End Navbar Logo image -->
-
                     <!--Start Navbar Menu list item -->
-                    <div class="flex basis-[72%]">
-                        <div class="w-full sl-flex-between">
-                            <div class="hidden basis-3/4 md:flex">
-                                <ul class="flex items-center ml-9 justify-center w-full text-white xl:text-black text-lg 2xl:text-xl font-medium font-roboto capitalize cursor-pointer">
-                                    <li class="mx-5 sl-flex-between">Home<i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
-                                    <li class="mx-5 sl-flex-between">about</li>
-                                    <li class="mx-5 sl-flex-between">event<i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
-                                    <li class="mx-5 sl-flex-between">causes <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
-                                    <li class="mx-5 sl-flex-between">blogs <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
-                                    <li class="mx-5 sl-flex-between">pages <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
-                                    <li class="mx-5 sl-flex-between">contact <i class="fa-solid fa-caret-down hidden 2xl:flex text-sm ml-1"></i></li>
+                    <div class="flex basis-full sl-flex-between flex-wrap lg:flex-nowrap">
+                        <div class="flex basis-full lg:basis-[27%] 2xl:basis-[18%]">
+                            <!--Start Navbar Logo image -->
+                            <div class="basis-[80%] sm:basis-[70%] md:basis-[55%] lg:basis-full h-full xs:border-none xs:ml-5 md:ml-0 py-3.5 sm:border-r sm:border-solid border-gray-500">
+                                <a href="" class="w-full">
+                                    <img src="./assets/images/logo/logo.png" class="m-auto block" alt="">
+                                </a>
+                            
+                            </div>
+                            <!--End Navbar Logo image -->
+
+                            <!--Start Navbar Menu Hamburger buttom-->
+                            <div class="lg:hidden w-full flex relative p-7 justify-end">
+                                <button type="button" class="bg-[#66bb6a] px-4 rounded-sm py-1">
+                                    <i class="fa-solid fa-bars text-white text-2xl"></i></button>
+                            </div>
+                            <!--End Navbar Menu Hamburger buttom-->
+                        </div>
+                        <div class="flex basis-full lg:basis-[73%] 2xl:basis-[82%] w-full h-full lg:sl-flex-start">
+                            <div class="hidden basis-full xl:basis-2/3 2xl:basis-full xl:w-full lg:flex bg-[#33691e] lg:bg-transparent">
+                                <ul class="flex items-start lg:items-center flex-col lg:flex-row mt-2 lg:ml-5 lg:justify-start 2xl:ml-[8.125rem] text-white xl:text-black text-lg 2xl:text-xl font-normal font-robotoSlab capitalize cursor-pointer ">
+                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">Home<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></li>
+                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">about</li>
+                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">events<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></li>
+                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">causes <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></li>
+                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">blogs <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></li>
+                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">pages <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></li>
+                                    <li class="mb-8 lg:mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">contact<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></li>
                                 </ul>
                             </div>
                             <!--Start Navbar Button for xl display only-->
-                            <div class="hidden xl:flex h-full basis-1/4 xl:border-solid xl:border-r xl:border-[gray]">
-                                <ul class="w-full sl-flex-end mr-[26px] text-white text-base font-medium font-roboto capitalize">
+                            <div class="hidden xl:flex h-full basis-1/4 mr-8">
+                                <ul class="w-full sl-flex-end text-white text-base font-medium font-roboto capitalize">
                                     <li><a href="" class="bg-[#689f38] inline-block border border-[#689f38] rounded-full px-5 2xl:px-10 py-2 xl:hover:bg-white xl:hover:text-[#689f38] xl:hover:ease-in-out duration-500">Contribute</a></li>
                                 </ul>
                             </div>
@@ -63,18 +73,14 @@
 
                     <!--Start Navbar Menu and Search button for xl display only-->
                     <div class="hidden xl:flex xl:basis-[14%] w-full">
-                        <div class="border-r border-solid border-[gray] sl-flex-center px-8">
+                        <div class="border-r border-l border-solid border-[gray] sl-flex-center px-8">
                             <a href=""><i class="fas fa-search text-[#689f38]"></i></a></li>
                         </div>
                         <div class="sl-flex-center px-8">
-                            <a href="" class="flex text-lg font-semibold text-white hover:text-green-800"><i class="fas fa-bars text-[#689f38] text-lg mr-1"></i>Menu</a>
+                            <a href="" class="flex text-base font-normal font-robotoSlab text-white hover:text-green-800"><i class="fas fa-bars text-[#689f38] text-base mr-1"></i>Menu</a>
                         </div>
                     </div>
                     <!--End Navbar Menu and Search button for xl display only-->
-
-                    <div class="md:hidden flex relative p-7">
-                        <button type="button" class="bg-[#66bb6a]  px-4 rounded-md"><i class="fa-solid fa-bars text-white text-2xl"></i></button>
-                    </div>
                 </div>
 
             </nav>
@@ -82,7 +88,7 @@
         <!--End Header Section here-->
 
         <!--Start Nav Side-Bar Section here-->
-        <div class="hidden xl:flex fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
+        <div class="hidden xl:hidden fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
             <ul class="text-white list-none capitalize sl-flex-start mt-[120px] flex-col w-full xl:ml-10 2xl:ml-0">
                 <li class="w-[295px] mb-5">
                     <a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">home</a>
@@ -100,10 +106,37 @@
 
         <!--Start Nav Side-Bar overlay Section here-->
         <div class="hidden w-full h-full fixed left-0 top-0 -z-20 bg-[#517c4b80] to-transparent"></div>
-        <!--End Nav Side-Bar overlay Section here-->
+    </section>
 
+    <section>
+        <!--Start hero carousel slider-->
+        <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide text-center text-lg bg-white justify-center items-center">
+                    <img src="./assets/images/slider/h1-slide1.jpg" alt="">
+                </div>
+                <div class="swiper-slide text-center text-lg bg-white justify-center items-center">
+                    <img src="./assets/images/slider/h1-slide2.jpg" alt="">
+                </div>
+                <div class="swiper-slide text-center text-lg bg-white justify-center items-center">
+                    <img src="./assets/images/slider/h1-slide3.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next text-white bg-black/50 w-[3.125rem] h-[3.125rem] rounded-full"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="swiper-button-prev text-white bg-black/50 w-[3.125rem] h-[3.125rem] rounded-full"><i class="fa-solid fa-chevron-left"></i></div>
+        </div>
+        <!--End hero carousel slider-->
+    </section>
 
-    </div>
+    <!-- SCRIPT LINKS -->
+    <script src="./assets/ventors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./assets/ventors/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/ventors/counter/jquery.counterup.min.js"></script>
+    <script src="./assets/ventors/counter/jquery.waypoints.js"></script>
+    <script src="./assets/ventors/counter/jquery.waypoints.min.js"></script>
+    
+    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/swiperSetting.js"></script>
 </body>
 
 </html>
