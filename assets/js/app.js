@@ -9,10 +9,8 @@ function hightSlide(id, hSize) {
      }
 }
 
-// ------- Counter Start ------- //
+// COUNTER JS SETUP
 $('.counter').counterUp({
      delay: 20,
      time: 2000
 });
-
- // ------- Counter End ------- // 
