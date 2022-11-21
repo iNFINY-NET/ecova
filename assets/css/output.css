@@ -816,6 +816,10 @@ input,
   top: -125%;
 }
 
+.top-\[50px\] {
+  top: 50px;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -2460,6 +2464,10 @@ input,
     top: 68%;
   }
 
+  .lg\:top-\[10\%\] {
+    top: 10%;
+  }
+
   .lg\:mr-24 {
     margin-right: 6rem;
   }
@@ -2741,6 +2749,10 @@ input,
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:top-\[27\%\] {
+    top: 27%;
+  }
+
   .\32xl\:ml-\[8\.125rem\] {
     margin-left: 8.125rem;
   }
@@ -2761,9 +2773,17 @@ input,
     display: flex;
   }
 
+  .\32xl\:pt-\[20\%\] {
+    padding-top: 20%;
+  
   .\32xl\:basis-\[18\%\] {
     flex-basis: 18%;
   }
+
+  .\32xl\:pt-\[10\%\] {
+    padding-top: 10%;
+  }
+}
 
   .\32xl\:basis-\[82\%\] {
     flex-basis: 82%;
