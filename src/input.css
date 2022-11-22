@@ -73,6 +73,9 @@
   select {
     @apply outline-none bg-transparent;
   }
+  img{
+    @apply object-cover
+  }
 }
 
 @layer utilities {
