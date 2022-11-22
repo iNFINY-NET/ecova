@@ -2,7 +2,12 @@ module.exports = {
   content: ["*.{html,js}"],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'volunteer': "url('/assets/images/factsbg.jpg')",
+        'volunteerBorder':"url('/assets/images/border.png')",
+      }
+    },
     fontFamily: {
       'sans': ['Poppins', 'ui-sans-serif', 'system-ui'],
       'serif': ['ui-serif', 'Georgia'],
