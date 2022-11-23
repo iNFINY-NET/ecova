@@ -4,7 +4,7 @@
 
 @layer components {
   .sl-container {
-    @apply xl:max-w-[1140px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
+    @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
   }
   .sl-container-wrap {
     @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
@@ -70,7 +70,8 @@
     @apply inline-block cursor-pointer;
   }
   input,
-  select {
+  select,
+  textarea {
     @apply outline-none bg-transparent;
   }
   img{
