@@ -2,6 +2,7 @@ $(document).ready(function () {
      currentProjectSwiper();
      homeBannerSlider();
      footerProductSlider();
+     brandLogoSwiper();
 });
 
 /**
@@ -78,5 +79,33 @@ function footerProductSlider() {
           //      nextEl: ".swiper-button-next",
           //      prevEl: ".swiper-button-prev",
           // },
+     });
+}
+
+
+/**
+ * Brand Logo Slider
+ */
+
+function brandLogoSwiper() {
+     var swiper = new Swiper(".brandSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 1,
+          loop: true,
+          autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+          },
+          breakpoints: {
+               640: {
+                    slidesPerView: 3,
+               },
+               768: {
+                    slidesPerView: 3,
+               },
+               1024: {
+                    slidesPerView: 5,
+               },
+          },
      });
 }
