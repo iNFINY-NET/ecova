@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage:{
         'volunteer': "url('/assets/images/factsbg.jpg')",
         'volunteerBorder':"url('/assets/images/border.png')",
+        'footerTexture':"url('/assets/images/fpat.jpg')",
       }
     },
     fontFamily: {
