@@ -794,14 +794,6 @@ img {
   top: 78%;
 }
 
-.top-\[71px\] {
-  top: 71px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .top-\[0px\] {
   top: 0px;
 }
@@ -820,6 +812,10 @@ img {
 
 .top-\[134px\] {
   top: 134px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-40 {
@@ -872,14 +868,6 @@ img {
 
 .left-2 {
   left: 0.5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-12 {
-  top: 3rem;
 }
 
 .z-\[99999\] {
@@ -1044,10 +1032,6 @@ img {
   margin-left: 0.25rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
 .mr-8 {
   margin-right: 2rem;
 }
@@ -1066,6 +1050,10 @@ img {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-3 {
@@ -1174,10 +1162,6 @@ img {
 
 .h-auto {
   height: auto;
-}
-
-.h-\[100px\] {
-  height: 100px;
 }
 
 .h-\[3\.125rem\] {
@@ -1407,10 +1391,6 @@ img {
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
-}
-
-.self-start {
-  align-self: flex-start;
 }
 
 .overflow-hidden {
@@ -1753,11 +1733,6 @@ img {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -3706,20 +3681,20 @@ img {
     top: 68%;
   }
 
-  .lg\:-top-\[126px\] {
-    top: -126px;
-  }
-
-  .lg\:top-\[10\%\] {
-    top: 10%;
-  }
-
   .lg\:top-\[71px\] {
     top: 71px;
   }
 
   .lg\:left-0 {
     left: 0px;
+  }
+
+  .lg\:-top-\[126px\] {
+    top: -126px;
+  }
+
+  .lg\:top-\[10\%\] {
+    top: 10%;
   }
 
   .lg\:mr-24 {
@@ -3764,10 +3739,6 @@ img {
 
   .lg\:block {
     display: block;
-  }
-
-  .lg\:inline-block {
-    display: inline-block;
   }
 
   .lg\:flex {
@@ -3889,10 +3860,6 @@ img {
 
   .lg\:justify-start {
     justify-content: flex-start;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
   }
 
   .lg\:justify-between {
@@ -4217,11 +4184,6 @@ img {
     text-align: left;
   }
 
-  .xl\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-
   .xl\:after\:h-\[1rem\]::after {
     content: var(--tw-content);
     height: 1rem;
@@ -4278,10 +4240,6 @@ img {
     }
   }
 
-  .\32xl\:absolute {
-    position: absolute;
-  }
-
   .\32xl\:top-5 {
     top: 1.25rem;
   }
@@ -4292,14 +4250,6 @@ img {
 
   .\32xl\:top-\[27\%\] {
     top: 27%;
-  }
-
-  .\32xl\:top-\[71px\] {
-    top: 71px;
-  }
-
-  .\32xl\:left-0 {
-    left: 0px;
   }
 
   .\32xl\:m-auto {
