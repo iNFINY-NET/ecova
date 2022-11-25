@@ -14,3 +14,19 @@ $('.counter').counterUp({
      delay: 20,
      time: 2000
 });
+
+
+//DROPDOWN MOBILE MENU
+
+$(document).ready(function () {
+     $("#navToggler").each(function (_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function () {
+               $(target).animate({
+                    height: "toggle",
+               });
+          });
+     });
+});
+
+//DROPDOWN NESTED MENU

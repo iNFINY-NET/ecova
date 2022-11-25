@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE & FAVICON -->
+    <link rel="icon" href="assets/images/icon/tdba_favicon.png" />
+    <title>Home Two</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="./assets/ventors/swiper/swiper-bundle.min.css">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- TAILWIND CSS -->
+    <link href="assets/css/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-800 text-white text-base font-normal">
+    <!-- SEARCH STARTS -->
+    <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
+        <button onclick="hightSlide(searchDiv, 'h-full')"
+            class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i
+                class="fa-solid fa-xmark"></i></button>
+        <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
+            <input type="text" placeholder="type keyword(s) here"
+                class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
+            <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+    <!-- SEARCH ENDS -->
+    <!-- HEADER SECTION STARTS -->
+    <section class="xl:absolute xl:z-10">
+        <!--Start Header Section here-->
+        <header class="bg-[#33691e] xl:bg-transparent w-full h-auto border-b border-solid border-[gray]">
+            <nav class="flex w-full h-full items-center justify-between">
+                <div class="flex w-full h-full">
+                    <!--Start Navbar Menu list item -->
+                    <div class="flex basis-full sl-flex-between flex-wrap lg:flex-nowrap">
+                        <div class="flex basis-full lg:basis-[27%] 2xl:basis-[18%]">
+                            <!--Start Navbar Logo image -->
+                            <div
+                                class="basis-[80%] sm:basis-[70%] md:basis-[55%] lg:basis-full 2xl:basis-[88%] h-full xs:border-none xs:ml-5 md:ml-0 py-3.5 sm:border-r sm:border-solid border-gray-500">
+                                <a href="" class="w-full">
+                                    <img src="./assets/images/logo/logo.png" class="m-auto block" alt="">
+                                </a>
+    
+                            </div>
+                            <!--End Navbar Logo image -->
+    
+                            <!--Start Navbar Menu Hamburger buttom-->
+                            <div class="lg:hidden w-full flex relative p-7 justify-end">
+                                <button type="button" class="bg-[#66bb6a] px-4 rounded-sm py-1" id="navToggler"
+                                    data-target="#dropdownMenu">
+                                    <i class="fa-solid fa-bars text-white text-2xl"></i></button>
+                            </div>
+                            <!--End Navbar Menu Hamburger buttom-->
+                        </div>
+                        <div id="drop" class="flex basis-full lg:basis-[73%] 2xl:basis-[82%] w-full h-auto lg:sl-flex-start">
+                            <div class="flex xl:basis-2/3 2xl:basis-full xl:w-full lg:bg-transparent">
+    
+                                <ul id="dropdownMenu" class="hidden lg:flex items-start lg:items-center flex-col lg:flex-row mt-2 lg:ml-5 lg:justify-start 2xl:ml-[8.125rem] text-white text-lg 2xl:text-xl font-normal font-robotoSlab capitalize cursor-pointer ">
+                                        <li id="submenuBtn" class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">Home<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuHome" class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">home one</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">home Two</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">home Three</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between">about</li>
+                                        <li  class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">events<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuEvent"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events grid</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events grid two</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events list</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events list two</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">causes <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuCauses"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">causes grid</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">causes list</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">causes details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">blogs <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuBlog"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog default</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog list</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog grid </a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog two columns</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog three columns</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=" relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">pages <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuPage"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">projects</a>
+                                                    <ul
+                                                        class="hidden absolute top-[0px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects grid</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects grid two</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects list</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects details</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">shop</a>
+                                                    <ul
+                                                        class="hidden absolute top-[44px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">shop</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">shop two</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">shop details</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">team </a>
+                                                    <ul
+                                                        class="hidden absolute top-[89px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">team one</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">team two</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">team details</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">gallery</a>
+                                                    <ul
+                                                        class="hidden absolute top-[134px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">gallery grid</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">gallery full</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">gallery masonry</a>
+                                                        </li>
+            
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">testimonials</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">donation</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">my account</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">coming soon</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">404 error</a>
+                                                </li>
+            
+                                            </ul>
+                                        </li>
+                                        <li class="relative mb-2 lg:mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row ">contact<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuContact"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">contact one</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">contact two</a></li>
+                                            </ul>
+                                        </li>
+                                </ul>
+                            </div>
+                            <!--Start Navbar Button for xl display only-->
+                            <div class="hidden xl:flex h-full basis-1/4 mr-8">
+                                <ul class="w-full sl-flex-end text-white text-base font-medium font-roboto capitalize">
+                                    <li><a href=""
+                                            class="bg-[#689f38] inline-block border border-[#689f38] rounded-full px-5 2xl:px-10 py-2 xl:hover:bg-white xl:hover:text-[#689f38] xl:hover:ease-in-out duration-500">Contribute</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--End Navbar Button for xl display only-->
+                        </div>
+                    </div>
+                    <!--End Navbar Menu list item -->
+    
+                    <!--Start Navbar Menu and Search button for xl display only-->
+                    <div class="hidden xl:flex xl:basis-[14%] w-full">
+                        <button onclick="hightSlide(searchDiv, 'h-full')"
+                            class="border-r border-l border-solid border-[gray] sl-flex-center px-8">
+                            <i class="fas fa-search text-[#689f38]"></i></li>
+                        </button>
+                        <div class="sl-flex-center px-8">
+                            <a href="" class="flex text-base font-normal font-robotoSlab text-white hover:text-green-800"><i
+                                    class="fas fa-bars text-[#689f38] text-base mr-1"></i>Menu</a>
+                        </div>
+                    </div>
+                    <!--End Navbar Menu and Search button for xl display only-->
+                </div>
+    
+            </nav>
+        </header>
+        <!--End Header Section here-->
+    
+        <!--Start Nav Side-Bar Section here-->
+        <div class="hidden xl:hidden fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
+            <ul class="text-white list-none capitalize sl-flex-start mt-[120px] flex-col w-full xl:ml-10 2xl:ml-0">
+                <li class="w-[295px] mb-5">
+                    <a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">home</a>
+                </li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">about us</a>
+                </li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">event</a></li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">causes</a>
+                </li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">projects</a>
+                </li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">blog</a></li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">shop</a></li>
+                <li class="w-[295px] mb-5"><a href=""
+                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">contact</a>
+                </li>
+            </ul>
+        </div>
+        <!--End Nav Side-Bar Section here-->
+    
+        <!--Start Nav Side-Bar overlay Section here-->
+        <div class="hidden w-full h-full fixed left-0 top-0 -z-20 bg-[#517c4b80] to-transparent"></div>
+        <!--End Nav Side-Bar overlay Section here-->
+    </section>
+    <!-- HEADER SECTION ENDS-->
+
+    <!-- HERO SLIDER SECTION STARTS -->
+    <section>
+        <!--Start hero carousel slider-->
+        <div class="swiper mySwiper w-full h-full">
+            <div class="swiper-wrapper">
+                <!--Start Slide 1-->
+                <div class="swiper-slide relative text-center text-lg bg-white justify-center items-center">
+                    <img src="./assets/images/slider/h1-slide1.jpg" alt="">
+                    <div
+                        class="absolute sl-container sm:block hidden sm:inset-0 right-0 top-40 sm:-top-5 xl:top-20 left-0 bottom-0 pt-20 lg:pt-14 xl:pt-20 2xl:pt-36 lg:text-left text-center font-robotoSlab">
+                        <strong class="block lg:text-[2.5rem] text-2xl font-bold lg:mb-6 mb-3">100k Plants Grown in
+                            2018,</strong>
+                        <h1
+                            class="font-bold lg:text-[5rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 sm:mt-[3.125rem] md:mt-0 capitalize">
+                            Heal the World</h1>
+                        <p class="hidden md:flex text-base lg:w-[65%] lg:text-[1.327rem] leading-9">Environmental
+                            awareness is not a
+                            trend that comes into style a few months and stops. Individuals working towards making
+                            a small impact on Earth.
+                        </p>
+                        <div class="hidden lg:flex mt-10">
+                            <button
+                                class="bg-[#6ea53b] mr-5 text-white px-[3.125rem] py-3 rounded-full font-medium capitalize">join
+                                us
+                                now</button>
+                            <button
+                                class="hover:bg-[#6ea53b] hover:ease-in-out duration-500 text-white border-2 border-solid border-white px-[3.125rem] py-3 rounded-full font-medium capitalize">more
+                                about us</button>
+                        </div>
+                    </div>
+                </div>
+                <!--End Slide 1-->
+    
+                <!--Start Slide 2-->
+                <div class="swiper-slide relative text-center text-lg bg-white justify-center items-center">
+                    <img src="./assets/images/slider/h1-slide2.jpg" alt="">
+                    <div
+                        class="absolute sl-container sm:block hidden sm:inset-0 sm:-top-5 right-0 top-40 xl:top-20 left-0 bottom-0 pt-20 lg:pt-14 xl:pt-20 2xl:pt-36 lg:text-left text-center font-robotoSlab">
+                        <strong class="block lg:text-[2.5rem] text-2xl font-bold lg:mb-6 mb-3">Organize the Management
+                            System of</strong>
+                        <h1
+                            class="font-bold lg:text-[5rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 sm:mt-[3.125rem] md:mt-0 capitalize">
+                            Recycling & Waste</h1>
+                        <p class="hidden md:flex text-base lg:w-[65%] lg:text-[1.327rem] leading-9">Environmental
+                            awareness is not a
+                            trend that comes into style a few months and stops. Individuals working towards making
+                            a small impact on Earth.
+                        </p>
+                        <div class="hidden lg:flex mt-10">
+                            <button
+                                class="bg-[#6ea53b] mr-5 text-white px-[3.125rem] py-3 rounded-full font-medium capitalize">join
+                                us
+                                now</button>
+                            <button
+                                class="hover:bg-[#6ea53b] hover:ease-in-out duration-500 text-white border-2 border-solid border-white px-[3.125rem] py-3 rounded-full font-medium capitalize">more
+                                about us</button>
+                        </div>
+                    </div>
+                </div>
+                <!--End Slide 2-->
+    
+                <!--Start Slide 3-->
+                <div class="swiper-slide relative text-center text-lg bg-white justify-center items-center">
+                    <img src="./assets/images/slider/h1-slide3.jpg" alt="">
+                    <div
+                        class="absolute sl-container sm:block hidden sm:inset-0 right-0 top-40 sm:-top-5 xl:top-20 left-0 bottom-0 pt-20 lg:pt-14 xl:pt-20 2xl:pt-36 lg:text-left text-center font-robotoSlab">
+                        <strong class="block lg:text-[2.5rem] text-2xl font-bold lg:mb-6 mb-3">It’s very harmful for
+                            everyone</strong>
+                        <h1
+                            class="font-bold lg:text-[5rem] md:text-[2.5rem] text-3xl lg:leading-[4.4rem] md:leading-[2.5rem] leading-7 lg:mb-4 mb-2 sm:mt-[3.125rem] md:mt-0 capitalize">
+                            Heal the World</h1>
+                        <p class="hidden md:flex text-base lg:w-[65%] lg:text-[1.327rem] leading-9">Environmental
+                            awareness is not a
+                            trend that comes into style a few months and stops. Individuals working towards making
+                            a small impact on Earth.
+                        </p>
+                        <div class="hidden lg:flex mt-10">
+                            <button
+                                class="bg-[#6ea53b] mr-5 text-white px-[3.125rem] py-3 rounded-full font-medium capitalize">join
+                                us
+                                now</button>
+                            <button
+                                class="hover:bg-[#6ea53b] hover:ease-in-out duration-500 text-white border-2 border-solid border-white px-[3.125rem] py-3 rounded-full font-medium capitalize">more
+                                about us</button>
+                        </div>
+                    </div>
+                </div>
+                <!--End Slide 3-->
+            </div>
+            <div class="swiper-button-next text-white bg-black/50 w-[3.125rem] h-[3.125rem] rounded-full"><i
+                    class="fa-solid fa-chevron-right"></i></div>
+            <div class="swiper-button-prev text-white bg-black/50 w-[3.125rem] h-[3.125rem] rounded-full"><i
+                    class="fa-solid fa-chevron-left"></i></div>
+        </div>
+        <!--End hero carousel slider-->
+    </section>
+    <!-- HERO SLIDER SECTION ENDS -->
+    
+    <!-- ECOVA BIO SECTION STARTS -->
+    <section
+        class="sl-container sm:max-w-[640px] md:max-w-[960px] md:m-0 lg:max-w-[1024px] xl:max-w-[1280px] xl:px-20 2xl:m-auto mt-5 2xl:mt-5">
+        <div class="relative w-full md:w-full md:grid md:grid-cols-2 py-20 px-2 gap-x-5">
+            <div class="relative sm:px-0 w-full">
+                <div class="relative">
+                    <strong
+                        class="font-robotoSlab text-white text-[4.5rem] leading-5 tracking-wide font-medium">ecova.</strong>
+                    <h3 class="font-robotoSlab leading-[3rem] mt-4 sm:mt-2 text-[1.875rem] 
+                                            lg:text-[2.5rem] font-medium lg:font-normal">
+                        is providing the best solution Eco Environment
+                    </h3>
+                    <h3
+                        class="absolute before:absolute before:left-1 before:w-[7.5rem] before:top-[1rem] before:h-[0.1875rem] before:content-[''] before:bg-[#689f38] 
+                            after:absolute after:left-2 after:top-[1rem] after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[1rem] after:content-[''] after:bg-slate-800">
+                    </h3>
+                </div>
+                <div>
+                    <p class="font-roboto font-light text-lg leading-8 mt-10">If anything’s hot in today’s economy, it’s
+                        saving money,
+                        including a broad range of green businesses helping people save
+                        energy, water, and other resources.
+                        <span class="font-roboto font-medium text-[#689f38]">Definitely, you can goo with this business as
+                            it
+                            is a nothing but the future.</span>
+                    </p>
+                    <p class="font-roboto font-light text-lg leading-8 mt-5">When you embrace eco awareness as a part of
+                        your daily
+                        life, you can definitely think about the environment business.</p>
+                    <ul class="mt-5 mb-5 sm:grid sm:grid-cols-2">
+                        <li><i class="fa-solid fa-check text-xs mr-2 mb-3 text-[#00cd93]"></i><span
+                                class="font-roboto text-base font-light tracking-wider capitalize">solar energy</span></li>
+                        <li><i class="fa-solid fa-check text-xs mr-2 mb-3 text-[#00cd93]"></i><span
+                                class="font-roboto text-base font-light tracking-wider capitalize">Waste Management</span>
+                        </li>
+                        <li><i class="fa-solid fa-check text-xs mr-2 mb-3 text-[#00cd93]"></i><span
+                                class="font-roboto text-base font-light tracking-wider capitalize">Eco Ideas</span></li>
+                        <li><i class="fa-solid fa-check text-xs mr-2 mb-3 text-[#00cd93]"></i><span
+                                class="font-roboto text-base font-light tracking-wider capitalize">Recycling
+                                Materials</span></li>
+                        <li><i class="fa-solid fa-check text-xs mr-2 mb-3 text-[#00cd93]"></i><span
+                                class="font-roboto text-base font-light tracking-wider capitalize">Plant Ecology</span></li>
+                        <li><i class="fa-solid fa-check text-xs mr-2 mb-3 text-[#00cd93]"></i><span
+                                class="font-roboto text-base font-light tracking-wider capitalize">Saving Wildlife</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="font-robotoSlab font-semibold text-lg px-10 tracking-wider py-3 rounded-full bg-gradient-to-r from-[#689f38] to-[#8bc34a] hover:bg-gradient-to-r hover:from-[#8bc34a] hover:to-[#689f38] capitalize">learn
+                        more
+                    </button>
+                </div>
+            </div>
+    
+            <div class="hidden md:grid md:relative ">
+                <div
+                    class="hidden lg:flex md:absolute lg:w-[70%] xl:w-[60%] top-0 2xl:top-5 right-0 2xl:-right-6 p-2.5 bg-white shadow-md z-10">
+                    <!--Start hero carousel slider-->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!--Start Slide 1-->
+                            <div class="swiper-slide w-full">
+                                <img src="./assets/images/aboutpic1.jpg" class="w-full h-full" alt="">
+                            </div>
+                            <!--End Slide 1-->
+    
+                            <!--Start Slide 1-->
+                            <div class="swiper-slide w-full">
+                                <img src="./assets/images/aboutpic3.jpg" class="w-full h-full" alt="">
+                            </div>
+                            <!--End Slide 1-->
+    
+                            <!--Start Slide 1-->
+                            <div class="swiper-slide w-full">
+                                <img src="./assets/images/aboutpic5.jpg" class="w-full h-full" alt="">
+                            </div>
+                            <!--End Slide 1-->
+                        </div>
+                    </div>
+                    <!--End hero carousel slider-->
+                </div>
+                <div class="md:absolute top-[7rem] left-0 xl:top-[8rem] xl:left-[1.875rem] p-2.5 bg-slate-600 shadow-md">
+                    <img src="./assets/images/aboutpic2.jpg" class="w-full block m-auto" alt="">
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <!-- ECOVA BIO SECTION ENDS -->
+    
+    <!-- ECOVA WORK SECTION STARTS -->
+    
+    <section class="pt-5 pb-10">
+        <div
+            class="grid md:grid-cols-3 sm:grid-cols-2 2xl:grid-cols-5 grid-cols-1 lg:gap-x-8 gap-x-6 lg:gap-y-12 gap-y-10 px-5 2xl:px-0">
+            <!-- Single Casuse STARTS 1 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/serimg1.jpg" alt="" class="w-full">
+                </div>
+                <div
+                    class="lg:p-8 p-8 sm:p-5 flex items-center justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-xl">
+                    <h2
+                        class="w-[80%] md:w-full xl:w-[80%] font-robotoSlab text-base lg:text-lg 2xl:text-2xl text-white/80 md:text-center xl:text-left justify-center group-hover:text-green-500 font-medium sl-animated capitalize">
+                        <a href="">Implement Solar & Wind Energies</a>
+                    </h2>
+                    <span
+                        class="px-2.5 py-1 xl:py-1.5 border border-solid border-white group-hover:border-green-500 rounded-full md:hidden xl:flex"><i
+                            class="fa-solid fa-arrow-right text-sm text-[#ccc] group-hover:text-green-500"></i></span>
+    
+                </div>
+            </div>
+            <!-- Single Casuse Ends 1 -->
+    
+            <!-- Single Casuse STARTS 2 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/serimg2.jpg" alt="" class="w-full">
+                </div>
+                <div
+                    class="lg:p-8 p-8 sm:p-5 flex items-center justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-xl">
+                    <h2
+                        class="w-[80%] md:w-full xl:w-[80%] font-robotoSlab text-base lg:text-lg 2xl:text-2xl text-white/80 md:text-center xl:text-left justify-center group-hover:text-green-500 font-medium sl-animated capitalize">
+                        <a href="">Implement Solar & Wind Energies</a>
+                    </h2>
+                    <span
+                        class="px-2.5 py-1 xl:py-1.5 border border-solid border-white group-hover:border-green-500 rounded-full md:hidden xl:flex"><i
+                            class="fa-solid fa-arrow-right text-sm text-[#ccc] group-hover:text-green-500"></i></span>
+    
+                </div>
+            </div>
+            <!-- Single Casuse Ends 2 -->
+    
+            <!-- Single Casuse STARTS 3 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/serimg3.jpg" alt="" class="w-full">
+                </div>
+                <div
+                    class="lg:p-8 p-8 sm:p-5 flex items-center justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-xl">
+                    <h2
+                        class="w-[80%] md:w-full xl:w-[80%] font-robotoSlab text-base lg:text-lg 2xl:text-2xl text-white/80 md:text-center xl:text-left justify-center group-hover:text-green-500 font-medium sl-animated capitalize">
+                        <a href="">Implement Solar & Wind Energies</a>
+                    </h2>
+                    <span
+                        class="px-2.5 py-1 xl:py-1.5 border border-solid border-white group-hover:border-green-500 rounded-full md:hidden xl:flex"><i
+                            class="fa-solid fa-arrow-right text-sm text-[#ccc] group-hover:text-green-500"></i></span>
+    
+                </div>
+            </div>
+            <!-- Single Casuse Ends 3 -->
+    
+            <!-- Single Casuse STARTS 4 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/serimg4.jpg" alt="" class="w-full">
+                </div>
+                <div
+                    class="lg:p-8 p-8 sm:p-5 flex items-center justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-xl">
+                    <h2
+                        class="w-[80%] md:w-full xl:w-[80%] font-robotoSlab text-base lg:text-lg 2xl:text-2xl text-white/80 md:text-center xl:text-left justify-center group-hover:text-green-500 font-medium sl-animated capitalize">
+                        <a href="">Implement Solar & Wind Energies</a>
+                    </h2>
+                    <span
+                        class="px-2.5 py-1 xl:py-1.5 border border-solid border-white group-hover:border-green-500 rounded-full md:hidden xl:flex"><i
+                            class="fa-solid fa-arrow-right text-sm text-[#ccc] group-hover:text-green-500"></i></span>
+    
+                </div>
+            </div>
+            <!-- Single Casuse Ends 4 -->
+    
+            <!-- Single Casuse STARTS 5 -->
+            <div class="group relative overflow-hidden rounded-xl">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/serimg5.jpg" alt="" class="w-full">
+                </div>
+                <div
+                    class="lg:p-8 p-8 sm:p-5 flex items-center justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-xl">
+                    <h2
+                        class="w-[80%] md:w-full xl:w-[80%] font-robotoSlab text-base lg:text-lg 2xl:text-2xl text-white/80 md:text-center xl:text-left justify-center group-hover:text-green-500 font-medium sl-animated capitalize">
+                        <a href="">Implement Solar & Wind Energies</a>
+                    </h2>
+                    <span
+                        class="px-2.5 py-1 xl:py-1.5 border border-solid border-white group-hover:border-green-500 rounded-full md:hidden xl:flex"><i
+                            class="fa-solid fa-arrow-right text-sm text-[#ccc] group-hover:text-green-500"></i></span>
+    
+                </div>
+            </div>
+            <!-- Single Casuse Ends 5 -->
+        </div>
+    
+        <!-- ECOVA WORK SECTION BUTTON STARTS -->
+        <div class="flex m-auto mt-10">
+            <button
+                class="m-auto font-robotoSlab font-semibold text-lg px-10 tracking-wider py-3 rounded-full bg-gradient-to-r from-[#689f38] to-[#8bc34a] hover:bg-gradient-to-r hover:from-[#8bc34a] hover:to-[#689f38] capitalize">
+                view more work
+            </button>
+        </div>
+        <!-- ECOVA WORK SECTION BUTTON ENDS -->
+    
+    </section>
+    
+    <!-- ECOVA WORK SECTION ENDS -->
+    
+    <!-- ECOVA POST & EVENT SECTION STARTS -->
+    <section
+        class="sl-container sm:max-w-[640px] md:sl-container 2xl:sl-container md:flex md:flex-row md:mb-20 lg:max-w-[1024px] xl:max-w-[1280px] lg:gap-x-5 py-10 xl:px-20 2xl:gap-x-10">
+    
+        <!-- ECOVA POST SECTION STARTS -->
+        <div class="mt-5 md:flex md:basis-[70%] lg:basis-[65%]">
+            <!-- ECOVA POST & EVENT SECTION SINGLE ITEM STARTS 1 -->
+            <div class="flex flex-col px-1">
+                <div class="relative font-robotoSlab">
+                    <h3
+                        class="absolute before:absolute before:left-[6.1rem] before:w-[3.4rem] before:top-4 before:h-[0.05rem] before:content-[''] before:bg-[#689f38] 
+                                after:absolute after:left-[9.1rem] after:top-4 after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+                    </h3>
+                    <strong class="text-sm font-medium text-[#689f38] uppercase tracking-wider">our latest</strong>
+                    <h2 class=" text-[1.75rem] font-base mt-2 capitalize">news posts</h2>
+                </div>
+                <!-- ECOVA POST & EVENT SECTION SINGLE ITEM STARTS 1 -->
+                <div
+                    class="group relative w-full py-10 sm:flex flex-row justify-between border-b border-solid border-gray-500 cursor-pointer">
+                    <div
+                        class="relative w-full lg:w-[80%] mb-5 sm:mr-8 overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                        <img src="./assets/images/np1.jpg" class="w-full h-full sm:h-[70%] md:h-full rounded-md" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="font-robotoSlab text-[1.25rem] mb-3 ">How you can keep alive wild animals for a long
+                            period.</h2>
+                        <div class="flex flex-row md:flex-col md:gap-y-1 lg:flex-row justify-start mb-3 capitalize">
+                            <p class="mr-3 text-[#689f38] text-sm">by: <span class="text-[#888888] text-sm"> danial
+                                    john</span></p>
+                            <p class="text-[#689f38] text-sm">posted: <span class="text-[#888888] text-sm"> 29
+                                    september,
+                                    2018</span></p>
+                        </div>
+                        <p class="font-roboto text-[#b9b9b9] font-light sm:text-[0.9375rem]">According to a survey the
+                            perceived
+                            higher cost of
+                            environmentally-friendly products is the major holdup to consumers
+                            going green.</p>
+                    </div>
+                </div>
+                <!-- ECOVA POST & EVENT SECTION SINGLE ITEM ENDS 1 -->
+    
+                <!-- ECOVA POST & EVENT SECTION SINGLE ITEM STARTS 2 -->
+                <div
+                    class="group w-full py-10 sm:flex flex-row justify-between border-b border-solid border-gray-500 cursor-pointer">
+                    <div
+                        class="relative w-full lg:w-[80%] mb-5 sm:mr-8 overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                        <img src="./assets/images/np2.jpg" class="w-full h-full sm:h-[70%] md:h-full rounded-md" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="font-robotoSlab text-[1.25rem] mb-3 ">Eliminate your plastic bottle pollution and keep
+                            safe.</h2>
+                        <div class="flex flex-row md:flex-col md:gap-y-1 lg:flex-row justify-start mb-3 capitalize">
+                            <p class="mr-3 text-[#689f38] text-sm">by: <span class="text-[#888888] text-sm"> danial
+                                    john</span></p>
+                            <p class="text-[#689f38] text-sm">posted: <span class="text-[#888888] text-sm"> 29
+                                    september,
+                                    2018</span></p>
+                        </div>
+                        <p class="font-roboto text-[#b9b9b9] font-light sm:text-[0.9375rem]">According to a survey the
+                            perceived
+                            higher cost of
+                            environmentally-friendly products is the major holdup to consumers
+                            going green.</p>
+                    </div>
+                </div>
+                <!-- ECOVA POST & EVENT SECTION SINGLE ITEM ENDS 2 -->
+    
+                <!-- ECOVA POST & EVENT SECTION SINGLE ITEM STARTS 3 -->
+                <div class="group w-full py-10 sm:flex flex-row justify-between cursor-pointer">
+                    <div
+                        class="relative w-full lg:w-[80%] mb-5 sm:mr-8 overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                        <img src="./assets/images/np3.jpg" class="w-full h-full sm:h-[70%] md:h-full rounded-md" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <h2 class="font-robotoSlab text-[1.25rem] mb-3 ">The effort to GoGreen has been felt across
+                            industries.</h2>
+                        <div class="flex flex-row md:flex-col md:gap-y-1 lg:flex-row justify-start mb-3 capitalize">
+                            <p class="mr-3 text-[#689f38] text-sm">by: <span class="text-[#888888] text-sm"> danial
+                                    john</span></p>
+                            <p class="text-[#689f38] text-sm">posted: <span class="text-[#888888] text-sm"> 29
+                                    september,
+                                    2018</span></p>
+                        </div>
+                        <p class="font-roboto text-[#b9b9b9] font-light sm:text-[0.9375rem]">According to a survey the
+                            perceived
+                            higher cost of
+                            environmentally-friendly products is the major holdup to consumers
+                            going green.</p>
+                    </div>
+                </div>
+                <!-- ECOVA POST & EVENT SECTION SINGLE ITEM ENDS 3 -->
+            </div>
+        </div>
+        <!-- ECOVA POST SECTION ENDS -->
+    
+        <!-- ECOVA EVENT SECTION STARTS -->
+        <div class="mt-10 md:mt-5 px-1 md:flex md:flex-col md:basis-[30%] lg:basis-[35%]">
+            <div class="relative font-robotoSlab mb-8">
+                <h3
+                    class="absolute before:absolute before:left-[5.1rem] before:w-[3.4rem] before:top-4 before:h-[0.05rem] before:content-[''] before:bg-[#689f38] 
+                            after:absolute after:left-[8.1rem] after:top-4 after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+                </h3>
+                <strong class="text-sm font-medium text-[#689f38] uppercase tracking-wider">our next</strong>
+                <h2 class=" text-[1.75rem] font-base mt-2 capitalize tracking-wider">events</h2>
+            </div>
+    
+            <div>
+                <!-- Single Casuse STARTS 1 -->
+                <div class="group relative overflow-hidden rounded-md cursor-pointer">
+                    <div
+                        class="relative overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                                class="fa-solid fa-link"></i></a>
+                        <img src="assets/images/ep1.jpg" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#000000d8] to-[#ffffff00] opacity-100"></div>
+                        <div
+                            class="w-full font-roboto absolute bottom-4 left-0 text-center md:text-left text-white text-base">
+                            <ul class="flex justify-center flex-row  md:flex-col xl:flex-row md:items-left md:px-8">
+                                <li class="capitalize">29 august, 2018</li>
+                                <li class="lowercase ml-3 md:ml-0">08:00 am - 01:00 pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="p-5 mb-10 flex flex-col justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-md">
+                        <h2
+                            class="font-robotoSlab mb-2 text-white/80 font-normal group-hover:text-green-500 sl-animated capitalize">
+                            <a href="">forest planting campaign</a>
+                        </h2>
+                        <span class="">
+                            <i class="fa-solid fa-location-dot mr-2 text-sm text-[#689f38]"></i>
+                            <span class="text-[0.8125rem] text-[#999999]">Green Gardendening Center, New York, USA</span>
+                        </span>
+    
+                    </div>
+                </div>
+                <!-- Single Casuse Ends 1 -->
+    
+                <!-- Single Casuse STARTS 2 -->
+                <div class="group relative overflow-hidden rounded-md cursor-pointer">
+                    <div
+                        class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                                class="fa-solid fa-link"></i></a>
+                        <img src="assets/images/ep2.jpg" alt="" class="w-full shadow-sm">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#000000d8] to-[#ffffff00] opacity-100"></div>
+                        <div
+                            class="w-full font-roboto absolute bottom-4 left-0 text-center md:text-left text-white text-base">
+                            <ul class="flex justify-center flex-row  md:flex-col xl:flex-row md:items-left md:px-8">
+                                <li class="capitalize">29 august, 2018</li>
+                                <li class="lowercase ml-3 md:ml-0">08:00 am - 01:00 pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="p-5 mb-10 flex flex-col justify-between bg-slate-900 shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20 rounded-b-md">
+                        <h2
+                            class="font-robotoSlab mb-2 text-white/80 font-normal group-hover:text-green-500 sl-animated capitalize">
+                            <a href="">Save Energy by Solar System</a>
+                        </h2>
+                        <span class="">
+                            <i class="fa-solid fa-location-dot mr-2 text-sm text-[#689f38]"></i>
+                            <span class="text-[0.8125rem] text-[#999999]">Electric Open Area, New York, USA</span>
+                        </span>
+    
+                    </div>
+                </div>
+                <!-- Single Casuse Ends 2 -->
+            </div>
+        </div>
+        <!-- ECOVA EVENT SECTION ENDS -->
+    </section>
+    <!-- ECOVA POST & EVENT SECTION ENDS -->
+    
+    
+    <!-- ECOVA FUNDRAISING SECTION STARTS -->
+    
+    <section class="p-3 xl:sl-container mb-20">
+        <div class="relative font-robotoSlab mb-8">
+            <h3
+                class="absolute before:absolute before:left-[6.5rem] before:w-[3.4rem] before:top-4 before:h-[0.05rem] before:content-[''] before:bg-[#689f38] 
+                        after:absolute after:left-[9.5rem] after:top-4 after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+            </h3>
+            <strong class="text-sm font-medium text-[#689f38] uppercase tracking-wider">our causes</strong>
+            <h2 class=" text-[1.75rem] font-base mt-2 capitalize">Fundraising Campaigns</h2>
+        </div>
+        <div class="grid gap-y-10 md:grid-cols-3 md:gap-x-5">
+            <!-- Single Casuse STARTS 1 -->
+            <div
+                class="group bg-slate-900 relative overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/causes/fc1.jpg" alt="" class="w-full">
+                </div>
+                <div class="lg:p-8 p-4 rounded-b">
+                    <h2
+                        class="lg:text-2xl text-xl h-[4rem] flex items-center md:items-start text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                        <a href="">Let’s Stop Global Warming</a>
+                    </h2>
+                    <ul class="flex items-center mb-6">
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                class="w-full h-full rounded-full"></li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><span
+                                class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                        </li>
+                        <li class="xl:block md:hidden block">
+                            <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                Backers</strong>
+                        </li>
+                    </ul>
+                    <div class="h-2.5 rounded-full mb-5 bg-slate-600">
+                        <div class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"></div>
+                    </div>
+                    <ul class="sl-flex-between">
+                        <li class="basis-1/3 text-sm text-white/80 text-left">
+                            <strong class="block lg:text-lg text-sm text-white">47%</strong>
+                            Funded
+                        </li>
+                        <li class="basis-1/3 text-sm text-white/80 text-center">
+                            <strong class="block lg:text-lg text-sm text-white">$638.00</strong>
+                            Raised
+                        </li>
+                        <li class="basis-1/3 text-sm text-white/80 text-right">
+                            <strong class="block lg:text-lg text-sm text-white">$9750.00</strong>
+                            Required
+                        </li>
+                    </ul>
+                </div>
+                <button class="sl-btn rounded-t-none w-full text-base leading-[50px]">donate now</button>
+            </div>
+            <!-- Single Casuse ENDS 1 -->
+            <!-- Single Casuse STARTS 2 -->
+            <div
+                class="group bg-slate-900 relative overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/causes/fc2.jpg" alt="" class="w-full">
+                </div>
+                <div class="lg:p-8 p-4 rounded-b">
+                    <h2
+                        class="lg:text-2xl text-xl h-[4rem] flex items-center md:items-start text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                        <a href="">It’s time to Forest Planting</a>
+                    </h2>
+                    <ul class="flex items-center mb-6">
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                class="w-full h-full rounded-full"></li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><span
+                                class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                        </li>
+                        <li class="xl:block md:hidden block">
+                            <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                Backers</strong>
+                        </li>
+                    </ul>
+                    <div class="h-2.5 rounded-full mb-5 bg-slate-600">
+                        <div class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"></div>
+                    </div>
+                    <ul class="sl-flex-between">
+                        <li class="basis-1/3 text-sm text-white/80 text-left">
+                            <strong class="block lg:text-lg text-sm text-white">47%</strong>
+                            Funded
+                        </li>
+                        <li class="basis-1/3 text-sm text-white/80 text-center">
+                            <strong class="block lg:text-lg text-sm text-white">$638.00</strong>
+                            Raised
+                        </li>
+                        <li class="basis-1/3 text-sm text-white/80 text-right">
+                            <strong class="block lg:text-lg text-sm text-white">$9750.00</strong>
+                            Required
+                        </li>
+                    </ul>
+                </div>
+                <button class="sl-btn rounded-t-none w-full text-base leading-[50px]">donate now</button>
+            </div>
+            <!-- Single Casuse ENDS 2 -->
+            <!-- Single Casuse STARTS 3 -->
+            <div
+                class="group bg-slate-900 relative overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+                <div
+                    class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                    <a href=""
+                        class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
+                            class="fa-solid fa-link"></i></a>
+                    <img src="assets/images/causes/fc3.jpg" alt="" class="w-full">
+                </div>
+                <div class="lg:p-8 p-4 rounded-b">
+                    <h2
+                        class="lg:text-2xl text-xl h-[4rem] flex items-center md:items-start text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                        <a href="">Securing Wildlife</a>
+                    </h2>
+                    <ul class="flex items-center mb-6">
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                class="w-full h-full rounded-full"></li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                class="w-full h-full rounded-full">
+                        </li>
+                        <li class="w-8 h-8 -ml-1.5"><span
+                                class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                        </li>
+                        <li class="xl:block md:hidden block">
+                            <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                Backers</strong>
+                        </li>
+                    </ul>
+                    <div class="h-2.5 rounded-full mb-5 bg-slate-600">
+                        <div class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"></div>
+                    </div>
+                    <ul class="sl-flex-between">
+                        <li class="basis-1/3 text-sm text-white/80 text-left">
+                            <strong class="block lg:text-lg text-sm text-white">47%</strong>
+                            Funded
+                        </li>
+                        <li class="basis-1/3 text-sm text-white/80 text-center">
+                            <strong class="block lg:text-lg text-sm text-white">$638.00</strong>
+                            Raised
+                        </li>
+                        <li class="basis-1/3 text-sm text-white/80 text-right">
+                            <strong class="block lg:text-lg text-sm text-white">$9750.00</strong>
+                            Required
+                        </li>
+                    </ul>
+                </div>
+                <button class="sl-btn rounded-t-none w-full text-base leading-[50px]">donate now</button>
+            </div>
+            <!-- Single Casuse ENDS 3 -->
+        </div>
+    </section>
+    
+    <!-- ECOVA FUNDRAISING SECTION ENDS -->
+    
+    <!-- ECOVA VOLUNTEER SECTION STARTS -->
+    
+    <section class="relative w-full h-auto bg-volunteer bg-cover bg-no-repeat mb-10 xl:py-5">
+        <div class="w-full px-3 py-8 sm:pt-14 md:flex md:justify-between md:gap-x-5 xl:sl-container">
+            <div class="md:flex md:flex-col md:basis-[55%]">
+                <div class="relative bg-volunteerBorder w-full h-auto sm:bg-cover md:bg-cover bg-no-repeat mb-5 capitalize">
+                    <div class="p-8 sm:pt-[4.5rem] md:pt-[2rem] xl:py-10">
+                        <h2 class="font-robotoSlab text-3xl sm:text-[2.5rem] md:text-[2rem] font-bold">Current promises</h2>
+                        <p class="font-robotoSlab text-2xl sm:text-3xl md:text-[1.5rem] lg:text-[2.5rem] font-normal">Save
+                            Water, Energey, Control
+                            Pollution
+                            & Environment, Wildlife, Forest Planting
+                            Implementation of Solar System.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full flex flex-col sm:flex-row sm:items-center sm:justify-start lg:items-end gap-x-14 md:gap-10 md:mt-5 lg:mt-[7rem] xl:mt-[8rem] capitalize">
+                    <div class="relative mb-10 lg:mb-0">
+                        <h3
+                            class="absolute before:absolute before:left-0 before:w-[3.4rem] before:top-0 before:h-[0.15rem] before:content-[''] before:bg-white 
+                                    after:absolute after:left-[2.95rem] after:top-0 after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+                        </h3>
+                        <h2 class=" font-roboto mb-2 text-5xl font-bold md:text-[2.125rem] lg:text-[2.8rem] mt-3">59000</h2>
+                        <p class=" font-roboto text-lg font-medium text-[#fff] md:text-xs lg:text-lg">Trees Planted</p>
+                    </div>
+    
+                    <div class="relative mb-10 lg:mb-0">
+                        <h3
+                            class="absolute before:absolute before:left-0 before:w-[3.4rem] before:top-0 before:h-[0.15rem] before:content-[''] before:bg-white 
+                                    after:absolute after:left-[2.95rem] after:top-0 after:w-[0.3rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+                        </h3>
+                        <h2 class=" font-roboto mb-2 text-5xl font-bold md:text-[2.125rem] lg:text-[2.8rem] mt-3">69000</h2>
+                        <p class=" font-roboto text-lg font-medium text-[#fff] md:text-xs lg:text-lg">solar panels in 2017
+                        </p>
+                    </div>
+    
+                    <div class="relative mb-10 lg:mb-0">
+                        <h3
+                            class="absolute before:absolute before:left-0 before:w-[3.4rem] before:top-0 before:h-[0.15rem] before:content-[''] before:bg-white 
+                                    after:absolute after:left-[2.95rem] after:top-0 after:w-[0.3rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+                        </h3>
+                        <h2 class=" font-roboto mb-2 text-5xl font-bold md:text-[2.125rem] lg:text-[2.8rem] mt-3">49000</h2>
+                        <p class=" font-roboto text-lg font-medium text-[#fff] md:text-xs lg:text-lg">wildlife saved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-4 sm:p-10 md:p-5 lg:p-10 md:basis-[45%]">
+                <div class="">
+                    <div class="relative font-robotoSlab mb-8">
+                        <h3
+                            class="absolute before:absolute before:left-[7rem] before:w-[3.4rem] before:top-4 before:h-[0.1rem] before:content-[''] before:bg-[#689f38] 
+                                    after:absolute after:left-[9.95rem] after:top-4 after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-white">
+                        </h3>
+                        <strong
+                            class="text-sm sm:text-base md:text-[0.875rem] text-[#689f38] font-bold uppercase tracking-wider">join
+                            us
+                            now</strong>
+                        <h2 class=" text-[1.75rem] sm:text-4xl md:text-[2.1875rem] text-black font-bold mt-2 capitalize">
+                            become volunteer
+                        </h2>
+                    </div>
+                    <form action="" class="w-full mb-2">
+                        <input type="text" placeholder="your name"
+                            class="w-full px-5 py-4 border-2 border-solid border-[#dddddd] rounded-full text-black focus:outline-none focus:border-[#689f38] focus:ring focus:ring-[#c4ee94] placeholder:pl-2 placeholder:capitalize mb-5">
+                        <input type="email" placeholder="email address"
+                            class="w-full px-5 py-4 border-2 border-solid border-[#dddddd] rounded-full text-black focus:outline-none focus:border-[#689f38] focus:ring focus:ring-[#c4ee94] placeholder:pl-2 placeholder:capitalize mb-5">
+                        <input type="text" placeholder="contact"
+                            class="w-full px-5 py-4 border-2 border-solid border-[#dddddd] rounded-full text-black focus:outline-none focus:border-[#689f38] focus:ring focus:ring-[#c4ee94] placeholder:pl-2 placeholder:capitalize mb-5">
+                        <button
+                            class="w-full font-robotoSlab font-semibold text-lg px-10 md:p-4 tracking-wider py-3 rounded-full bg-gradient-to-r from-[#689f38] to-[#8bc34a] hover:bg-gradient-to-r hover:from-[#8bc34a] hover:to-[#689f38] capitalize">
+                            signup to join us now
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ECOVA VOLUNTEER SECTION ENDS -->
+    
+    <!-- ECOVA ACTIVITIES SECTION STARTS -->
+    
+    <Section class="xl:sl-container p-3 mb-20">
+        <div>
+            <div class="lg:flex lg:items-center lg:justify-between lg:mb-8">
+                <div class="relative font-robotoSlab">
+                    <h3
+                        class="absolute before:absolute before:left-[6.5rem] before:w-[3.4rem] before:top-4 before:h-[0.05rem] before:content-[''] before:bg-[#689f38] 
+                                    after:absolute after:left-[9.5rem] after:top-4 after:w-[0.3125rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-slate-800">
+                    </h3>
+                    <strong class="text-sm font-medium text-[#689f38] uppercase tracking-wider">our latest</strong>
+                    <h2 class=" text-[1.75rem] font-base mt-2 capitalize">Activities Gallery</h2>
+                </div>
+    
+                <div class="mt-10 sm:mt-12 lg:mt-0 md:mt-10">
+                    <ul class="w-full flex flex-wrap justify-end gap-x-2 gap-y-2">
+                        <li
+                            class="py-2 px-4 rounded-full text-sm font-light border border-solid border-gray-700 capitalize hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">show all</a>
+                        </li>
+                        <li
+                            class="py-2 px-4 rounded-full text-sm font-light border border-solid border-gray-700 capitalize hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">wildlife</a>
+                        </li>
+                        <li
+                            class="py-2 px-4 rounded-full text-sm font-light border border-solid border-gray-700 capitalize hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">water resouces</a>
+                        </li>
+                        <li
+                            class="py-2 px-4 rounded-full text-sm font-light border border-solid border-gray-700 capitalize hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">solar energy</a>
+                        </li>
+                        <li
+                            class="py-2 px-4 rounded-full text-sm font-light border border-solid border-gray-700 capitalize hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">recycling</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="mt-5 w-full grid gap-2 sm:grid-cols-2 md:grid-cols-4">
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery1.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery2.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery3.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery4.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery5.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery6.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery7.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+    
+                <li class="group relative">
+                    <div
+                        class="group relative w-full overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:rounded-lg after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
+                        <a href=""
+                            class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide">
+                            <i class="fa-solid fa-search"></i>
+                        </a>
+                        <img src="./assets/images/gallery/agallery8.jpg"
+                            class="w-full m-auto block rounded-lg cursor-pointer" alt="">
+                    </div>
+                </li>
+            </ul>
+    
+        </div>
+    
+    </Section>
+    
+    <!-- ECOVA ACTIVITIES SECTION ENDS -->
+    
+    <!-- ECOVA BRAND SLIDER SECTION STARTS -->
+    
+    <Section class="mb-20 lg:mb-40  bg-slate-600">
+        <div class="swiper brandSwiper w-full h-full xl:sl-container">
+            <div class="swiper-wrapper">
+                <!--Start Slide 1-->
+                <div class="swiper-slide relative w-full text-center text-lg justify-center items-center py-14">
+                    <img src="./assets/images/brandslider/plogo1.png " class="m-auto block grayscale hover:grayscale-0"
+                        alt="">
+                </div>
+                <!--End Slide 1-->
+    
+                <!--Start Slide 2-->
+                <div class="swiper-slide relative text-center text-lg justify-center items-center  py-14">
+                    <img src="./assets/images/brandslider/plogo2.png" class="m-auto block grayscale hover:grayscale-0"
+                        alt="">
+                </div>
+                <!--End Slide 2-->
+    
+                <!--Start Slide 3-->
+                <div class="swiper-slide relative text-center text-lg justify-center items-center  py-14">
+                    <img src="./assets/images/brandslider/plogo3.png" class="m-auto block grayscale hover:grayscale-0"
+                        alt="">
+                </div>
+                <!--End Slide 3-->
+    
+                <!--Start Slide 4-->
+                <div class="swiper-slide relative text-center text-lg justify-center items-center  py-14">
+                    <img src="./assets/images/brandslider/plogo4.png" class="m-auto block grayscale hover:grayscale-0"
+                        alt="">
+                </div>
+                <!--End Slide 4-->
+    
+                <!--Start Slide 5-->
+                <div class="swiper-slide relative text-center text-lg justify-center items-center  py-14">
+                    <img src="./assets/images/brandslider/plogo5.png" class="m-auto block grayscale hover:grayscale-0"
+                        alt="">
+                </div>
+                <!--End Slide 6-->
+            </div>
+        </div>
+    </Section>
+    
+    <!-- ECOVA BRAND SLIDER SECTION ENDS -->
+    
+    
+    <!-- ECOVA FOOTER SECTION STARTS -->
+    <section class="bg-footerTexture bg-cover bg-repeat">
+        <div class="xl:sl-container pt-10 border-b border-solid border-gray-600">
+            <div class="w-full p-3 sm:grid sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-4">
+                <div class="relative w-full ">
+                    <div class="bg-green-900 rounded-md lg:rounded-t-none lg:absolute lg:-top-[126px] lg:w-full">
+                        <div class="bg-[#33691e] py-5 rounded-t-md">
+                            <img src="./assets/images/logo/f2logo.png" class="m-auto block" alt="image">
+                        </div>
+                        <div class="font-robotoSlab p-5">
+                            <p class="font-robotoSlab text-base font-normal text-[#c8e6c9] mb-5">We are Ecova: eco &
+                                environmental
+                                community. We need your support and help to Stop Globar Warning. Few generations
+                                ago
+                                it to seemed like the world’s resources were infinite, and the people needed only to access
+                                them to create
+                                business,
+                                Lorem ipsum dolor it amet consect adipiscing.</p>
+                            <a href="" class="font-medium text-sm uppercase">more about ecova</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CURRENT PROJECTS STARTS -->
+                <div class="relative mt-8 sm:mt-0">
+                    <strong class="font-robotoSlab text-[1.3rem] text-[#c8e6c9] capitalize">current Projects</strong>
+                    <h3
+                        class="absolute before:absolute before:left-0 before:w-[10.5rem] before:top-2.5 before:h-[0.05rem] before:content-[''] before:bg-[#c8e6c9] 
+                            after:absolute after:left-0 after:top-[0.56rem] after:w-[2rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-[#c8e6c9]">
+                    </h3>
+                    <ul class="mt-10">
+                        <li class="cursor-pointer"><i class="fa-solid fa-caret-right mr-2 mb-3 text-[#00cd93]"></i>
+                            <span class="font-roboto text-lg text-[#c8e6c9] font-bold tracking-wider capitalize">waste
+                                management</span>
+                        </li>
+                        <li class="cursor-pointer"><i class="fa-solid fa-caret-right mr-2 mb-3 text-[#00cd93]"></i>
+                            <span class="font-roboto text-lg text-[#c8e6c9] font-bold tracking-wider capitalize">solar
+                                energy</span>
+                        </li>
+                        <li class="cursor-pointer"><i class="fa-solid fa-caret-right mr-2 mb-3 text-[#00cd93]"></i>
+                            <span class="font-roboto text-lg text-[#c8e6c9] font-bold tracking-wider capitalize">eco
+                                ideas</span>
+                        </li>
+                        <li class="cursor-pointer"><i class="fa-solid fa-caret-right mr-2 mb-3 text-[#00cd93]"></i>
+                            <span class="font-roboto text-lg text-[#c8e6c9] font-bold tracking-wider capitalize">recycling
+                                materials</span>
+                        </li>
+                        <li class="cursor-pointer"><i class="fa-solid fa-caret-right mr-2 mb-3 text-[#00cd93]"></i>
+                            <span class="font-roboto text-lg text-[#c8e6c9] font-bold tracking-wider capitalize">planting
+                                ecology</span>
+                        </li>
+                        <li class="cursor-pointer"><i class="fa-solid fa-caret-right mr-2 mb-3 text-[#00cd93]"></i>
+                            <span class="font-roboto text-lg text-[#c8e6c9] font-bold tracking-wider capitalize">saving
+                                wildlife</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- CURRENT PROJECTS END -->
+    
+                <!-- TAGS STARTS -->
+                <div class="mt-14 lg:mt-0">
+                    <strong class="relative font-robotoSlab text-[1.3rem] text-[#c8e6c9] capitalize">tags</strong>
+                    <h3
+                        class="absolute before:absolute before:left-0 before:w-[10.5rem] before:top-2.5 before:h-[0.05rem] before:content-[''] before:bg-[#c8e6c9] 
+                            after:absolute after:left-0 after:top-[0.56rem] after:w-[2rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-[#c8e6c9]">
+                    </h3>
+                    <ul class="mt-10 flex flex-wrap capitalize gap-2">
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">solar energy</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">plant Ecology</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">wildlife</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">eco ideas</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">waste management</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">water</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">forest planting</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">wild energy</a>
+                        </li>
+                        <li
+                            class="px-4 py-2 rounded-full text-sm font-light bg-[#444444] text-[#c8e6c9] cursor-pointer hover:bg-[#80b744] hover:ease-in-out duration-500">
+                            <a href="">recycling</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- TAGS END -->
+    
+                <!-- POSTS STARTS -->
+                <div class="pb-6">
+                    <div class="mt-14 lg:mt-0">
+                        <strong class="relative font-robotoSlab text-[1.3rem] text-[#c8e6c9] capitalize">latest
+                            posts</strong>
+                        <h3
+                            class="absolute before:absolute before:left-0 before:w-[10.5rem] before:top-2.5 before:h-[0.05rem] before:content-[''] before:bg-[#c8e6c9] 
+                                after:absolute after:left-0 after:top-[0.56rem] after:w-[2rem] after:h-[0.2rem] xl:after:h-[0.2rem] after:content-[''] after:bg-[#c8e6c9]">
+                        </h3>
+                        <ul class="mt-10">
+                            <li class="flex gap-x-3 mb-4 cursor-pointer">
+                                <img src="./assets/images/flp1.jpg" class="rounded-md" alt="">
+                                <div>
+                                    <h2 class="font-robotoSlab text-sm text-[#c8e6c9] mb-1">How you can keep alive wild
+                                        animals for...
+                                    </h2>
+                                    <p class="font-roboto text-[#9ccc65] text-xs capitalize">posted:<span
+                                            class="text-gray-400"> 29
+                                            september,
+                                            2018</span></p>
+                                </div>
+                            </li>
+    
+                            <li class="flex gap-x-3 mb-4 cursor-pointer">
+                                <img src="./assets/images/flp2.jpg" class="rounded-md" alt="">
+                                <div>
+                                    <h2 class="font-robotoSlab text-sm text-[#c8e6c9] mb-1">How you can keep alive wild
+                                        animals for...
+                                    </h2>
+                                    <p class="font-roboto text-[#9ccc65] text-xs capitalize">posted:<span
+                                            class="text-gray-400"> 29
+                                            september,
+                                            2018</span></p>
+                                </div>
+                            </li>
+    
+                            <li class="flex gap-x-3 mb-4 cursor-pointer">
+                                <img src="./assets/images/flp3.jpg" class="rounded-md" alt="">
+                                <div>
+                                    <h2 class="font-robotoSlab text-sm text-[#c8e6c9] mb-1">How you can keep alive wild
+                                        animals for...
+                                    </h2>
+                                    <p class="font-roboto text-[#9ccc65] text-xs capitalize">posted:<span
+                                            class="text-gray-400"> 29
+                                            september,
+                                            2018</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- POSTS END -->
+            </div>
+        </div>
+    
+        <!-- NEWSLETTER STARTS -->
+    
+        <div class="xl:sl-container">
+            <div class="p-3">
+                <div class="mt-14 px-5 lg:px-0 lg:flex lg:items-center lg:justify-between">
+                    <form action="">
+                        <strong class="font-robotoSlab text-[1.5rem] text-[#c8e6c9] font-normal capitalize">join our
+                            newsletter</strong>
+                        <div class="sm:flex sm:gap-x-2">
+                            <input type="text" placeholder="your name"
+                                class="w-full lg:w-1/3 mt-3 py-3 px-5 border border-solid border-gray-400 rounded-md text-black focus:outline-none focus:border-gray-900 placeholder:font-light placeholder:font-roboto placeholder:text-gray-700 placeholder:capitalize bg-white">
+                            <input type="email" placeholder="your email"
+                                class="w-full lg:w-1/3 mt-3 py-3 px-5 border border-solid border-gray-300 rounded-md text-black focus:outline-none focus:border-gray-900 placeholder:font-light placeholder:font-roboto placeholder:text-gray-700 placeholder:capitalize bg-white">
+                            <button
+                                class="sl-btn font-robotoSlab font-medium text-base py-[0.625rem] lg:px-6 mt-3">subscribe</button>
+                        </div>
+                    </form>
+    
+                    <div class="mt-8 lg:mt-0 xl:mr-10">
+                        <strong class="font-robotoSlab text-[1.5rem] font-normal capitalize">get connect</strong>
+                        <ul class="flex flex-wrap mt-3 gap-x-1">
+                            <li
+                                class="w-10 h-10 sm:w-12 sm:h-12 items-center justify-center flex border border-solid border-[#66bb6a] text-[#66bb6a] rounded-full cursor-pointer hover:bg-[#66bb6a] hover:text-white hover:ease-in-out duration-500">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li
+                                class="w-10 h-10 sm:w-12 sm:h-12 items-center justify-center flex border border-solid border-[#66bb6a] text-[#66bb6a] rounded-full cursor-pointer hover:bg-[#66bb6a] hover:text-white hover:ease-in-out duration-500">
+                                <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                            </li>
+                            <li
+                                class="w-10 h-10 sm:w-12 sm:h-12 items-center justify-center flex border border-solid border-[#66bb6a] text-[#66bb6a] rounded-full cursor-pointer hover:bg-[#66bb6a] hover:text-white hover:ease-in-out duration-500">
+                                <a href=""><i class="fa-brands fa-linkedin-in"></i></i></a>
+                            </li>
+                            <li
+                                class="w-10 h-10 sm:w-12 sm:h-12 items-center justify-center flex border border-solid border-[#66bb6a] text-[#66bb6a] rounded-full cursor-pointer hover:bg-[#66bb6a] hover:text-white hover:ease-in-out duration-500">
+                                <a href=""><i class="fa-brands fa-google-plus-g"></i></i></a>
+                            </li>
+                            <li
+                                class="w-10 h-10 sm:w-12 sm:h-12 items-center justify-center flex border border-solid border-[#66bb6a] text-[#66bb6a] rounded-full cursor-pointer hover:bg-[#66bb6a] hover:text-white hover:ease-in-out duration-500">
+                                <a href=""><i class="fa-brands fa-instagram"></i></i></a>
+                            </li>
+                            <li
+                                class="w-10 h-10 sm:w-12 sm:h-12 items-center justify-center flex border border-solid border-[#66bb6a] text-[#66bb6a] rounded-full cursor-pointer hover:bg-[#66bb6a] hover:text-white hover:ease-in-out duration-500">
+                                <a href=""><i class="fa-brands fa-youtube"></i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEWSLETTER END -->
+    
+        <!-- ECOVA FOOTER CREDIT STARTS -->
+    
+        <div class="bg-[#191919] mt-5">
+            <div class="w-full px-5 font-roboto text-sm py-3 text-center text-[#666666]">All Rights Reserved of Ecova ©
+                2018, Design &
+                Developed By: GramoTech</div>
+        </div>
+        <!-- ECOVA FOOTER CREDIT SECTION ENDS -->
+    </section>
+    
+    <!-- ECOVA FOOTER SECTION ENDS -->
+
+
+    <!-- SCRIPT LINKS -->
+    <script src="./assets/ventors/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./assets/ventors/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/ventors/counter/jquery.counterup.min.js"></script>
+    <script src="./assets/ventors/counter/jquery.waypoints.js"></script>
+    <script src="./assets/ventors/counter/jquery.waypoints.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/swiperSetting.js"></script>
+</body>

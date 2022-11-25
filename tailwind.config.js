@@ -2,12 +2,19 @@ module.exports = {
   content: ["*.{html,js}"],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'volunteer': "url('/assets/images/factsbg.jpg')",
+        'volunteerBorder':"url('/assets/images/border.png')",
+        'footerTexture':"url('/assets/images/fpat.jpg')",
+      }
+    },
     fontFamily: {
       'sans': ['Poppins', 'ui-sans-serif', 'system-ui'],
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'roboto': ['Roboto', 'ui-sans-serif', 'system-ui'],
+      'robotoSlab':['Roboto Slab', 'serif'],
     },
     screens: {
       'xs': '380px',
