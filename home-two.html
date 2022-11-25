@@ -42,7 +42,7 @@
     <!-- HEADER SECTION STARTS -->
     <section class="xl:absolute xl:z-10">
         <!--Start Header Section here-->
-        <header class="bg-[#33691e] xl:bg-transparent w-full h-[100px] border-b border-solid border-[gray]">
+        <header class="bg-[#33691e] xl:bg-transparent w-full h-auto border-b border-solid border-[gray]">
             <nav class="flex w-full h-full items-center justify-between">
                 <div class="flex w-full h-full">
                     <!--Start Navbar Menu list item -->
@@ -54,222 +54,221 @@
                                 <a href="" class="w-full">
                                     <img src="./assets/images/logo/logo.png" class="m-auto block" alt="">
                                 </a>
-        
+    
                             </div>
                             <!--End Navbar Logo image -->
-        
+    
                             <!--Start Navbar Menu Hamburger buttom-->
                             <div class="lg:hidden w-full flex relative p-7 justify-end">
-                                <button type="button" class="bg-[#66bb6a] px-4 rounded-sm py-1">
+                                <button type="button" class="bg-[#66bb6a] px-4 rounded-sm py-1" id="navToggler"
+                                    data-target="#dropdownMenu">
                                     <i class="fa-solid fa-bars text-white text-2xl"></i></button>
                             </div>
                             <!--End Navbar Menu Hamburger buttom-->
                         </div>
-                        <div class="flex basis-full lg:basis-[73%] 2xl:basis-[82%] w-full h-full lg:sl-flex-start">
-                            <div
-                                class="hidden basis-full xl:basis-2/3 2xl:basis-full xl:w-full lg:flex bg-[#33691e] lg:bg-transparent">
-                                <ul
-                                    class="flex items-start lg:items-center flex-col lg:flex-row mt-2 lg:ml-5 lg:justify-start 2xl:ml-[8.125rem] text-white xl:text-black text-lg 2xl:text-xl font-normal font-robotoSlab capitalize cursor-pointer ">
-                                    <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">Home<i
-                                            class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i>
-                                        <ul
-                                            class="hidden absolute top-[71px] left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">home one</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">home Two</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">home Three</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">about</li>
-                                    <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">events<i
-                                            class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i>
-                                        <ul
-                                            class="hidden absolute top-[71px] left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">events grid</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">events grid two</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">events list</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">events list two</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">events details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">causes <i
-                                            class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i>
-                                        <ul
-                                            class="hidden absolute top-[71px] left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">causes grid</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">causes list</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">causes details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">blogs <i
-                                            class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i>
-                                        <ul
-                                            class="hidden absolute top-[71px] left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">blog default</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">blog list</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">blog grid </a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">blog two columns</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">blog three columns</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">blog details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=" relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">pages <i
-                                            class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i>
-                                        <ul
-                                            class="hidden absolute top-[71px] left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">projects</a>
-                                                <ul
-                                                    class="hidden absolute top-[0px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">projects</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">projects grid</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">projects grid two</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">projects list</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">projects details</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">shop</a>
-                                                <ul
-                                                    class="hidden absolute top-[44px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">shop</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">shop two</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">shop details</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">team </a>
-                                                <ul
-                                                    class="hidden absolute top-[89px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">team one</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">team two</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">team details</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">gallery</a>
-                                                <ul
-                                                    class="hidden absolute top-[134px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">gallery grid</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">gallery full</a>
-                                                    </li>
-                                                    <li
-                                                        class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                        <a href="">gallery masonry</a>
-                                                    </li>
-        
-                                                </ul>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">testimonials</a>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">donation</a>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">my account</a>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">coming soon</a>
-                                            </li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">404 error</a>
-                                            </li>
-        
-                                        </ul>
-                                    </li>
-                                    <li class="relative mb-8 lg:mb-2 ml-2 p-2 2xl:mr-2 text-white text-xl sl-flex-between">
-                                        contact<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i>
-                                        <ul
-                                            class="hidden absolute top-[71px] left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">contact one</a></li>
-                                            <li
-                                                class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                <a href="">contact two</a></li>
-                                        </ul>
-                                    </li>
+                        <div id="drop" class="flex basis-full lg:basis-[73%] 2xl:basis-[82%] w-full h-auto lg:sl-flex-start">
+                            <div class="flex xl:basis-2/3 2xl:basis-full xl:w-full lg:bg-transparent">
+    
+                                <ul id="dropdownMenu" class="hidden lg:flex items-start lg:items-center flex-col lg:flex-row mt-2 lg:ml-5 lg:justify-start 2xl:ml-[8.125rem] text-white text-lg 2xl:text-xl font-normal font-robotoSlab capitalize cursor-pointer ">
+                                        <li id="submenuBtn" class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">Home<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuHome" class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">home one</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">home Two</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">home Three</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between">about</li>
+                                        <li  class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">events<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuEvent"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events grid</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events grid two</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events list</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events list two</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">events details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">causes <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuCauses"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">causes grid</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">causes list</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">causes details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">blogs <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuBlog"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog default</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog list</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog grid </a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog two columns</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog three columns</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">blog details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class=" relative mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row">pages <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuPage"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">projects</a>
+                                                    <ul
+                                                        class="hidden absolute top-[0px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects grid</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects grid two</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects list</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">projects details</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">shop</a>
+                                                    <ul
+                                                        class="hidden absolute top-[44px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">shop</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">shop two</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">shop details</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">team </a>
+                                                    <ul
+                                                        class="hidden absolute top-[89px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">team one</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">team two</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">team details</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">gallery</a>
+                                                    <ul
+                                                        class="hidden absolute top-[134px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">gallery grid</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">gallery full</a>
+                                                        </li>
+                                                        <li
+                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                            <a href="">gallery masonry</a>
+                                                        </li>
+            
+                                                    </ul>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">testimonials</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">donation</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">my account</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">coming soon</a>
+                                                </li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">404 error</a>
+                                                </li>
+            
+                                            </ul>
+                                        </li>
+                                        <li class="relative mb-2 lg:mb-2 ml-2 p-2 2xl:mr-2 text-white text-lg sl-flex-between flex flex-col items-start">
+                                            <span class="lg:flex lg:flex-row ">contact<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
+                                            <ul id="submenuContact"
+                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">contact one</a></li>
+                                                <li
+                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
+                                                    <a href="">contact two</a></li>
+                                            </ul>
+                                        </li>
                                 </ul>
                             </div>
                             <!--Start Navbar Button for xl display only-->
@@ -284,12 +283,13 @@
                         </div>
                     </div>
                     <!--End Navbar Menu list item -->
-        
+    
                     <!--Start Navbar Menu and Search button for xl display only-->
                     <div class="hidden xl:flex xl:basis-[14%] w-full">
-                        <div class="border-r border-l border-solid border-[gray] sl-flex-center px-8">
-                            <a href=""><i class="fas fa-search text-[#689f38]"></i></a></li>
-                        </div>
+                        <button onclick="hightSlide(searchDiv, 'h-full')"
+                            class="border-r border-l border-solid border-[gray] sl-flex-center px-8">
+                            <i class="fas fa-search text-[#689f38]"></i></li>
+                        </button>
                         <div class="sl-flex-center px-8">
                             <a href="" class="flex text-base font-normal font-robotoSlab text-white hover:text-green-800"><i
                                     class="fas fa-bars text-[#689f38] text-base mr-1"></i>Menu</a>
@@ -297,18 +297,16 @@
                     </div>
                     <!--End Navbar Menu and Search button for xl display only-->
                 </div>
-        
+    
             </nav>
         </header>
         <!--End Header Section here-->
-
+    
         <!--Start Nav Side-Bar Section here-->
-        <div
-            class="hidden xl:hidden fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
+        <div class="hidden xl:hidden fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
             <ul class="text-white list-none capitalize sl-flex-start mt-[120px] flex-col w-full xl:ml-10 2xl:ml-0">
                 <li class="w-[295px] mb-5">
-                    <a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">home</a>
+                    <a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">home</a>
                 </li>
                 <li class="w-[295px] mb-5"><a href=""
                         class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest ">about us</a>
@@ -331,7 +329,7 @@
             </ul>
         </div>
         <!--End Nav Side-Bar Section here-->
-
+    
         <!--Start Nav Side-Bar overlay Section here-->
         <div class="hidden w-full h-full fixed left-0 top-0 -z-20 bg-[#517c4b80] to-transparent"></div>
         <!--End Nav Side-Bar overlay Section here-->
