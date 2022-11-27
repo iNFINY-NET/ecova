@@ -4,11 +4,11 @@
 
 @layer components {
   .sl-container {
-    @apply xl: max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
+    @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
   }
 
   .sl-container-wrap {
-    @apply sl-container flex flex-wrap items-center justify-around lg: text-left text-center;
+    @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
   }
 
   /* FLEX */
@@ -47,11 +47,11 @@
 
   /* TITLE */
   .sl-section-title h3 {
-    @apply font-medium text-green-500 lg: text-3xl md:text-2xl text-xl mb-1.5;
+    @apply font-medium text-green-500 lg:text-3xl md:text-2xl text-xl mb-1.5;
   }
 
   .sl-section-title h2 {
-    @apply font-bold lg: text-4xl md:text-3xl text-2xl my-3;
+    @apply font-bold lg:text-4xl md:text-3xl text-2xl my-3;
   }
 
   /* BACKGROUND IMAGE */
@@ -70,7 +70,7 @@
 
   /* BUTTON */
   .sl-btn {
-    @apply bg-green-500 hover: bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;
+    @apply bg-green-500 hover:bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;
   }
 
   /*GALLERY ACTIVE STATE*/
@@ -104,7 +104,6 @@
 }
 
 @layer utilities {
-
   /* SLIDER BUTTON STYLE RESET */
   .swiper-button-next::after,
   .swiper-button-prev::after {
