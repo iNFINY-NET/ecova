@@ -74,7 +74,7 @@
   }
 
   /*GALLERY ACTIVE STATE*/
-  .gallery-active{
+  .gallery-active {
     @apply bg-[#80b744];
   }
 }
@@ -104,6 +104,7 @@
 }
 
 @layer utilities {
+
   /* SLIDER BUTTON STYLE RESET */
   .swiper-button-next::after,
   .swiper-button-prev::after {
@@ -114,5 +115,10 @@
   .bg-center-bottom {
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
+  }
+
+  /*Active swiper slider*/
+  .swiper-slide-active {
+    filter: grayscale(0);
   }
 }

@@ -2588,6 +2588,12 @@ img {
   background-repeat: no-repeat !important;
 }
 
+/*Active swiper slider*/
+
+.swiper-slide-active {
+  filter: grayscale(0);
+}
+
 .placeholder\:pl-2::-moz-placeholder {
   padding-left: 0.5rem;
 }
@@ -4496,10 +4502,6 @@ img {
 
   .xl\:flex {
     display: flex;
-  }
-
-  .xl\:hidden {
-    display: none;
   }
 
   .xl\:w-full {
