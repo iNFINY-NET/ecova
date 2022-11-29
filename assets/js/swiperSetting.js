@@ -45,7 +45,7 @@ function currentProjectSwiper() {
                     slidesPerView: 2,
                },
                768: {
-                    slidesPerView: 4,
+                    slidesPerView: 2,
                },
                1024: {
                     slidesPerView: 4,

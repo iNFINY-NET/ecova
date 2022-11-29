@@ -923,6 +923,11 @@ img {
   margin-right: 0.25rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -3833,6 +3838,10 @@ img {
     margin-top: 1rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -4000,6 +4009,14 @@ img {
 
   .md\:pt-\[2rem\] {
     padding-top: 2rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .md\:pl-4 {
+    padding-left: 1rem;
   }
 
   .md\:text-left {
@@ -4519,6 +4536,10 @@ img {
 
   .xl\:flex {
     display: flex;
+  }
+
+  .xl\:h-full {
+    height: 100%;
   }
 
   .xl\:w-full {
