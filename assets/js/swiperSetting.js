@@ -92,6 +92,7 @@ function brandLogoSwiper() {
           slidesPerView: 1,
           spaceBetween: 1,
           loop: true,
+          centeredSlides: true,
           autoplay: {
                delay: 2500,
                disableOnInteraction: false,
