@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -2603,17 +2603,8 @@ img {
 
 /*Active swiper slider*/
 
-/* PAGINATION BUTTON */
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 10px !important;
-  height: 10px !important;
-  border-radius: 0 !important;
-  border: 2px solid #bbbbbb;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background: #869791 !important;
+.swiper-slide-active {
+  filter: grayscale(0);
 }
 
 .placeholder\:pl-2::-moz-placeholder {
