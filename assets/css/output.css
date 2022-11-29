@@ -881,6 +881,22 @@ img {
   left: 0.5rem;
 }
 
+.bottom-\[78\%\] {
+  bottom: 78%;
+}
+
+.top-\[65\%\] {
+  top: 65%;
+}
+
+.top-\[68\%\] {
+  top: 68%;
+}
+
+.top-\[75\%\] {
+  top: 75%;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -926,6 +942,11 @@ img {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mr-5 {
@@ -3555,6 +3576,10 @@ img {
     top: -1.25rem;
   }
 
+  .sm\:bottom-\[70\%\] {
+    bottom: 70%;
+  }
+
   .sm\:float-left {
     float: left;
   }
@@ -3912,6 +3937,10 @@ img {
     top: 78%;
   }
 
+  .md\:bottom-\[78\%\] {
+    bottom: 78%;
+  }
+
   .md\:m-0 {
     margin: 0px;
   }
@@ -4219,6 +4248,10 @@ img {
 
   .lg\:top-\[10\%\] {
     top: 10%;
+  }
+
+  .lg\:bottom-\[68\%\] {
+    bottom: 68%;
   }
 
   .lg\:mr-24 {
@@ -4614,6 +4647,10 @@ img {
 
   .xl\:left-\[1\.875rem\] {
     left: 1.875rem;
+  }
+
+  .xl\:bottom-\[72\%\] {
+    bottom: 72%;
   }
 
   .xl\:z-10 {
