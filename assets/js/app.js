@@ -92,17 +92,17 @@ nestedHome.addEventListener("click", (e)=>{
 
 
 // ACTIVITIES GALLERY FILTER
-$(window).on("load", function () {
-     var t = $("#gallery");
-     t.isotope({
-          filter: ".showAll",
-     }), 
+// $(window).on("load", function () {
+//      var t = $("#gallery");
+//      t.isotope({
+//           filter: ".showAll",
+//      }), 
      
-     $("#filter li").click(function () {
-          $("#filter .gallery-active").removeClass("gallery-active"), $(this).addClass("gallery-active");
-          var i = $(this).attr("data-filter");
-          return t.isotope({
-               filter: i,
-          });
-     });
-});
+//      $("#filter li").click(function () {
+//           $("#filter .gallery-active").removeClass("gallery-active"), $(this).addClass("gallery-active");
+//           var i = $(this).attr("data-filter");
+//           return t.isotope({
+//                filter: i,
+//           });
+//      });
+// });

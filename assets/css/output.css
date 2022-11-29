@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1836,6 +1836,11 @@ img {
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#80b744\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 183 68 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -3763,10 +3768,13 @@ img {
     line-height: 1rem;
   }
 
+<<<<<<< HEAD
   .sm\:text-\[1\.25rem\] {
     font-size: 1.25rem;
   }
 
+=======
+>>>>>>> origin/fayez
   .sm\:font-normal {
     font-weight: 400;
   }
