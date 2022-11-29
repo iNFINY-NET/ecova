@@ -28,13 +28,11 @@ const filterGallery = (item) => {
  * @param {String} name 
  */
 const showGallery = (element, name) => {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    console.log('arr1', arr1)
-    arr2 = name.split(" ");
-    console.log('arr2', arr2)
-    for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+    var i, elementArray, classArray;
+    elementArray = element.className.split(" ");
+    classArray = name.split(" ");
+    for (i = 0; i < classArray.length; i++) {
+        if (elementArray.indexOf(classArray[i]) == -1) { element.className += " " + classArray[i]; }
     }
 }
 
@@ -44,15 +42,15 @@ const showGallery = (element, name) => {
  * @param {String} name 
  */
 const hideGallery = (element, name) => {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
+    var i, elementArray, classArray;
+    elementArray = element.className.split(" ");
+    classArray = name.split(" ");
+    for (i = 0; i < classArray.length; i++) {
+        while (elementArray.indexOf(classArray[i]) > -1) {
+            elementArray.splice(elementArray.indexOf(classArray[i]), 1);
         }
     }
-    element.className = arr1.join(" ");
+    element.className = elementArray.join(" ");
 }
 
 // Add active class to the current button (highlight it)
