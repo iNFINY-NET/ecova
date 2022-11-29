@@ -45,7 +45,7 @@ function currentProjectSwiper() {
                     slidesPerView: 2,
                },
                768: {
-                    slidesPerView: 4,
+                    slidesPerView: 2,
                },
                1024: {
                     slidesPerView: 4,
@@ -92,6 +92,7 @@ function brandLogoSwiper() {
           slidesPerView: 1,
           spaceBetween: 1,
           loop: true,
+          centeredSlides: true,
           autoplay: {
                delay: 2500,
                disableOnInteraction: false,
