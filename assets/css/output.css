@@ -4124,6 +4124,11 @@ img {
          column-gap: 1.25rem;
   }
 
+  .md\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
   .md\:border-r {
     border-right-width: 1px;
   }
@@ -4142,6 +4147,18 @@ img {
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
+  .md\:p-7 {
+    padding: 1.75rem;
   }
 
   .md\:px-4 {
@@ -4456,6 +4473,14 @@ img {
 
   .lg\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .lg\:basis-\[40\%\] {
+    flex-basis: 40%;
+  }
+
+  .lg\:basis-\[60\%\] {
+    flex-basis: 60%;
   }
 
   .lg\:grid-cols-8 {
