@@ -3619,6 +3619,22 @@ img {
     margin-top: 1.5rem;
   }
 
+  .sm\:ml-\[50px\] {
+    margin-left: 50px;
+  }
+
+  .sm\:ml-\[100px\] {
+    margin-left: 100px;
+  }
+
+  .sm\:ml-\[80px\] {
+    margin-left: 80px;
+  }
+
+  .sm\:ml-\[70px\] {
+    margin-left: 70px;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -4372,6 +4388,10 @@ img {
 
   .lg\:mr-0 {
     margin-right: 0px;
+  }
+
+  .lg\:ml-0 {
+    margin-left: 0px;
   }
 
   .lg\:block {
