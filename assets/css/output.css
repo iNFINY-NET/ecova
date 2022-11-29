@@ -1838,6 +1838,11 @@ img {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#80b744\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 183 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -3518,6 +3523,10 @@ img {
     margin-bottom: 1.25rem;
   }
 
+  .sm\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -3763,6 +3772,13 @@ img {
     line-height: 1rem;
   }
 
+<<<<<<< HEAD
+  .sm\:text-\[1\.25rem\] {
+    font-size: 1.25rem;
+  }
+
+=======
+>>>>>>> origin/fayez
   .sm\:font-normal {
     font-weight: 400;
   }
@@ -3857,6 +3873,10 @@ img {
 
   .md\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:block {
