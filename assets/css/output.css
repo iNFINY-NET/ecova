@@ -1829,6 +1829,11 @@ img {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#80b744\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 183 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
