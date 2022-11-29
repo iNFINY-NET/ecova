@@ -64,7 +64,7 @@
   }
 
   /* INPUT */
-  .radio-box input[type="radio"]:checked+label {
+  .radio-box input[type="radio"]:checked + label {
     @apply bg-green-500 text-white;
   }
 
@@ -99,12 +99,11 @@
   }
 
   img {
-    @apply object-cover
+    @apply object-cover;
   }
 }
 
 @layer utilities {
-
   /* SLIDER BUTTON STYLE RESET */
   .swiper-button-next::after,
   .swiper-button-prev::after {
@@ -120,5 +119,15 @@
   /*Active swiper slider*/
   .swiper-slide-active {
     filter: grayscale(0);
+  }
+  /* PAGINATION BUTTON */
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 0 !important;
+    border: 2px solid #bbbbbb;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #869791 !important;
   }
 }

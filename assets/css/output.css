@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -692,7 +692,7 @@ img {
 
 /* INPUT */
 
-.radio-box input[type="radio"]:checked+label {
+.radio-box input[type="radio"]:checked + label {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -2119,6 +2119,14 @@ img {
   padding-left: 1.5rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pt-\[56\.25\%\] {
   padding-top: 56.25%;
 }
@@ -2590,8 +2598,17 @@ img {
 
 /*Active swiper slider*/
 
-.swiper-slide-active {
-  filter: grayscale(0);
+/* PAGINATION BUTTON */
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 0 !important;
+  border: 2px solid #bbbbbb;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #869791 !important;
 }
 
 .placeholder\:pl-2::-moz-placeholder {
