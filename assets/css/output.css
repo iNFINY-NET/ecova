@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -3523,6 +3523,10 @@ img {
     margin-bottom: 1.25rem;
   }
 
+  .sm\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -3686,10 +3690,6 @@ img {
     padding: 2.5rem;
   }
 
-  .sm\:p-5 {
-    padding: 1.25rem;
-  }
-
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -3741,6 +3741,10 @@ img {
 
   .sm\:text-\[0\.9375rem\] {
     font-size: 0.9375rem;
+  }
+
+  .sm\:text-\[1\.25rem\] {
+    font-size: 1.25rem;
   }
 
   .sm\:text-3xl {
@@ -3869,6 +3873,10 @@ img {
 
   .md\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .md\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .md\:block {
@@ -4035,11 +4043,6 @@ img {
     padding-right: 1rem;
   }
 
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -4079,6 +4082,10 @@ img {
     line-height: 2.25rem;
   }
 
+  .md\:text-\[1\.125rem\] {
+    font-size: 1.125rem;
+  }
+
   .md\:text-\[2rem\] {
     font-size: 2rem;
   }
@@ -4108,10 +4115,6 @@ img {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-\[1\.125rem\] {
-    font-size: 1.125rem;
   }
 
   .md\:font-normal {
@@ -4501,6 +4504,10 @@ img {
     font-size: 1.327rem;
   }
 
+  .lg\:text-\[1\.25rem\] {
+    font-size: 1.25rem;
+  }
+
   .lg\:text-\[2\.8rem\] {
     font-size: 2.8rem;
   }
@@ -4512,10 +4519,6 @@ img {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .lg\:text-\[1\.25rem\] {
-    font-size: 1.25rem;
   }
 
   .lg\:font-medium {
