@@ -2206,6 +2206,10 @@ img {
   font-family: Roboto Slab, serif;
 }
 
+.font-sans {
+  font-family: Poppins, ui-sans-serif, system-ui;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2574,6 +2578,26 @@ img {
   color: rgb(56 169 53 / var(--tw-text-opacity));
 }
 
+.text-\[\#cccccc\] {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
+}
+
+.text-\[\#555\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#a7a6a6\] {
+  --tw-text-opacity: 1;
+  color: rgb(167 166 166 / var(--tw-text-opacity));
+}
+
+.text-\[\#8a8989\] {
+  --tw-text-opacity: 1;
+  color: rgb(138 137 137 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -2703,6 +2727,14 @@ img {
 
 .placeholder\:font-light::placeholder {
   font-weight: 300;
+}
+
+.placeholder\:font-medium::-moz-placeholder {
+  font-weight: 500;
+}
+
+.placeholder\:font-medium::placeholder {
+  font-weight: 500;
 }
 
 .placeholder\:capitalize::-moz-placeholder {
