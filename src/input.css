@@ -6,56 +6,76 @@
   .sl-container {
     @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
   }
+
   .sl-container-wrap {
     @apply sl-container flex flex-wrap items-center justify-around lg:text-left text-center;
   }
+
   /* FLEX */
   .sl-flex-between {
     @apply flex items-center justify-between;
   }
+
   .sl-flex-start {
     @apply flex items-center justify-start;
   }
+
   .sl-flex-center {
     @apply flex items-center justify-center;
   }
+
   .sl-flex-end {
     @apply flex items-center justify-end;
   }
+
   .sl-flex-wrap {
     @apply flex flex-wrap w-full;
   }
+
   /* ANIMATION */
   .sl-animated {
     @apply transition duration-500;
   }
+
   .sl-animated-fade {
     @apply transition-all duration-500 ease-in-out;
   }
+
   .sl-animated-slide {
     @apply transition-all duration-700 ease-in-out;
   }
+
   /* TITLE */
   .sl-section-title h3 {
     @apply font-medium text-green-500 lg:text-3xl md:text-2xl text-xl mb-1.5;
   }
+
   .sl-section-title h2 {
     @apply font-bold lg:text-4xl md:text-3xl text-2xl my-3;
   }
+
   /* BACKGROUND IMAGE */
   .sl-bg-img {
     @apply absolute top-0 left-0 w-full h-full mix-blend-multiply z-0;
   }
+
   .sl-bg-cover {
     @apply bg-cover bg-center bg-no-repeat;
   }
+
   /* INPUT */
   .radio-box input[type="radio"]:checked + label {
     @apply bg-green-500 text-white;
   }
+
   /* BUTTON */
   .sl-btn {
     @apply bg-green-500 hover:bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;
+  }
+
+  /*GALLERY ACTIVE STATE*/
+  .gallery-active {
+    @apply bg-[#80b744];
   }
 }
 
@@ -63,19 +83,23 @@
   section {
     @apply relative w-full;
   }
+
   a {
     @apply inline-block cursor-pointer;
   }
+
   button {
     @apply inline-block cursor-pointer;
   }
+
   input,
   select,
   textarea {
     @apply outline-none bg-transparent;
   }
-  img{
-    @apply object-cover
+
+  img {
+    @apply object-cover;
   }
 }
 
@@ -85,9 +109,25 @@
   .swiper-button-prev::after {
     content: "";
   }
+
   /* SELF MADE CSS */
   .bg-center-bottom {
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
+  }
+
+  /*Active swiper slider*/
+  .swiper-slide-active {
+    filter: grayscale(0);
+  }
+  /* PAGINATION BUTTON */
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 0 !important;
+    border: 2px solid #bbbbbb;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active {
+    background: #869791 !important;
   }
 }
