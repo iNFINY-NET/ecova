@@ -1127,6 +1127,14 @@ img {
   margin-right: 0.375rem;
 }
 
+.mb-\[13px\] {
+  margin-bottom: 13px;
+}
+
+.mb-\[0\.813rem\] {
+  margin-bottom: 0.813rem;
+}
+
 .block {
   display: block;
 }
@@ -2378,6 +2386,10 @@ img {
 
 .leading-\[2\.5rem\] {
   line-height: 2.5rem;
+}
+
+.leading-\[1\.2\] {
+  line-height: 1.2;
 }
 
 .tracking-widest {
@@ -3838,6 +3850,10 @@ img {
     line-height: 1rem;
   }
 
+  .sm\:text-\[1\.8rem\] {
+    font-size: 1.8rem;
+  }
+
   .sm\:font-normal {
     font-weight: 400;
   }
@@ -4618,6 +4634,10 @@ img {
     line-height: 2.5rem;
   }
 
+  .lg\:text-\[1\.75rem\] {
+    font-size: 1.75rem;
+  }
+
   .lg\:font-medium {
     font-weight: 500;
   }
@@ -4876,8 +4896,16 @@ img {
     text-align: left;
   }
 
+  .xl\:text-\[1\.75rem\] {
+    font-size: 1.75rem;
+  }
+
   .xl\:font-semibold {
     font-weight: 600;
+  }
+
+  .xl\:text-\[1\.75\] {
+    color: 1.75;
   }
 
   .xl\:after\:h-\[1rem\]::after {
