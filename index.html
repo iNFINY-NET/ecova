@@ -368,21 +368,17 @@
                          </div>
                     </div>
                     <div class="lg:basis-1/2 basis-full px-2">
-                         <div class="sm:text-right mt-5">
-                              <a href=""
-                                   onclick="filterSlider('filterWildlife')"
-                                   class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Wildlife</a>
-                              <a href=""
-                                   onclick="filterSlider('waterResources')"
-                                   class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Water
-                                   Resources</a>
-                              <a href=""
-                                  onclick="filterSlider('solarEnergy')"
-                                   class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Solar
-                                   Energy</a>
-                              <a href=""
-                                   onclick="filterSlider('recycling')"
-                                   class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Recycling</a>
+                         <ul class="sm:text-right mt-5" id="filterButtonGroup">
+                              <button onclick="filterSlider('filterWildlife')"
+                                   class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent bg-green-500 hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Wildlife</button>
+                              <button onclick="filterSlider('waterResources')"
+                                   class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent bg-green-500 hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Water
+                                   Resources</button>
+                              <button onclick="filterSlider('solarEnergy')"
+                                   class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent bg-green-500 hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Solar
+                                   Energy</button>
+                              <button onclick="filterSlider('recycling')"
+                                   class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent bg-green-500 hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Recycling</button>
                          </div>
                     </div>
                </div>
@@ -406,7 +402,7 @@
                               </div>
                          </div>
                          <!--Project 2-->
-                         <div class="px-2 swiper-slide hidden showWildlife waterResources recycling">
+                         <div class="px-2 swiper-slide hidden showWildlife filterWildlife waterResources recycling">
                               <div
                                    class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                    <img src="assets/images/current-project/current-pro2.jpg" alt="" class="rounded w-full">
@@ -459,7 +455,7 @@
                               </div>
                          </div>
                          <!--Project 5-->
-                         <div class="px-2 swiper-slide hidden showWildlife waterResources recycling">
+                         <div class="px-2 swiper-slide hidden showWildlife filterWildlife waterResources recycling">
                               <div
                                    class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                    <img src="assets/images/current-project/current-pro5.jpg" alt="" class="rounded w-full">
@@ -493,7 +489,7 @@
                               </div>
                          </div>
                          <!--Project 7-->
-                         <div class="px-2 swiper-slide hidden showWildlife solarEnergy">
+                         <div class="px-2 swiper-slide hidden showWildlife filterWildlife solarEnergy">
                               <div
                                    class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                    <img src="assets/images/current-project/current-pro7.jpg" alt="" class="rounded w-full">
@@ -510,7 +506,7 @@
                               </div>
                          </div>
                          <!--Project 8-->
-                         <div class="px-2 swiper-slide hidden showWildlife solarEnergy recycling">
+                         <div class="px-2 swiper-slide hidden showWildlife filterWildlife solarEnergy recycling">
                               <div
                                    class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                    <img src="assets/images/current-project/current-pro8.jpg" alt="" class="rounded w-full">

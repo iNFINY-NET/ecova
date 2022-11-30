@@ -2,6 +2,7 @@ $(document).ready(function () {
     filterGallery("all");
     filterSlider("filterWildlife");
     activeButton();
+    activeSliderBtn();
 });
 
 /**
@@ -30,16 +31,21 @@ const filterGallery = (item) => {
  * @param {String} item
  *  @return Element, Class Name
  */
- const filterSlider = (item) => {
+const filterSlider = (item) => {
     var x, i;
     x = $(".showWildlife");
-    if (item == "filterWildlife") item = "";
+    // if (item == "filterWildlife") item = "";
     for (i = 0; i < x.length; i++) {
-        hideGallery(x[i], "hidden");
+        if (item == "filterWildlife") {
+            hideGallery(x[i], "hidden");
+            showGallery(x[i], "swiper-slide");
+        }
+
         if (x[i].className.indexOf(item) > -1) {
             showGallery(x[i], "block")
         } else {
-            showGallery(x[i], "hidden")
+            showGallery(x[i], "hidden");
+            hideGallery(x[i], "swiper-slide");
         };
     }
 }
@@ -86,6 +92,19 @@ const activeButton = () => {
             var current = document.getElementsByClassName("bg-[#80b744]");
             current[0].className = current[0].className.replace(" bg-[#80b744]", "");
             this.className += " bg-[#80b744]";
+        });
+    }
+}
+
+
+const activeSliderBtn = () => {
+    // var btnContainer = document.getElementById("filterButtonGroup");
+    var buttons = document.getElementsByClassName("filterBtn");
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("bg-green-500");
+            current[0].className = current[0].className.replace(" bg-green-500", "");
+            this.className += " bg-green-500";
         });
     }
 }
