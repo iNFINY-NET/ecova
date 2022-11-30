@@ -1059,30 +1059,6 @@ img {
   margin-top: 1.5rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -3172,6 +3148,11 @@ img {
 .hover\:border-green-800:hover {
   --tw-border-opacity: 1;
   border-color: rgb(22 101 52 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#689f38\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(104 159 56 / var(--tw-border-opacity));
 }
 
 .hover\:bg-lime-500:hover {
