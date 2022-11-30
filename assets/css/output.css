@@ -2121,6 +2121,11 @@ img {
   padding-bottom: 4rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pr-8 {
   padding-right: 2rem;
 }
@@ -2175,6 +2180,10 @@ img {
 
 .pt-\[56\.25\%\] {
   padding-top: 56.25%;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
@@ -4048,6 +4057,10 @@ img {
     margin-top: 1rem;
   }
 
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4952,6 +4965,10 @@ img {
     padding-top: 5rem;
   }
 
+  .xl\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -5089,6 +5106,11 @@ img {
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .\32xl\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .\32xl\:pt-36 {
