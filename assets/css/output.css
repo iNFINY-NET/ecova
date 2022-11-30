@@ -2347,6 +2347,18 @@ img {
   line-height: 2.5rem;
 }
 
+.leading-\[18px\] {
+  line-height: 18px;
+}
+
+.leading-\[1\.125rem\] {
+  line-height: 1.125rem;
+}
+
+.leading-\[3\.125rem\] {
+  line-height: 3.125rem;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
