@@ -1135,6 +1135,10 @@ img {
   margin-bottom: 3.25rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -2285,6 +2289,10 @@ img {
 
 .text-\[0\.875rem\] {
   font-size: 0.875rem;
+}
+
+.text-\[1\.2rem\] {
+  font-size: 1.2rem;
 }
 
 .font-normal {
@@ -4367,6 +4375,14 @@ img {
 
   .lg\:ml-0 {
     margin-left: 0px;
+  }
+
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .lg\:ml-8 {
+    margin-left: 2rem;
   }
 
   .lg\:block {
