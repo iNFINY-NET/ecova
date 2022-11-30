@@ -1,5 +1,6 @@
 $(document).ready(function () {
     filterGallery("all");
+    filterSlider("filterWildlife");
     activeButton();
 });
 
@@ -21,6 +22,29 @@ const filterGallery = (item) => {
         };
     }
 }
+
+
+
+/**
+ * To Filter Slider Data
+ * @param {String} item
+ *  @return Element, Class Name
+ */
+ const filterSlider = (item) => {
+    var x, i;
+    x = $(".showWildlife");
+    if (item == "filterWildlife") item = "";
+    for (i = 0; i < x.length; i++) {
+        hideGallery(x[i], "hidden");
+        if (x[i].className.indexOf(item) > -1) {
+            showGallery(x[i], "block")
+        } else {
+            showGallery(x[i], "hidden")
+        };
+    }
+}
+
+
 
 /**
  * Set active or block class to filtered data
