@@ -1939,6 +1939,14 @@ img {
   padding: 2.5rem;
 }
 
+.p-\[0\.938rem\] {
+  padding: 0.938rem;
+}
+
+.p-\[0\.93rem\] {
+  padding: 0.93rem;
+}
+
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
