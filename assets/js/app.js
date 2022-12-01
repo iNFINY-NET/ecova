@@ -1,3 +1,9 @@
+// COUNTER JS SETUP
+$('.counter').counterUp({
+     delay: 20,
+     time: 2000
+});
+
 // HIGHT SLIDE
 function hightSlide(id, hSize) {
      if (id.classList.contains("h-0")) {
@@ -9,15 +15,8 @@ function hightSlide(id, hSize) {
      }
 }
 
-// COUNTER JS SETUP
-$('.counter').counterUp({
-     delay: 20,
-     time: 2000
-});
-
 
 //DROPDOWN MOBILE MENU
-
 $(document).ready(function () {
      $("#navToggler").each(function (_, navToggler) {
           var target = $(navToggler).data("target");
