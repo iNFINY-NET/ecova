@@ -2263,6 +2263,10 @@ img {
   font-size: 1.5rem;
 }
 
+.text-\[0\.8125rem\] {
+  font-size: 0.8125rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -2851,6 +2855,12 @@ img {
 .before\:bg-slate-900\/50::before {
   content: var(--tw-content);
   background-color: rgb(15 23 42 / 0.5);
+}
+
+.before\:bg-lime-500::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 204 22 / var(--tw-bg-opacity));
 }
 
 .before\:opacity-0::before {
@@ -3843,6 +3853,10 @@ img {
 
   .md\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .md\:block {
