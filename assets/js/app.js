@@ -1,8 +1,15 @@
+$(document).ready(function () {
+     counter('counter')
+ });
+ 
+
 // COUNTER JS SETUP
-$('.counter').counterUp({
-     delay: 20,
-     time: 2000
-});
+function counter(className){
+     $('.'+ className).counterUp({
+          delay: 20,
+          time: 2000
+     });
+}
 
 // HIGHT SLIDE
 function hightSlide(id, hSize) {
