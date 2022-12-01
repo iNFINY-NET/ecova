@@ -4442,6 +4442,10 @@ img {
     height: 6.25rem;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
   .lg\:w-4\/5 {
     width: 80%;
   }
