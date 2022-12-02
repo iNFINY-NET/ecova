@@ -58,8 +58,8 @@ function currentProjectSwiper(item) {
      });
 
      // Filter Slider
-     $(".current-project button")   
-     $(".current-project button").removeClass("bg-green-500");
+     $(".current-project button").addClass("bg-transparent border-white/80");
+     $(".current-project button").removeClass("bg-green-500 border-green-500");
      $(`#${item}`).addClass("bg-green-500 border-green-500");
      $(`#${item}`).removeClass("bg-transparent border-white/80");
 
