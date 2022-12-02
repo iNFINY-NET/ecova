@@ -3,6 +3,7 @@ $(document).ready(function () {
      homeBannerSlider();
      footerProductSlider();
      brandLogoSwiper();
+     recentworkSlider();
 });
 
 /**
@@ -110,3 +111,24 @@ function brandLogoSwiper() {
           },
      });
 }
+
+/**
+ * Recent Work Slider
+ */
+function recentworkSlider() {
+     var swiper = new Swiper(".recentworkSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 1,
+          loop: true,
+          centeredSlides: true,
+          autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+          },
+          navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+          },
+     });
+}
+
