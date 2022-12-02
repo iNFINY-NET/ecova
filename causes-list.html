@@ -10,12 +10,13 @@
      <title>ECOVA</title>
 
      <!-- FONT AWESOME -->
-     <script src="https://kit.fontawesome.com/272eed3989.js" crossorigin="anonymous"></script>
+     <script src="./assets/ventors/fontAwesome/fontawesome.js" crossorigin="anonymous"></script>
 
      <!-- GOOGLE FONTS -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet">
      <!-- SWIPER CSS -->
      <link rel="stylesheet" href="./assets/ventors/swiper/swiper-bundle.min.css">
      <!-- TAILWIND CSS -->
@@ -26,11 +27,14 @@
 
      <!-- SEARCH STARTS -->
      <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
-          <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i
+          <button onclick="hightSlide(searchDiv, 'h-full')"
+               class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i
                     class="fa-solid fa-xmark"></i></button>
           <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
-               <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
-               <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i class="fa-solid fa-magnifying-glass"></i></button>
+               <input type="text" placeholder="type keyword(s) here"
+                    class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
+               <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i
+                         class="fa-solid fa-magnifying-glass"></i></button>
           </form>
      </div>
      <!-- SEARCH ENDS -->
@@ -38,8 +42,12 @@
      <!-- HEADER STARTS -->
      <header class="bg-green-900">
           <div class="w-full flex items-center lg:flex-nowrap flex-wrap lg:justify-start justify-between">
-               <a href="index.html" class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
-               <button onclick="hightSlide(mainNav, 'h-[27rem]')" class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i class="fa-solid fa-bars"></i></button>
+               <a href="index.html"
+                    class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img
+                         src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
+               <button onclick="hightSlide(mainNav, 'h-[27rem]')"
+                    class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i
+                         class="fa-solid fa-bars"></i></button>
                <nav id="mainNav"
                     class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
                     <ul class="flex lg:flex-row flex-col mr-auto">
@@ -72,9 +80,11 @@
                          <li class="mr-3.5"><a onclick="hightSlide(searchDiv, 'h-full')"
                                    class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
                                         class="fa-solid fa-magnifying-glass"></i></a></li>
-                         <li class="mr-3.5"><a href="" class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
+                         <li class="mr-3.5"><a href=""
+                                   class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
                                         class="fa-solid fa-cart-shopping"></i></a></li>
-                         <li class="mr-3.5 text-sm leading-10"><a href="" class="text-lime-100 hover:text-lime-500 sl-animated">Login</a> | <a href=""
+                         <li class="mr-3.5 text-sm leading-10"><a href=""
+                                   class="text-lime-100 hover:text-lime-500 sl-animated">Login</a> | <a href=""
                                    class="text-lime-100 hover:text-lime-500 sl-animated">Signup</a></li>
                     </ul>
                </nav>
@@ -98,8 +108,9 @@
      <!-- MAIN STARTS -->
      <main class="sl-container flex flex-wrap py-20">
           <div class="lg:basis-3/4 md:basis-2/3 basis-full md:px-4 px-2">
-               
-               <div class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+
+               <div
+                    class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
                     <div
                          class="relative overflow-hidden rounded-tl rounded-bl sm:sm:w-[42%] w-full after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
                          <a href=""
@@ -108,17 +119,27 @@
                          <img src="assets/images/cl1.jpg" alt="" class="w-full md:h-full h-auto">
                     </div>
                     <div class="sm:w-[58%] w-full lg:p-8 p-4">
-                         <h2 class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"><a href="">Let’s Safe our Planet by
+                         <h2
+                              class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                              <a href="">Let’s Safe our Planet by
                                    Stop Global Warming</a></h2>
                          <ul class="flex items-center mb-6">
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><span class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><span
+                                        class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                              </li>
                               <li class="lg:block md:hidden block">
-                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span> Backers</strong>
+                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                        Backers</strong>
                               </li>
                          </ul>
                          <div class="h-2.5 rounded-full mb-5 bg-slate-600">
@@ -142,7 +163,8 @@
                     </div>
                </div>
 
-               <div class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+               <div
+                    class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
                     <div
                          class="relative overflow-hidden rounded-tl rounded-bl sm:w-[42%] w-full after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
                          <a href=""
@@ -151,16 +173,26 @@
                          <img src="assets/images/causes/fc4.jpg" alt="" class="w-full md:h-full h-auto">
                     </div>
                     <div class="sm:w-[58%] w-full lg:p-8 p-4">
-                         <h2 class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"><a href="">Fusce eu lectus eleifend, varius erat a, mollis felis</a></h2>
+                         <h2
+                              class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                              <a href="">Fusce eu lectus eleifend, varius erat a, mollis felis</a></h2>
                          <ul class="flex items-center mb-6">
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><span class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><span
+                                        class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                              </li>
                               <li class="lg:block md:hidden block">
-                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span> Backers</strong>
+                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                        Backers</strong>
                               </li>
                          </ul>
                          <div class="h-2.5 rounded-full mb-5 bg-slate-600">
@@ -184,7 +216,8 @@
                     </div>
                </div>
 
-               <div class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+               <div
+                    class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
                     <div
                          class="relative overflow-hidden rounded-tl rounded-bl sm:w-[42%] w-full after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
                          <a href=""
@@ -193,16 +226,26 @@
                          <img src="assets/images/causes/fc7.jpg" alt="" class="w-full md:h-full h-auto">
                     </div>
                     <div class="sm:w-[58%] w-full lg:p-8 p-4">
-                         <h2 class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"><a href="">Nam et diam sollicitudin mauris semper bibendum</a></h2>
+                         <h2
+                              class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                              <a href="">Nam et diam sollicitudin mauris semper bibendum</a></h2>
                          <ul class="flex items-center mb-6">
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><span class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><span
+                                        class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                              </li>
                               <li class="lg:block md:hidden block">
-                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span> Backers</strong>
+                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                        Backers</strong>
                               </li>
                          </ul>
                          <div class="h-2.5 rounded-full mb-5 bg-slate-600">
@@ -226,7 +269,8 @@
                     </div>
                </div>
 
-               <div class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+               <div
+                    class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
                     <div
                          class="relative overflow-hidden rounded-tl rounded-bl sm:w-[42%] w-full after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
                          <a href=""
@@ -235,16 +279,26 @@
                          <img src="assets/images/causes/fc10.jpg" alt="" class="w-full md:h-full h-auto">
                     </div>
                     <div class="sm:w-[58%] w-full lg:p-8 p-4">
-                         <h2 class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"><a href="">Praesent tristique libero in convallis luctus</a></h2>
+                         <h2
+                              class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                              <a href="">Praesent tristique libero in convallis luctus</a></h2>
                          <ul class="flex items-center mb-6">
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><span class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><span
+                                        class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                              </li>
                               <li class="lg:block md:hidden block">
-                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span> Backers</strong>
+                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                        Backers</strong>
                               </li>
                          </ul>
                          <div class="h-2.5 rounded-full mb-5 bg-slate-600">
@@ -268,7 +322,8 @@
                     </div>
                </div>
 
-               <div class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
+               <div
+                    class="group relative sl-flex-wrap mb-10 rounded bg-slate-900 overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
                     <div
                          class="relative overflow-hidden rounded-tl rounded-bl sm:w-[42%] w-full after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
                          <a href=""
@@ -277,16 +332,26 @@
                          <img src="assets/images/causes/fc11.jpg" alt="" class="w-full md:h-full h-auto">
                     </div>
                     <div class="sm:w-[58%] w-full lg:p-8 p-4">
-                         <h2 class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"><a href="">Sed tristique elit vitae aliquam viverra</a></h2>
+                         <h2
+                              class="lg:text-2xl text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated">
+                              <a href="">Sed tristique elit vitae aliquam viverra</a></h2>
                          <ul class="flex items-center mb-6">
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt="" class="w-full h-full rounded-full"></li>
-                              <li class="w-8 h-8 -ml-1.5"><span class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u4.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u5.jpg" alt=""
+                                        class="w-full h-full rounded-full"></li>
+                              <li class="w-8 h-8 -ml-1.5"><span
+                                        class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
+                              </li>
                               <li class="lg:block md:hidden block">
-                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span> Backers</strong>
+                                   <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span>
+                                        Backers</strong>
                               </li>
                          </ul>
                          <div class="h-2.5 rounded-full mb-5 bg-slate-600">
@@ -314,14 +379,19 @@
                <div class="mb-10">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Search</h3>
                     <form action="" class="relative overflow-hidden">
-                         <input type="search" placeholder="Search" class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <button class="absolute right-0 top-0 rounded-tl-none rounded-bl-none h-12 w-12 px-0 text-base text-center sl-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                         <input type="search" placeholder="Search"
+                              class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
+                         <button
+                              class="absolute right-0 top-0 rounded-tl-none rounded-bl-none h-12 w-12 px-0 text-base text-center sl-btn"><i
+                                   class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                </div>
                <div class="mb-10">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Text Widget</h3>
-                    <p class="text-white/80"> We are Ecova: eco & environmental community. We need your support and help to Stop Globar Warning. Few generations ago it to seemed like world’s resources
-                         were infinite, and the people needed only to access them to create business, Lorem ipsum dolor it amet consect adipiscing. </p>
+                    <p class="text-white/80"> We are Ecova: eco & environmental community. We need your support and help
+                         to Stop Globar Warning. Few generations ago it to seemed like world’s resources
+                         were infinite, and the people needed only to access them to create business, Lorem ipsum dolor
+                         it amet consect adipiscing. </p>
                </div>
                <div class="mb-10">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-xl">News & Articles</h3>
@@ -330,15 +400,20 @@
                               <img src="assets/images/flp1.jpg" alt="" class="rounded">
                               <p class="ml-2.5">
                                    <a href="" class="text-sm font-medium">How you can keep alive wild animals for...</a>
-                                   <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold"><i class="fa-regular fa-calendar-days"></i></strong> 29 September,
+                                   <span class="block font-light text-xs text-white/80"><strong
+                                             class="text-lime-500 font-semibold"><i
+                                                  class="fa-regular fa-calendar-days"></i></strong> 29 September,
                                         2018</span>
                               </p>
                          </li>
                          <li class="flex mb-5">
                               <img src="assets/images/flp2.jpg" alt="" class="rounded">
                               <p class="ml-2.5">
-                                   <a href="" class="text-sm font-medium">Eliminate your plastic bottle pollution & keep...</a>
-                                   <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold"><i class="fa-regular fa-calendar-days"></i></strong> 29 September,
+                                   <a href="" class="text-sm font-medium">Eliminate your plastic bottle pollution &
+                                        keep...</a>
+                                   <span class="block font-light text-xs text-white/80"><strong
+                                             class="text-lime-500 font-semibold"><i
+                                                  class="fa-regular fa-calendar-days"></i></strong> 29 September,
                                         2018</span>
                               </p>
                          </li>
@@ -346,7 +421,9 @@
                               <img src="assets/images/flp3.jpg" alt="" class="rounded">
                               <p class="ml-2.5">
                                    <a href="" class="text-sm font-medium">How you can keep alive wild animals for...</a>
-                                   <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold"><i class="fa-regular fa-calendar-days"></i></strong> 29 September,
+                                   <span class="block font-light text-xs text-white/80"><strong
+                                             class="text-lime-500 font-semibold"><i
+                                                  class="fa-regular fa-calendar-days"></i></strong> 29 September,
                                         2018</span>
                               </p>
                          </li>
@@ -355,39 +432,79 @@
                <div class="mb-10 bg-slate-700 rounded p-5">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Current Projects</h3>
                     <ul>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Waste Management</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Solar Energy</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Eco Ideas</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Recycling
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Waste
+                                   Management</a></li>
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Solar
+                                   Energy</a></li>
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Eco
+                                   Ideas</a></li>
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span>
+                                   Recycling
                                    Materials</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Plant
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Plant
                                    Ecology</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Saving
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span>
+                                   Saving
                                    Wildlife</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Water Resources</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Forest & Tree Planting</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Wing Energy</a></li>
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Water
+                                   Resources</a></li>
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span>
+                                   Forest & Tree Planting</a></li>
+                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span
+                                        class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Wing
+                                   Energy</a></li>
                     </ul>
                </div>
                <div class="mb-10">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Tags</h3>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Solar Energy </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Plant Ecology </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Wildlife </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Eco Ideas </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Waste Management </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Water </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Forest Planting </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Donation </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Wind Energy </a>
-                    <a href="" class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1"> Recycling </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Solar Energy </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Plant Ecology </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Wildlife </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Eco Ideas </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Waste Management </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Water </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Forest Planting </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Donation </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Wind Energy </a>
+                    <a href=""
+                         class="bg-slate-700 rounded-full leading-10 text-xs text-white/80 hover:bg-green-500 sl-animated px-5 mr-px mb-1">
+                         Recycling </a>
                </div>
                <div class="mb-10">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Become a Volunteer</h3>
                     <form action="" class="relative overflow-hidden">
-                         <input type="text" placeholder="Your Name" class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <input type="email" placeholder="Email Address" class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <input type="text" placeholder="Contact" class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
+                         <input type="text" placeholder="Your Name"
+                              class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
+                         <input type="email" placeholder="Email Address"
+                              class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
+                         <input type="text" placeholder="Contact"
+                              class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
                          <button class="sl-btn w-full text-base leading-[3rem] h-12">sing to join us now</button>
                     </form>
                </div>
@@ -401,25 +518,40 @@
                <div class="sl-flex-wrap">
                     <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
                          <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">About Ecova</h3>
-                         <p class="text-white/80 mb-4"> If anything’s hot in today’s economy, it’s saving money, including a broad range of green businesses helping people save energy, water, and
+                         <p class="text-white/80 mb-4"> If anything’s hot in today’s economy, it’s saving money,
+                              including a broad range of green businesses helping people save energy, water, and
                               other
-                              resources. Definitely, you can go with this business as it is a nothing but the future. </p>
+                              resources. Definitely, you can go with this business as it is a nothing but the future.
+                         </p>
                          <a href="" class="sl-btn">about us</a>
                     </div>
                     <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
                          <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">Our Promises</h3>
                          <ul>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Solar Energy</a>
+                              <li><a href=""
+                                        class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
+                                             class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Solar
+                                        Energy</a>
                               </li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Waste
+                              <li><a href=""
+                                        class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
+                                             class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Waste
                                         Management</a></li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Eco Ideas</a>
+                              <li><a href=""
+                                        class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
+                                             class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Eco Ideas</a>
                               </li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Recycling
+                              <li><a href=""
+                                        class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
+                                             class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Recycling
                                         Materials</a></li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Plant
+                              <li><a href=""
+                                        class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
+                                             class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Plant
                                         Ecology</a></li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Saving
+                              <li><a href=""
+                                        class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
+                                             class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Saving
                                         Wildlife</a></li>
                          </ul>
                     </div>
@@ -429,22 +561,31 @@
                               <li class="flex mb-5">
                                    <img src="assets/images/flp1.jpg" alt="" class="rounded">
                                    <p class="ml-2.5">
-                                        <a href="" class="text-sm font-medium">How you can keep alive wild animals for...</a>
-                                        <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
+                                        <a href="" class="text-sm font-medium">How you can keep alive wild animals
+                                             for...</a>
+                                        <span class="block font-light text-xs text-white/80"><strong
+                                                  class="text-lime-500 font-semibold">Posted:</strong> 29 September,
+                                             2018</span>
                                    </p>
                               </li>
                               <li class="flex mb-5">
                                    <img src="assets/images/flp2.jpg" alt="" class="rounded">
                                    <p class="ml-2.5">
-                                        <a href="" class="text-sm font-medium">Eliminate your plastic bottle pollution & keep...</a>
-                                        <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
+                                        <a href="" class="text-sm font-medium">Eliminate your plastic bottle pollution &
+                                             keep...</a>
+                                        <span class="block font-light text-xs text-white/80"><strong
+                                                  class="text-lime-500 font-semibold">Posted:</strong> 29 September,
+                                             2018</span>
                                    </p>
                               </li>
                               <li class="flex mb-5">
                                    <img src="assets/images/flp3.jpg" alt="" class="rounded">
                                    <p class="ml-2.5">
-                                        <a href="" class="text-sm font-medium">How you can keep alive wild animals for...</a>
-                                        <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
+                                        <a href="" class="text-sm font-medium">How you can keep alive wild animals
+                                             for...</a>
+                                        <span class="block font-light text-xs text-white/80"><strong
+                                                  class="text-lime-500 font-semibold">Posted:</strong> 29 September,
+                                             2018</span>
                                    </p>
                               </li>
                          </ul>
@@ -480,7 +621,8 @@
 
                               </div>
                               <!--Footer SLider Pagination-->
-                              <div class="swiper-pagination text-right top-[78%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1">
+                              <div
+                                   class="swiper-pagination text-right top-[78%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1">
                               </div>
                          </div>
                     </div>
@@ -490,7 +632,8 @@
           <div class="border-t border-white/30 py-5">
                <div class="sl-container sl-flex-between sm:flex-row flex-col">
                     <img src="assets/images/logo/logo.png" alt="" class="">
-                    <p class="text-sm sm:text-right text-center text-white/80 mt-3.5"> All Rights Reserved of Ecova © 2018, Design & Developed By: GramoTech </p>
+                    <p class="text-sm sm:text-right text-center text-white/80 mt-3.5"> All Rights Reserved of Ecova ©
+                         2018, Design & Developed By: GramoTech </p>
                </div>
           </div>
      </footer>
@@ -504,7 +647,7 @@
      <script src="./assets/ventors/counter/jquery.waypoints.js"></script>
      <script src="./assets/ventors/counter/jquery.waypoints.min.js"></script>
 
-     <script src="assets/js/app.js"></script>
+     <script src="./assets/js/app.js"></script>
      <script src="./assets/js/swiperSetting.js"></script>
 
 
