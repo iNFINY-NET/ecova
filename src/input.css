@@ -117,7 +117,7 @@
   }
 
   /*Active swiper slider*/
-  .swiper-slide-active {
+  .swiper-slide.swiper-slide-active {
     filter: grayscale(0)!important;
   }
   /* PAGINATION BUTTON */
