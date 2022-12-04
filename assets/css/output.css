@@ -854,6 +854,18 @@ img {
   left: 0.5rem;
 }
 
+.top-full {
+  top: 100%;
+}
+
+.left-full {
+  left: 100%;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -1276,6 +1288,10 @@ img {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .max-w-\[15rem\] {
@@ -3163,6 +3179,10 @@ img {
   outline-offset: 2px;
 }
 
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
 .group:hover .group-hover\:top-1\/2 {
   top: 50%;
 }
@@ -3502,6 +3522,11 @@ img {
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .sm\:pt-14 {

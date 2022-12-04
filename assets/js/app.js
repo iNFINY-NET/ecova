@@ -9,15 +9,21 @@ function hightSlide(id, hSize) {
      }
 }
 
-
+// WIDTH SLIDE
 function widthSlide(id) {
      const navigation = id.querySelector('nav');
 
      if (id.classList.contains("invisible")) {
-          id.classList.remove("opacity-0","invisible");
+          id.classList.remove("opacity-0", "invisible");
           navigation.classList.add("sidebarShow");
      } else {
-          id.classList.add("opacity-0","invisible");
+          id.classList.add("opacity-0", "invisible");
           navigation.classList.remove("sidebarShow");
      }
+}
+
+// MENU TOGGLE
+function menuToggle(btn) {
+     const dropdown = btn.nextElementSibling;
+     hightSlide(dropdown, 'h-fit');
 }
