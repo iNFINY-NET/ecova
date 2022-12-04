@@ -10,20 +10,14 @@ function hightSlide(id, hSize) {
 }
 
 
-//DROPDOWN MOBILE MENU
-$(document).ready(function () {
-     $("#navToggler").each(function (_, navToggler) {
-          var target = $(navToggler).data("target");
-          $(navToggler).on("click", function () {
-               $(target).animate({
-                    height: "toggle",
-               });
-          });
-     });
-});
+function widthSlide(id) {
+     const navigation = id.querySelector('nav');
 
-//Toggle HOME SCREEN SIDEMENU & OVERLAY
-
-const togglesideMenu = document.querySelector("#menuBtn");
-const sideMenu = document.querySelector("#sliderMenu");
-const toggleOverlay = document.querySelector("#overlay");
+     if (id.classList.contains("invisible")) {
+          id.classList.remove("opacity-0","invisible");
+          navigation.classList.add("sidebarShow");
+     } else {
+          id.classList.add("opacity-0","invisible");
+          navigation.classList.remove("sidebarShow");
+     }
+}

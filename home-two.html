@@ -27,7 +27,7 @@
 
 <body class="bg-slate-800 text-white text-base font-normal">
     <!-- SEARCH STARTS -->
-    <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
+    <div id="searchDiv" class="fixed sidebarShow inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
         <button onclick="hightSlide(searchDiv, 'h-full')"
             class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i
                 class="fa-solid fa-xmark"></i></button>
@@ -40,8 +40,26 @@
     </div>
     <!-- SEARCH ENDS -->
 
+    <!-- SIDEBAR STARTS -->
+    <div id="sidebar" class="absolute opacity-0 invisible inset-0 bg-green-500/80 w-full h-screen z-40">
+        <div onclick="widthSlide(sidebar)" class="absolute inset-0 z-20"></div>
+        <nav class="sidebarHidden fixed right-0 top-0 max-w-lg w-full h-full bg-slate-900 pt-32 px-24 pb-16 overflow-y-auto z-30">
+            <ul>
+                <li class="delay-[0.30s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">home</a></li>
+                <li class="delay-[0.45s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">about us</a></li>
+                <li class="delay-[0.6s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">events</a></li>
+                <li class="delay-[0.75s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">causes</a></li>
+                <li class="delay-[0.9s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">projects</a></li>
+                <li class="delay-[1.05s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">blog</a></li>
+                <li class="delay-[1.20s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">shop</a></li>
+                <li class="delay-[1.35s] mb-5"><a href="" class="hover:text-lime-500 text-lg tracking-[5px] font-medium uppercase py-2.5 sl-animated">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- SIDEBAR ENDS -->
+
     <!-- HEADER SECTION STARTS -->
-    <header class="absolute w-full z-30 xl:bg-transparent bg-green-900">
+    <header class="absolute w-full xl:bg-transparent bg-green-900 z-50">
         <div class="sl-flex-between flex-wrap border-b border-white/20">
             <div class="sl-flex-center xl:h-28 h-24 2xl:px-14 xl:px-5 sm:px-14 px-5 mr-8 sm:border-r border-white/20"><img src="assets/images/logo/logo.png" alt=""></div>
             <button onclick="hightSlide(mainNav, 'h-[22rem]')" class="lg:hidden text-white text-2xl mr-5 py-2 px-4 bg-lime-500 h-fit rounded"><i class="fa-solid fa-bars"></i></button>
@@ -58,7 +76,7 @@
                 <ul class="xl:flex hidden h-full mr-12">
                     <li class="sl-flex-center h-full px-8 border-r border-white/20"><button class="px-5 border border-lime-500 rounded-full leading-9 bg-lime-500 hover:bg-white hover:text-lime-500 sl-animated">Contribute</button></li>
                     <li class="sl-flex-center h-full px-8 border-r border-white/20 text-lime-500"><button onclick="hightSlide(searchDiv, 'h-full')"><i class="fa-solid fa-magnifying-glass"></i></button></li>
-                    <li class="sl-flex-center h-full px-8"><button class=""><span class="text-lime-500"><i class="fa-solid fa-bars"></i></span> Menu</button></li>
+                    <li class="sl-flex-center h-full px-8"><button onclick="widthSlide(sidebar)"><span class="text-lime-500"><i class="fa-solid fa-bars"></i></span> Menu</button></li>
                 </ul>
             </nav>
         </div>
