@@ -2449,6 +2449,10 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
+.text-white\/40 {
+  color: rgb(255 255 255 / 0.4);
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -2993,6 +2997,11 @@ img {
 
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\2c \'\]::after {
+  --tw-content: ',';
   content: var(--tw-content);
 }
 
