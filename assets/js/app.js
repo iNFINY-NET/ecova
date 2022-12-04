@@ -1,7 +1,3 @@
-$(document).ready(function () {
-     counter('counter')
- });
-
 // HIGHT SLIDE
 function hightSlide(id, hSize) {
      if (id.classList.contains("h-0")) {
@@ -13,10 +9,21 @@ function hightSlide(id, hSize) {
      }
 }
 
-// COUNTER JS SETUP
-function counter(className){
-     $('.'+ className).counterUp({
-          delay: 20,
-          time: 2000
+
+//DROPDOWN MOBILE MENU
+$(document).ready(function () {
+     $("#navToggler").each(function (_, navToggler) {
+          var target = $(navToggler).data("target");
+          $(navToggler).on("click", function () {
+               $(target).animate({
+                    height: "toggle",
+               });
+          });
      });
-}
+});
+
+//Toggle HOME SCREEN SIDEMENU & OVERLAY
+
+const togglesideMenu = document.querySelector("#menuBtn");
+const sideMenu = document.querySelector("#sliderMenu");
+const toggleOverlay = document.querySelector("#overlay");
