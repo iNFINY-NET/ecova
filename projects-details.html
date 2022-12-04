@@ -832,35 +832,47 @@
                </div>
                <div class="mb-10">
                     <h3 class="mb-3 font-semibold lg:text-2xl text-2xl">Make a Donation</h3>
-                    <ul
-                         class="mb-3 w-full grid grid-cols-4 sm:grid-cols-7 md:grid-cols-2 xl:grid-cols-3 gap-2 text-xl  text-center">
-                         <li
-                              class="py-3 text-white/80 border border-solid border-gray-500 rounded-sm bg-slate-700 hover:cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">
-                              $<span>5</span></li>
-                         <li
-                              class="py-3 text-white/80 border border-solid border-gray-500 rounded-sm bg-slate-700 hover:cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">
-                              $<span>20</span></li>
-                         <li
-                              class="py-3 text-white/80 border border-solid border-gray-500 rounded-sm bg-slate-700 hover:cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">
-                              $<span>50</span></li>
-                         <li
-                              class="py-3 text-white/80 border border-solid border-gray-500 rounded-sm bg-slate-700 hover:cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">
-                              $<span>100</span></li>
-                         <li
-                              class="py-3 text-white/80 border border-solid border-gray-500 rounded-sm bg-slate-700 hover:cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">
-                              $<span>250</span></li>
-                         <li
-                              class="py-3 text-white/80 border border-solid border-gray-500 rounded-sm bg-slate-700 hover:cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">
-                              $<span>500</span></li>
-                    </ul>
-
+                    <div class="mb-3 w-full grid grid-cols-4 sm:grid-cols-7 md:grid-cols-2 xl:grid-cols-3 gap-2">
+                         <div class="radio-box">
+                              <input id="d1" type="radio" name="donation" class="hidden">
+                              <label for="d1"
+                                   class="w-full block text-center bg-slate-700 px-2 border border-solid border-gray-500 cursor-pointer rounded-sm font-roboto sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg hover:bg-green-500 hover:border-green-500 sl-animated">$5</label>
+                         </div>
+                    
+                         <div class="radio-box">
+                              <input id="d1" type="radio" name="donation" class="hidden">
+                              <label for="d1"
+                                   class="w-full block text-center bg-slate-700 px-2 border border-solid border-gray-500 cursor-pointer rounded-sm font-roboto sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg hover:bg-green-500 hover:border-green-500 sl-animated">$20</label>
+                         </div>
+                    
+                         <div class="radio-box">
+                              <input id="d1" type="radio" name="donation" class="hidden">
+                              <label for="d1"
+                                   class="w-full block text-center bg-slate-700 px-2 border border-solid border-gray-500 cursor-pointer rounded-sm font-roboto sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg hover:bg-green-500 hover:border-green-500 sl-animated">$50</label>
+                         </div>
+                    
+                         <div class="radio-box">
+                              <input id="d1" type="radio" name="donation" class="hidden">
+                              <label for="d1"
+                                   class="w-full block text-center bg-slate-700 px-2 border border-solid border-gray-500 cursor-pointer rounded-sm font-roboto sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg hover:bg-green-500 hover:border-green-500 sl-animated">$100</label>
+                         </div>
+                    
+                         <div class="radio-box">
+                              <input id="d1" type="radio" name="donation" class="hidden">
+                              <label for="d1"
+                                   class="w-full block text-center bg-slate-700 px-2 border border-solid border-gray-500 cursor-pointer rounded-sm font-roboto sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg hover:bg-green-500 hover:border-green-500 sl-animated">$250</label>
+                         </div>
+                    
+                         <div class="radio-box">
+                              <input id="d1" type="radio" name="donation" class="hidden">
+                              <label for="d1"
+                                   class="w-full block text-center bg-slate-700 px-2 border border-solid border-gray-500 cursor-pointer rounded-sm font-roboto sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg hover:bg-green-500 hover:border-green-500 sl-animated">$500</label>
+                         </div>
+                    </div>
                     <div>
-                         <input
-                              class="w-full text-white/80 mb-2 py-3 border border-solid border-gray-500 text-center rounded-[4px] placeholder:text-center "
+                         <input class="w-full text-white/80 mb-2 py-3 border border-solid border-gray-500 text-center rounded-[0.25rem] placeholder:text-center "
                               type="text" placeholder="Enter other amount $">
-                         <button
-                              class="w-full py-3 text-center font-medium bg-green-500 rounded-[4px] uppercase hover:bg-green-900 hover:ease-in-out duration-500">continue
-                              to donate</button>
+                         <button class="w-full sl-btn">continue to donate </button>
                     </div>
                </div>
 
