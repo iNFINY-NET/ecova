@@ -40,301 +40,28 @@
     <!-- SEARCH ENDS -->
 
     <!-- HEADER SECTION STARTS -->
-    <section class="xl:absolute xl:z-10">
-        <!--Start Header Section here-->
-        <header class="bg-[#33691e] xl:bg-transparent w-full h-auto border-b border-solid border-gray-200">
-            <nav class="flex w-full h-full items-center justify-between">
-                <div class="flex w-full h-full">
-                    <!--Start Navbar Menu list item -->
-                    <div class="flex basis-full sl-flex-between flex-wrap lg:flex-nowrap">
-                        <div class="flex basis-full lg:basis-[27%] 2xl:basis-[18%]">
-                            <!--Start Navbar Logo image -->
-                            <div
-                                class="basis-4/5 sm:basis-[75%] md:basis-[55%] lg:basis-full 2xl:basis-[88%] h-full xs:border-none xs:ml-5 md:ml-0 py-3.5 sm:border-r sm:border-solid border-gray-500">
-                                <a href="" class="w-full">
-                                    <img src="./assets/images/logo/logo.png" class="m-auto block" alt="">
-                                </a>
-
-                            </div>
-                            <!--End Navbar Logo image -->
-
-                            <!--Start Navbar Menu Hamburger button-->
-                            <div class="lg:hidden w-full flex relative p-7 justify-end">
-                                <button type="button" class="bg-[#66bb6a] px-4 rounded-sm py-1" id="navToggler"
-                                    data-target="#dropdownMenu">
-                                    <i class="fa-solid fa-bars text-white text-2xl"></i></button>
-                            </div>
-                            <!--End Navbar Menu Hamburger button-->
-                        </div>
-                        <div id="drop"
-                            class="flex basis-full lg:basis-[73%] 2xl:basis-[82%] w-full h-auto lg:sl-flex-start">
-                            <div class="flex xl:basis-2/3 2xl:basis-full xl:w-full lg:bg-transparent">
-    
-                                <ul id="dropdownMenu" class="hidden lg:flex items-start lg:items-center flex-col lg:flex-row mt-2 lg:ml-8 lg:justify-start 2xl:ml-[8.125rem] text-white text-lg 2xl:text-xl font-normal font-robotoSlab capitalize cursor-pointer ">
-                                        <li  id="submenuBtn" class="relative mb-2 mr-4 p-2 2xl:mr-2 text-white font-robotoSlab text-[1.2rem] sl-flex-between flex flex-col items-start">
-                                            <span class="lg:flex lg:flex-row">Home<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
-                                            <ul id="submenuHome" class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">home one</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">home Two</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">home Three</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="mb-2 mr-4 p-2 2xl:mr-2 text-white text-lg sl-flex-between">about</li>
-                                        <li  class="relative mb-2 mr-4 p-2 2xl:mr-2 text-white font-robotoSlab text-[1.2rem] sl-flex-between flex flex-col items-start">
-                                            <span class="lg:flex lg:flex-row">events<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
-                                            <ul id="submenuEvent"
-                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">events grid</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">events grid two</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">events list</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">events list two</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">events details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="relative mb-2 mr-4 p-2 2xl:mr-2 text-white font-robotoSlab text-[1.2rem] sl-flex-between flex flex-col items-start">
-                                            <span class="lg:flex lg:flex-row">causes <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
-                                            <ul id="submenuCauses"
-                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">causes grid</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">causes list</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">causes details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="relative mb-2 mr-4 p-2 2xl:mr-2 text-white font-robotoSlab text-[1.2rem] sl-flex-between flex flex-col items-start">
-                                            <span class="lg:flex lg:flex-row">blogs <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
-                                            <ul id="submenuBlog"
-                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">blog default</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">blog list</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">blog grid </a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">blog two columns</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">blog three columns</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">blog details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class=" relative mb-2 mr-4 p-2 2xl:mr-2 text-white font-robotoSlab text-[1.2rem] sl-flex-between flex flex-col items-start">
-                                            <span class="lg:flex lg:flex-row">pages <i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
-                                            <ul id="submenuPage"
-                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">projects</a>
-                                                    <ul
-                                                        class="hidden absolute top-[0px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">projects</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">projects grid</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">projects grid two</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">projects list</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">projects details</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">shop</a>
-                                                    <ul
-                                                        class="hidden absolute top-[44px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">shop</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">shop two</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">shop details</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">team </a>
-                                                    <ul
-                                                        class="hidden absolute top-[89px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">team one</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">team two</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">team details</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">gallery</a>
-                                                    <ul
-                                                        class="hidden absolute top-[134px] left-[200px] w-[200px] bg-slate-100 font-robotoSlab text-black text-sm  font-normal">
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">gallery grid</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">gallery full</a>
-                                                        </li>
-                                                        <li
-                                                            class="p-3 border-b border-solid border-gray-200 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                            <a href="">gallery masonry</a>
-                                                        </li>
-            
-                                                    </ul>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">testimonials</a>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">donation</a>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">my account</a>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">coming soon</a>
-                                                </li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">404 error</a>
-                                                </li>
-            
-                                            </ul>
-                                        </li>
-                                        <li class="relative mb-2 lg:mb-2 mr-4 p-2 2xl:mr-2 text-white font-robotoSlab text-[1.2rem] sl-flex-between flex flex-col items-start">
-                                            <span class="lg:flex lg:flex-row ">contact<i class="fa-solid fa-caret-down lg:hidden 2xl:flex 2xl:mt-1 text-sm ml-1"></i></span>
-                                            <ul id="submenuContact"
-                                                class="hidden lg:absolute lg:top-[71px] lg:left-0 w-[200px] bg-white font-robotoSlab text-black text-sm  font-normal rounded-sm z-30">
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">contact one</a></li>
-                                                <li
-                                                    class="p-3 border-b border-solid border-gray-100 hover:text-[#689f38] hover:ease-in-out duration-300">
-                                                    <a href="">contact two</a></li>
-                                            </ul>
-                                        </li>
-                                </ul>
-                            </div>
-                            <!--Start Navbar Button for xl display only-->
-                            <div class="hidden xl:flex h-full basis-1/4 mr-8">
-                                <ul class="w-full sl-flex-end text-white text-base font-medium font-roboto capitalize">
-                                    <li><a href=""
-                                            class="bg-[#689f38] inline-block border border-[#689f38] rounded-full px-5 2xl:px-10 py-2 xl:hover:bg-white xl:hover:text-[#689f38] xl:hover:ease-in-out duration-500">Contribute</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--End Navbar Button for xl display only-->
-                        </div>
-                    </div>
-                    <!--End Navbar Menu list item -->
-
-                    <!--Start Navbar Menu and Search button for xl display only-->
-                    <div class="hidden xl:flex xl:basis-[14%] w-full">
-                        <button onclick="hightSlide(searchDiv, 'h-full')"
-                            class="border-r border-l border-solid border-[gray] sl-flex-center px-8">
-                            <i class="fas fa-search text-[#689f38]"></i></li>
-                        </button>
-                        <div class="sl-flex-center px-8">
-                            <button id="menuBtn" class="flex text-base font-normal font-robotoSlab text-white hover:text-green-800"><i
-                                   data-target="#sliderMenu" class="fas fa-bars text-[#689f38] text-base mr-1"></i>Menu</button>
-                        </div>
-                    </div>
-                    <!--End Navbar Menu and Search button for xl display only-->
-                </div>
-
+    <header class="absolute w-full z-30 xl:bg-transparent bg-green-900">
+        <div class="sl-flex-between flex-wrap border-b border-white/20">
+            <div class="sl-flex-center xl:h-28 h-24 2xl:px-14 xl:px-5 sm:px-14 px-5 mr-8 sm:border-r border-white/20"><img src="assets/images/logo/logo.png" alt=""></div>
+            <button onclick="hightSlide(mainNav, 'h-[22rem]')" class="lg:hidden text-white text-2xl mr-5 py-2 px-4 bg-lime-500 h-fit rounded"><i class="fa-solid fa-bars"></i></button>
+            <nav id="mainNav" class="flex lg:basis-auto basis-full grow items-center xl:h-28 lg:h-24 h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
+                <ul class="flex lg:flex-row flex-col xl:w-[55%] w-full lg:m-auto">
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">Home</a></li>
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">About</a></li>
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">Events</a></li>
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">Causes</a></li>
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">Blogs</a></li>
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">Pages</a></li>
+                    <li><a href="" class="xl:text-base text-xl xl:px-3 px-4 py-2.5">Contact</a></li>
+                </ul>
+                <ul class="xl:flex hidden h-full mr-12">
+                    <li class="sl-flex-center h-full px-8 border-r border-white/20"><button class="px-5 border border-lime-500 rounded-full leading-9 bg-lime-500 hover:bg-white hover:text-lime-500 sl-animated">Contribute</button></li>
+                    <li class="sl-flex-center h-full px-8 border-r border-white/20 text-lime-500"><button onclick="hightSlide(searchDiv, 'h-full')"><i class="fa-solid fa-magnifying-glass"></i></button></li>
+                    <li class="sl-flex-center h-full px-8"><button class=""><span class="text-lime-500"><i class="fa-solid fa-bars"></i></span> Menu</button></li>
+                </ul>
             </nav>
-        </header>
-        <!--End Header Section here-->
-
-        <!--Start Nav Side-Bar Section here-->
-        <div id="sliderMenu" class="hidden fixed top-0 right-0 max-w-[515px] w-full h-full bg-[#2a2a2a] overflow-y-auto -z-10">
-            <ul class="text-white list-none capitalize sl-flex-start mt-[120px] flex-col w-full xl:ml-10 2xl:ml-0">
-                <li class="w-[295px] mb-5">
-                    <a href="" class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500 ">home</a>
-                </li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">about us</a>
-                </li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">event</a></li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">causes</a>
-                </li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">projects</a>
-                </li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">blog</a></li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">shop</a></li>
-                <li class="w-[295px] mb-5"><a href=""
-                        class="text-white uppercase text-lg block py-[10px] font-medium tracking-widest hover:text-[#689f38] hover:ease-in-out duration-500">contact</a>
-                </li>
-            </ul>
         </div>
-        <!--End Nav Side-Bar Section here-->
-
-        <!--Start Nav Side-Bar overlay Section here-->
-        <div id="overlay" class="hidden w-full h-full fixed left-0 top-0 -z-20 bg-[#517c4b80] to-transparent"></div>
-        <!--End Nav Side-Bar overlay Section here-->
-    </section>
+    </header>
     <!-- HEADER SECTION ENDS-->
 
     <!-- HERO SLIDER SECTION STARTS -->
@@ -344,7 +71,7 @@
             <div class="swiper-wrapper">
                 <!--Start Slide 1-->
                 <div class="swiper-slide relative text-center text-lg bg-white justify-center items-center">
-                    <img src="./assets/images/slider/h1-slide1.jpg" alt="">
+                    <img src="./assets/images/slider/h1-slide1.jpg" alt="" class="w-full">
                     <div
                         class="absolute sl-container sm:block hidden sm:inset-0 right-0 top-40 sm:-top-5 xl:top-20 left-0 bottom-0 pt-20 lg:pt-14 xl:pt-20 2xl:pt-36 lg:text-left text-center font-robotoSlab">
                         <strong class="block lg:text-[2.5rem] text-2xl font-bold lg:mb-6 mb-3">100k Plants Grown in
@@ -372,7 +99,7 @@
 
                 <!--Start Slide 2-->
                 <div class="swiper-slide relative text-center text-lg bg-white justify-center items-center">
-                    <img src="./assets/images/slider/h1-slide2.jpg" alt="">
+                    <img src="./assets/images/slider/h1-slide2.jpg" alt="" class="w-full">
                     <div
                         class="absolute sl-container sm:block hidden sm:inset-0 sm:-top-5 right-0 top-40 xl:top-20 left-0 bottom-0 pt-20 lg:pt-14 xl:pt-20 2xl:pt-36 lg:text-left text-center font-robotoSlab">
                         <strong class="block lg:text-[2.5rem] text-2xl font-bold lg:mb-6 mb-3">Organize the Management
@@ -400,7 +127,7 @@
 
                 <!--Start Slide 3-->
                 <div class="swiper-slide relative text-center text-lg bg-white justify-center items-center">
-                    <img src="./assets/images/slider/h1-slide3.jpg" alt="">
+                    <img src="./assets/images/slider/h1-slide3.jpg" alt="" class="w-full">
                     <div
                         class="absolute sl-container sm:block hidden sm:inset-0 right-0 top-40 sm:-top-5 xl:top-20 left-0 bottom-0 pt-20 lg:pt-14 xl:pt-20 2xl:pt-36 lg:text-left text-center font-robotoSlab">
                         <strong class="block lg:text-[2.5rem] text-2xl font-bold lg:mb-6 mb-3">It’s very harmful for
@@ -535,7 +262,6 @@
     <!-- ECOVA ABOUT SECTION ENDS -->
 
     <!-- ECOVA SERVICE SECTION STARTS -->
-
     <section class="pt-5 pb-10">
         <div
             class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-cols-1 lg:gap-x-8 gap-x-6 lg:gap-y-12 gap-y-10 px-5 lg:px-0 2xl:px-0">
@@ -674,7 +400,6 @@
         <!-- ECOVA WORK SECTION BUTTON ENDS -->
 
     </section>
-
     <!-- ECOVA SERVICE SECTION ENDS -->
 
     <!-- ECOVA POST & EVENT SECTION STARTS -->
@@ -878,7 +603,6 @@
 
 
     <!-- ECOVA FUNDRAISING SECTION STARTS -->
-
     <section class="p-3 xl:sl-container mb-20">
         <div class="relative font-robotoSlab mb-8">
             <h3
@@ -1068,11 +792,9 @@
             <!-- Single Casuse ENDS 3 -->
         </div>
     </section>
-
     <!-- ECOVA FUNDRAISING SECTION ENDS -->
 
     <!-- ECOVA VOLUNTEER SECTION STARTS -->
-
     <section class="relative w-full h-auto bg-volunteer bg-cover bg-no-repeat mb-14 xl:py-5">
         <div class="w-full px-3 py-8 sm:pt-14 md:flex md:justify-between md:gap-x-10 xl:sl-container">
             <div class="md:flex md:flex-col md:basis-[55%] lg:basis-[60%]">
@@ -1151,11 +873,9 @@
             </div>
         </div>
     </section>
-
     <!-- ECOVA VOLUNTEER SECTION ENDS -->
 
     <!-- ECOVA ACTIVITIES SECTION STARTS -->
-
     <Section class="xl:sl-container p-3 mb-20">
         <div>
             <div class="lg:flex lg:items-end lg:justify-between lg:mb-8">
@@ -1293,11 +1013,9 @@
         </div>
 
     </Section>
-
     <!-- ECOVA ACTIVITIES SECTION ENDS -->
 
     <!-- ECOVA BRAND SLIDER SECTION STARTS -->
-
     <Section class="mb-20 lg:mb-40  bg-slate-600">
         <div class="swiper brandSwiper w-full h-full xl:sl-container">
             <div class="swiper-wrapper">
@@ -1338,7 +1056,6 @@
             </div>
         </div>
     </Section>
-
     <!-- ECOVA BRAND SLIDER SECTION ENDS -->
 
 
@@ -1586,7 +1303,6 @@
         </div>
         <!-- ECOVA FOOTER CREDIT SECTION ENDS -->
     </section>
-
     <!-- ECOVA FOOTER SECTION ENDS -->
 
 
@@ -1597,7 +1313,7 @@
     <!-- <script src="./assets/ventors/counter/jquery.waypoints.js"></script>
     <script src="./assets/ventors/counter/jquery.waypoints.min.js"></script> -->
 
-    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/swiperSetting.js"></script>
     <script src="./assets/js/galleryFilter.js"></script>
 </body>

@@ -109,14 +109,12 @@
   .swiper-button-prev::after {
     content: "";
   }
-
   /* SELF MADE CSS */
   .bg-center-bottom {
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
   }
-
-  /*Active swiper slider*/
+  /* ACTIVE SWIPER SLIDER */
   .swiper-slide-active {
     filter: grayscale(0);
   }
