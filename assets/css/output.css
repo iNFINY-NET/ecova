@@ -1250,6 +1250,10 @@ img {
   height: 4.25rem;
 }
 
+.h-\[170px\] {
+  height: 170px;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1344,6 +1348,10 @@ img {
 
 .w-\[4\.25rem\] {
   width: 4.25rem;
+}
+
+.w-\[276px\] {
+  width: 276px;
 }
 
 .max-w-\[15rem\] {
