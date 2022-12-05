@@ -15,7 +15,6 @@ const filterGallery = (item) => {
             hideGallery(buttons[j], "bg-green-500")
         };
     }
-
     // Data filtering
     var x, i;
     x = document.getElementsByClassName("showAll");
@@ -28,8 +27,6 @@ const filterGallery = (item) => {
             showGallery(x[i], "hidden")
         };
     }
-
-
 }
 
 
