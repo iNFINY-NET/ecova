@@ -1260,6 +1260,10 @@ img {
   height: 1.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1338,6 +1342,10 @@ img {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-\[1024px\] {
+  width: 1024px;
 }
 
 .max-w-\[15rem\] {
@@ -1550,6 +1558,10 @@ img {
   border-radius: 0.5rem;
 }
 
+.rounded-\[0\.625rem\] {
+  border-radius: 0.625rem;
+}
+
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
@@ -1578,6 +1590,11 @@ img {
 .rounded-t-md {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
+}
+
+.rounded-b-\[0\.625rem\] {
+  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
 }
 
 .rounded-tl-none {
@@ -4141,6 +4158,10 @@ img {
 
   .lg\:w-\[53\%\] {
     width: 53%;
+  }
+
+  .lg\:w-\[1024px\] {
+    width: 1024px;
   }
 
   .lg\:max-w-\[17rem\] {
