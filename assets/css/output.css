@@ -1238,6 +1238,14 @@ img {
   height: 1.5rem;
 }
 
+.h-\[68px\] {
+  height: 68px;
+}
+
+.h-\[68\%\] {
+  height: 68%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1304,6 +1312,30 @@ img {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-\[68px\] {
+  width: 68px;
+}
+
+.w-\[68\%\] {
+  width: 68%;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .max-w-\[15rem\] {
@@ -1758,6 +1790,11 @@ img {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
