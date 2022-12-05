@@ -25,7 +25,7 @@
 <body class="bg-slate-800 text-white text-base font-normal">
      <!-- SEARCH STARTS -->
      <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
-          <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i
+          <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-8 text-slate-900 text-2xl bg-green-500 border border-green-500 py-1 px-3"><i
                     class="fa-solid fa-xmark"></i></button>
           <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
                <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
@@ -42,26 +42,44 @@
                <nav id="mainNav"
                     class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
                     <ul class="flex lg:flex-row flex-col mr-auto">
-                         <li><a href="index.html"
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
+                         <li class="relative"><a onclick="menuToggle(this)"
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
+                                   <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
+                                        <li><a href="/" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Home One</a></li>
+                                        <li><a href="home-two.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Home Two</a></li>
+                                   </ul>
                          </li>
-                         <li><a href="about.html"
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a>
+                         <li class="relative"><a
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a>
                          </li>
-                         <li><a href="events"
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a>
+                         <li class="relative"><a
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a>
                          </li>
-                         <li><a href="causes.html"
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a>
+                         <li class="relative"><a onclick="menuToggle(this)"
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a>
+                                   <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
+                                        <li><a href="causes.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes Grid</a></li>
+                                        <li><a href="causes-list.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes List</a></li>
+                                        <li><a href="causes-details.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes Details</a></li>
+                                   </ul>
                          </li>
-                         <li><a href="blogs.html"
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a>
+                         <li class="relative"><a
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a>
                          </li>
-                         <li><a href=""
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a>
+                         <li class="relative"><a onclick="menuToggle(this)"
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a>
+                                   <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
+                                        <li class="relative group">
+                                             <a href="causes.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Projects</a>
+                                             <ul id class="absolute left-full top-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-slate-800 rounded z-30">
+                                                  <li><a href="projects-details.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Projects Details</a></li>
+                                             </ul>
+                                        </li>
+                                        <li><a href="donation.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Donation</a></li>
+                                   </ul>
                          </li>
-                         <li><a href="contact.html"
-                                   class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
+                         <li class="relative"><a
+                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
                          </li>
                     </ul>
                     <ul class="2xl:flex hidden items-center pr-8">
@@ -231,7 +249,7 @@
                     <div class="md:basis-1/4 basis-1/2">
                          <div class="relative mb-10 pt-8 pl-6 before:absolute before:left-0 before:top-0 before:w-24 before:h-32 before:bg-slate-900/50 before:border-2 before:border-slate-500 z-10">
                               <div class="relative z-20">
-                                   <p class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">89000
+                                   <p data-count="89000" class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">89000
                                    </p>
                                    <p class="lg:text-lg text-sm text-white/80">Trees Planted</p>
                               </div>
@@ -240,7 +258,7 @@
                     <div class="md:basis-1/4 basis-1/2">
                          <div class="relative mb-10 pt-8 pl-6 before:absolute before:left-0 before:top-0 before:w-24 before:h-32 before:bg-slate-900/50 before:border-2 before:border-slate-500 z-10">
                               <div class="relative z-20">
-                                   <p class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">79000
+                                   <p data-count="79000" class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">79000
                                    </p>
                                    <p class="lg:text-lg text-sm text-white/80">Solar Panels in 2017</p>
                               </div>
@@ -249,7 +267,7 @@
                     <div class="md:basis-1/4 basis-1/2">
                          <div class="relative mb-10 pt-8 pl-6 before:absolute before:left-0 before:top-0 before:w-24 before:h-32 before:bg-slate-900/50 before:border-2 before:border-slate-500 z-10">
                               <div class="relative z-20">
-                                   <p class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">69000</p>
+                                   <p data-count="69000" class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">69000</p>
                                    <p class="lg:text-lg text-sm text-white/80">Wildlife Saved</p>
                               </div>
                          </div>
@@ -257,7 +275,7 @@
                     <div class="md:basis-1/4 basis-1/2">
                          <div class="relative mb-10 pt-8 pl-6 before:absolute before:left-0 before:top-0 before:w-24 before:h-32 before:bg-slate-900/50 before:border-2 before:border-slate-500 z-10">
                               <div class="relative z-20">
-                                   <p class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">59000</p>
+                                   <p data-count="59000" class="text-green-500 lg:text-5xl text-4xl font-bold mb-1.5 counter">59000</p>
                                    <p class="lg:text-lg text-sm text-white/80">Served Water Gallons</p>
                               </div>
                          </div>
@@ -867,14 +885,12 @@
      <!-- SCRIPT LINKS -->
      <script src="./assets/ventors/jquery/jquery-3.6.1.min.js"></script>
      <script src="./assets/ventors/swiper/swiper-bundle.min.js"></script>
-     <script src="./assets/ventors/counter/jquery.counterup.min.js"></script>
-     <script src="./assets/ventors/counter/jquery.waypoints.js"></script>
-     <script src="./assets/ventors/counter/jquery.waypoints.min.js"></script>
+     <script src="./assets/js/counter.js"></script>
 
      <script src="./assets/js/swiperSetting.js"></script>
      <script src="./assets/js/app.js"></script>
     <script src="./assets/js/galleryFilter.js"></script>
-    <script src="./assets/js/filterSwiperSlider.js"></script>
+    <script src="./assets/js/filterSwiperSlider.js"></script> 
 </body>
 
 </html>
