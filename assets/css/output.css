@@ -2334,6 +2334,10 @@ img {
   letter-spacing: 0.025em;
 }
 
+.tracking-\[0\.313rem\] {
+  letter-spacing: 0.313rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3408,6 +3412,10 @@ img {
     margin-bottom: 1.25rem;
   }
 
+  .sm\:ml-\[4\.375rem\] {
+    margin-left: 4.375rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -4025,6 +4033,10 @@ img {
 
   .lg\:top-\[10\%\] {
     top: 10%;
+  }
+
+  .lg\:-top-\[7\.875rem\] {
+    top: -7.875rem;
   }
 
   .lg\:m-auto {
