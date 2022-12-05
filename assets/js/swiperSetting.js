@@ -1,15 +1,17 @@
 $(document).ready(function () {
-     currentProjectSwiper();
+     // currentProjectSwiper('all');
      homeBannerSlider();
      footerProductSlider();
      brandLogoSwiper();
+     recentWorkSwiper();
 });
 
 /**
  * Home Banner Slider
  */
 function homeBannerSlider() {
-     var swiper = new Swiper(".mySwiper", {
+     var swiper = new Swiper(".homeBannerSlider", {
+          
           spaceBetween: 30,
           centeredSlides: true,
           autoplay: {
@@ -20,36 +22,6 @@ function homeBannerSlider() {
           pagination: {
                el: ".swiper-pagination",
                clickable: true,
-          },
-          navigation: {
-               nextEl: ".swiper-button-next",
-               prevEl: ".swiper-button-prev",
-          },
-     });
-}
-
-/**
- * Current Project Slider
- */
-function currentProjectSwiper() {
-     var swiper = new Swiper(".current-project", {
-          slidesPerView: 1,
-          spaceBetween: 1,
-          loop: false,
-          pagination: {
-               el: ".swiper-pagination",
-               clickable: true,
-          },
-          breakpoints: {
-               640: {
-                    slidesPerView: 2,
-               },
-               768: {
-                    slidesPerView: 2,
-               },
-               1024: {
-                    slidesPerView: 4,
-               },
           },
           navigation: {
                nextEl: ".swiper-button-next",
@@ -110,3 +82,24 @@ function brandLogoSwiper() {
           },
      });
 }
+
+/**
+ * Recent Work Slider
+ */
+function recentWorkSwiper() {
+     var swiper = new Swiper(".recentWorkSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 1,
+          loop: true,
+          // centeredSlides: true,
+          autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+          },
+          navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+          },
+     });
+}
+

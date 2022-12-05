@@ -1,3 +1,7 @@
+$(document).ready(function () {
+     counter('counter')
+ });
+
 // HIGHT SLIDE
 function hightSlide(id, hSize) {
      if (id.classList.contains("h-0")) {
@@ -9,18 +13,13 @@ function hightSlide(id, hSize) {
      }
 }
 
-
-//DROPDOWN MOBILE MENU
-$(document).ready(function () {
-     $("#navToggler").each(function (_, navToggler) {
-          var target = $(navToggler).data("target");
-          $(navToggler).on("click", function () {
-               $(target).animate({
-                    height: "toggle",
-               });
-          });
+// COUNTER JS SETUP
+function counter(className){
+     $('.'+ className).counterUp({
+          delay: 20,
+          time: 2000
      });
-});
+};
 
 //Toggle HOME SCREEN SIDEMENU & OVERLAY
 
