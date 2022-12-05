@@ -1246,6 +1246,10 @@ img {
   height: 68%;
 }
 
+.h-\[4\.25rem\] {
+  height: 4.25rem;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1336,6 +1340,10 @@ img {
 
 .w-\[45\%\] {
   width: 45%;
+}
+
+.w-\[4\.25rem\] {
+  width: 4.25rem;
 }
 
 .max-w-\[15rem\] {
