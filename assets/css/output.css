@@ -1258,6 +1258,18 @@ img {
   height: 4.5rem;
 }
 
+.h-\[241px\] {
+  height: 241px;
+}
+
+.h-\[15\.063rem\] {
+  height: 15.063rem;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
+}
+
 .w-screen {
   width: 100vw;
 }
