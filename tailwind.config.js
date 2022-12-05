@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'volunteer': "url('/assets/images/factsbg.jpg')",
-        'volunteerBorder':"url('/assets/images/border.png')",
-        'footerTexture':"url('/assets/images/fpat.jpg')",
+        'volunteer': "url('/assets/images/bg-images/factsbg.jpg')",
+        'volunteerBorder':"url('/assets/images/bg-images/border.png')",
+        'footerTexture':"url('/assets/images/bg-images/fpat.jpg')",
       }
     },
     fontFamily: {
