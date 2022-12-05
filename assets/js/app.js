@@ -1,7 +1,3 @@
-$(document).ready(function () {
-     counter('counter')
- });
-
 // HIGHT SLIDE
 function hightSlide(id, hSize) {
      if (id.classList.contains("h-0")) {
@@ -13,16 +9,21 @@ function hightSlide(id, hSize) {
      }
 }
 
-// COUNTER JS SETUP
-function counter(className){
-     $('.'+ className).counterUp({
-          delay: 20,
-          time: 2000
-     });
-};
+// WIDTH SLIDE
+function widthSlide(id) {
+     const navigation = id.querySelector('nav');
 
-//Toggle HOME SCREEN SIDEMENU & OVERLAY
+     if (id.classList.contains("invisible")) {
+          id.classList.remove("opacity-0", "invisible");
+          navigation.classList.add("sidebarShow");
+     } else {
+          id.classList.add("opacity-0", "invisible");
+          navigation.classList.remove("sidebarShow");
+     }
+}
 
-const togglesideMenu = document.querySelector("#menuBtn");
-const sideMenu = document.querySelector("#sliderMenu");
-const toggleOverlay = document.querySelector("#overlay");
+// MENU TOGGLE
+function menuToggle(btn) {
+     const dropdown = btn.nextElementSibling;
+     hightSlide(dropdown, 'h-fit');
+}

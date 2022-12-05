@@ -114,9 +114,25 @@
     background-position: center bottom !important;
     background-repeat: no-repeat !important;
   }
-  /* ACTIVE SWIPER SLIDER */
-  .swiper-slide-active {
-    filter: grayscale(0);
+
+  .sidebarHidden{
+    transform: translateX(100%) !important;
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  .sidebarShow {
+    transform: translateX(0) !important;
+  }
+
+  /* SLIDER BUTTON STYLE RESET */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: "";
+  }
+
+  /*Active swiper slider*/
+  .swiper-slide.swiper-slide-active {
+    filter: grayscale(0) !important;
   }
   /* PAGINATION BUTTON */
   .swiper-pagination .swiper-pagination-bullet {
