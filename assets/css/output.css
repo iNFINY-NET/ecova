@@ -2922,6 +2922,11 @@ img {
   height: 50%;
 }
 
+.after\:h-\[0\.75rem\]::after {
+  content: var(--tw-content);
+  height: 0.75rem;
+}
+
 .after\:w-0::after {
   content: var(--tw-content);
   width: 0px;
@@ -4438,6 +4443,11 @@ img {
   .lg\:after\:w-\[2px\]::after {
     content: var(--tw-content);
     width: 2px;
+  }
+
+  .lg\:after\:w-\[0\.125rem\]::after {
+    content: var(--tw-content);
+    width: 0.125rem;
   }
 }
 
