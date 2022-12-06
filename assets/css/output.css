@@ -1798,18 +1798,6 @@ img {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.bg-volunteer {
-  background-image: url('/assets/images/bg-images/factsbg.jpg');
-}
-
-.bg-volunteerBorder {
-  background-image: url('/assets/images/bg-images/border.png');
-}
-
-.bg-footerTexture {
-  background-image: url('/assets/images/bg-images/fpat.jpg');
-}
-
 .from-\[\#689f38\] {
   --tw-gradient-from: #689f38;
   --tw-gradient-to: rgb(104 159 56 / 0);
@@ -2422,11 +2410,6 @@ img {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
-.text-\[\#00cd93\] {
-  --tw-text-opacity: 1;
-  color: rgb(0 205 147 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
