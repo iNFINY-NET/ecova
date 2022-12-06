@@ -393,23 +393,23 @@
                          </div>
                          <div class="lg:basis-1/2 basis-full px-2">
                               <div class="sm:text-right mt-5 current-project">
-                                   <button onclick="currentProjectSwiper('all')" id="all"
-                                        class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Wildlife</a>
-                                        <button onclick="currentProjectSwiper('waterResources')" id="waterResources"
-                                             class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Water
+                                   <button onclick="filterProject('all')" id="all"
+                                        class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Wildlife</a>
+                                        <button onclick="filterProject('waterResources')" id="waterResources"
+                                             class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Water
                                              Resources</button>
-                                        <button onclick="currentProjectSwiper('solarEnergy')" id="solarEnergy"
-                                             class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Solar
+                                        <button onclick="filterProject('solarEnergy')" id="solarEnergy"
+                                             class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Solar
                                              Energy</button>
-                                        <button onclick="currentProjectSwiper('recycling')" id="recycling"
-                                             class="ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Recycling</button>
+                                        <button onclick="filterProject('recycling')" id="recycling"
+                                             class="filterBtn ml-1 my-1 xl:px-5 px-2.5 py-2 rounded-full border border-white/80 hover:border-green-500 bg-transparent hover:bg-green-500 text-sm text-white/80 hover:text-white sl-animated">Recycling</button>
                               </div>
                          </div>
                     </div>
                     <!-- SLIDER STARTS -->
                     <div class="swiper currentProject">
                          <div class="swiper-wrapper relative">
-                              <div class="px-2 swiper-slide" data-filter="wildLife">
+                              <div class="px-2 swiper-slide hidden showAll wildLife waterResources">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro1.jpg" alt="Forest & Tree Planting" class="rounded w-full">
@@ -424,7 +424,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="waterResources">
+                              <div class="px-2 swiper-slide hidden showAll waterResources">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro2.jpg" alt="" class="rounded w-full">
@@ -440,7 +440,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="wildLife">
+                              <div class="px-2 swiper-slide hidden showAll wildLife">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro3.jpg" alt="" class="rounded w-full">
@@ -456,7 +456,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="solarEnergy">
+                              <div class="px-2 swiper-slide hidden showAll wildLife">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro4.jpg" alt="" class="rounded w-full">
@@ -472,7 +472,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="waterResources">
+                              <div class="px-2 swiper-slide hidden showAll recycling">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro5.jpg" alt="" class="rounded w-full">
@@ -488,7 +488,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="recycling">
+                              <div class="px-2 swiper-slide hidden showAll recycling solarEnergy">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro6.jpg" alt="" class="rounded w-full">
@@ -504,7 +504,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="wildLife">
+                              <div class="px-2 swiper-slide hidden showAll wildLife solarEnergy">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro7.jpg" alt="" class="rounded w-full">
@@ -520,7 +520,7 @@
                                         </div>
                                    </div>
                               </div>
-                              <div class="px-2 swiper-slide" data-filter="solarEnergy">
+                              <div class="px-2 swiper-slide hidden showAll solarEnergy">
                                    <div
                                         class="group relative rounded overflow-hidden after:absolute after:left-0 after:bottom-0 after:w-full after:h-3/5 after:bg-gradient-to-b after:from-transparent after:to-black after:z-10">
                                         <img src="assets/images/current-project/current-pro8.jpg" alt="" class="rounded w-full">
@@ -538,13 +538,17 @@
                               </div>
                          </div>
                          <!-- SLIDER BUTTON STARTS -->
-                         <div class="sl-flex-center w-full mt-4">
-                              <button type="button" class="swiper-button-prev relative mt-0 left-0 mr-1 w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
-                                   <i class="fa-solid fa-chevron-left"></i>
-                              </button>
-                              <button type="button" class="swiper-button-next relative mt-0 right-0 ml-1 w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
-                                   <i class="fa-solid fa-chevron-right"></i>
-                              </button>
+                         <div id="swiperSliderBtn">
+                              <div class="sl-flex-center w-full mt-4">
+                                   <button type="button"
+                                        class="swiper-button-prev relative mt-0 left-0 mr-1 w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                   </button>
+                                   <button type="button"
+                                        class="swiper-button-next relative mt-0 right-0 ml-1 w-12 h-12 rounded text-lg text-white bg-black/50 hover:bg-green-500/50 sl-animated">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                   </button>
+                              </div>
                          </div>
                          <!-- SLIDER BUTTON ENDS -->
                     </div>
@@ -888,6 +892,7 @@
      <!-- SCRIPT LINKS -->
      <script src="./assets/js/app.js"></script>
      <script src="assets/js/counter.js"></script>
+     <script src="assets/js/filterSwiperSlider.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
      <script>
           var swiper = new Swiper(".homeBannerSlider", {

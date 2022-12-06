@@ -1,18 +1,20 @@
 /**
- * To Filter Activities Gallery Data
+ * To Filter Current Project Data
  * @param {String} item
  *  @return Element, Class Name
  */
-const filterGallery = (item) => {
-
+const filterProject = (item) => {
      // Set active button
      var buttons = document.getElementsByClassName('filterBtn');
      for (let j = 0; j < buttons.length; j++) {
-          hideGallery(buttons[j], "hidden");
+          hideClass(buttons[j], "hidden");
           if (buttons[j].id == item) {
-               showGallery(buttons[j], "bg-green-500")
+               console.log('true', true)
+               showClass(buttons[j], "bg-green-500 border-green-500")
+               hideClass(buttons[j], "bg-transparent border-white/80")
           } else {
-               hideGallery(buttons[j], "bg-green-500")
+               hideClass(buttons[j], "bg-green-500 border-green-500")
+               showClass(buttons[j], "bg-transparent border-white/80")
           };
      }
      // Data filtering
@@ -21,13 +23,13 @@ const filterGallery = (item) => {
      x = document.getElementsByClassName("showAll");
      if (item == "all") item = "";
      for (i = 0; i < x.length; i++) {
-          hideGallery(x[i], "hidden");
+          hideClass(x[i], "hidden");
           if (x[i].className.indexOf(item) > -1) {
-               showGallery(x[i], "block");
+               showClass(x[i], "block");
                activeElement.push(x[i]);
           } else {
-               showGallery(x[i], "hidden");
-               hideGallery(x[i], "block");
+               showClass(x[i], "hidden");
+               hideClass(x[i], "block");
           };
      }
 
@@ -44,7 +46,7 @@ const filterGallery = (item) => {
  * @param {element} element 
  * @param {String} name 
  */
-const showGallery = (element, name) => {
+const showClass = (element, name) => {
      var i, elementArray, classArray;
      elementArray = element.className.split(" ");
      classArray = name.split(" ");
@@ -58,7 +60,7 @@ const showGallery = (element, name) => {
  * @param {element} element 
  * @param {String} name 
  */
-const hideGallery = (element, name) => {
+const hideClass = (element, name) => {
      var i, elementArray, classArray;
      elementArray = element.className.split(" ");
      classArray = name.split(" ");
@@ -70,4 +72,4 @@ const hideGallery = (element, name) => {
      element.className = elementArray.join(" ");
 }
 
-filterGallery("all");
+filterProject("all");

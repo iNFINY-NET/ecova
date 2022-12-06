@@ -829,23 +829,23 @@
 
                     <div class="mt-10 sm:mt-12 lg:mt-0 md:mt-10">
                         <ul id="filterButtonGroup" class="flex flex-wrap justify-end gap-x-1 gap-y-1">
-                            <li onclick="filterGallery('all')"
-                                class="filterBtn py-2 px-4 rounded-full text-[0.813rem] font-light border border-solid border-gray-700 capitalize bg-green-500 hover:bg-green-500 sl-animated cursor-pointer">
+                            <li onclick="filterGallery('all')" id="all"
+                                class="filterBtn py-2 px-4 rounded-full text-[0.813rem] font-light border border-solid border-gray-700 capitalize hover:bg-green-500 sl-animated cursor-pointer">
                                 <span>show all</span>
                             </li>
-                            <li onclick="filterGallery('filterWildlife')"
+                            <li onclick="filterGallery('filterWildlife')" id="filterWildlife"
                                 class="filterBtn py-2 px-4 rounded-full text-[0.813rem] font-light border border-solid border-gray-700 capitalize hover:bg-green-500 sl-animated cursor-pointer">
                                 <span>wildlife</span>
                             </li>
-                            <li onclick="filterGallery('waterResources')"
+                            <li onclick="filterGallery('waterResources')" id="waterResources"
                                 class="filterBtn py-2 px-4 rounded-full text-[0.813rem] font-light border border-solid border-gray-700 capitalize hover:bg-green-500 sl-animated cursor-pointer">
                                 <span>water resource</span>
                             </li>
-                            <li onclick="filterGallery('solarEnergy')"
+                            <li onclick="filterGallery('solarEnergy')" id="solarEnergy"
                                 class="filterBtn py-2 px-4 rounded-full text-[0.813rem] font-light border border-solid border-gray-700 capitalize hover:bg-green-500 sl-animated cursor-pointer">
                                 <span>solar energy</span>
                             </li>
-                            <li onclick="filterGallery('recycling')"
+                            <li onclick="filterGallery('recycling')" id="recycling"
                                 class="filterBtn py-2 px-4 rounded-full text-[0.813rem] font-light border border-solid border-gray-700 capitalize hover:bg-green-500 sl-animated cursor-pointer">
                                 <span>recycling</span>
                             </li>
@@ -1223,6 +1223,7 @@
     <!-- SCRIPT LINKS -->
     <script src="./assets/js/app.js"></script>
     <script src="assets/js/counter.js"></script>
+    <script src="assets/js/galleryFilter.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".homeBannerSlider", {
