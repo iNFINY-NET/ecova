@@ -1,18 +1,23 @@
-$(document).ready(function () {
-    filterGallery("all");
-    filterSlider("filterWildlife");
-    activeButton();
-    // activeSliderBtn();
-});
-
 /**
  * To Filter Activities Gallery Data
  * @param {String} item
  *  @return Element, Class Name
  */
 const filterGallery = (item) => {
+
+    // Set active button
+    var buttons = document.getElementsByClassName('filterBtn');
+    for (let j = 0; j < buttons.length; j++) {
+        hideGallery(buttons[j], "hidden");
+        if (buttons[j].id == item) {
+            showGallery(buttons[j], "bg-green-500")
+        } else {
+            hideGallery(buttons[j], "bg-green-500")
+        };
+    }
+    // Data filtering
     var x, i;
-    x = $(".showAll");
+    x = document.getElementsByClassName("showAll");
     if (item == "all") item = "";
     for (i = 0; i < x.length; i++) {
         hideGallery(x[i], "hidden");
@@ -23,33 +28,6 @@ const filterGallery = (item) => {
         };
     }
 }
-
-
-
-/**
- * To Filter Slider Data
- * @param {String} item
- *  @return Element, Class Name
- */
-const filterSlider = (item) => {
-    var x, i;
-    x = $(".showWildlife");
-    // if (item == "filterWildlife") item = "";
-    for (i = 0; i < x.length; i++) {
-        if (item == "filterWildlife") {
-            hideGallery(x[i], "hidden");
-            showGallery(x[i], "swiper-slide");
-        }
-
-        if (x[i].className.indexOf(item) > -1) {
-            showGallery(x[i], "block")
-        } else {
-            showGallery(x[i], "hidden");
-            hideGallery(x[i], "swiper-slide");
-        };
-    }
-}
-
 
 
 /**
@@ -83,28 +61,4 @@ const hideGallery = (element, name) => {
     element.className = elementArray.join(" ");
 }
 
-// Add active class to the current button (highlight it)
-const activeButton = () => {
-    var btnContainer = document.getElementById("filterButtonGroup");
-    var buttons = btnContainer.getElementsByClassName("filterBtn");
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function () {
-            var current = document.getElementsByClassName("bg-[#80b744]");
-            current[0].className = current[0].className.replace(" bg-[#80b744]", "");
-            this.className += " bg-[#80b744]";
-        });
-    }
-}
-
-
-// const activeSliderBtn = () => {
-//     // var btnContainer = document.getElementById("filterButtonGroup");
-//     var buttons = document.getElementsByClassName("filterBtn");
-//     for (var i = 0; i < buttons.length; i++) {
-//         buttons[i].addEventListener("click", function () {
-//             var current = document.getElementsByClassName("bg-green-500");
-//             current[0].className = current[0].className.replace(" bg-green-500", "");
-//             this.className += " bg-green-500";
-//         });
-//     }
-// }
+filterGallery("all");
