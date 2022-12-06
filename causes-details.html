@@ -1,493 +1,1007 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE & FAVICON -->
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <title>ECOVA || Causes Details</title>
 
-     <!-- TITLE & FAVICON -->
-     <link rel="icon" href="assets/images/logo/favicon.png" />
-     <title>ECOVA || Causes Details</title>
+    <!-- FONT AWESOME -->
+    <script
+      src="./assets/ventors/fontAwesome/fontawesome.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- TAILWIND CSS -->
+    <link href="assets/css/output.css" rel="stylesheet" />
+  </head>
 
-     <!-- FONT AWESOME -->
-     <script src="./assets/ventors/fontAwesome/fontawesome.js" crossorigin="anonymous"></script>
-     <!-- GOOGLE FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-     <!-- SWIPER CSS -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-     <!-- TAILWIND CSS -->
-     <link href="assets/css/output.css" rel="stylesheet">
-</head>
+  <body class="bg-slate-800 text-white text-base font-normal">
+    <!-- SEARCH STARTS -->
+    <div
+      id="searchDiv"
+      class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]"
+    >
+      <button
+        onclick="hightSlide(searchDiv, 'h-full')"
+        class="absolute top-3.5 right-8 text-slate-900 text-2xl bg-green-500 border border-green-500 py-1 px-3"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
+        <input
+          type="text"
+          placeholder="type keyword(s) here"
+          class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300"
+        />
+        <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+    <!-- SEARCH ENDS -->
 
-<body class="bg-slate-800 text-white text-base font-normal">
-     <!-- SEARCH STARTS -->
-     <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
-          <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-8 text-slate-900 text-2xl bg-green-500 border border-green-500 py-1 px-3"><i
-                    class="fa-solid fa-xmark"></i></button>
-          <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
-               <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
-               <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <!-- HEADER STARTS -->
+    <header class="bg-green-900">
+      <div
+        class="w-full flex items-center lg:flex-nowrap flex-wrap lg:justify-start justify-between"
+      >
+        <a
+          href="index.html"
+          class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"
+          ><img src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"
+        /></a>
+        <button
+          onclick="hightSlide(mainNav, 'h-[27rem]')"
+          class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav
+          id="mainNav"
+          class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide"
+        >
+          <ul class="flex lg:flex-row flex-col mr-auto">
+            <li class="relative">
+              <a
+                onclick="menuToggle(this)"
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"
+                >home</a
+              >
+              <ul
+                id
+                class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30"
+              >
+                <li>
+                  <a
+                    href="/"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Home One</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="home-two.html"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Home Two</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"
+                >about</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"
+                >events</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                onclick="menuToggle(this)"
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"
+                >causes</a
+              >
+              <ul
+                id
+                class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30"
+              >
+                <li>
+                  <a
+                    href="causes.html"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Causes Grid</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="causes-list.html"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Causes List</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="causes-details.html"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Causes Details</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"
+                >blogs</a
+              >
+            </li>
+            <li class="relative">
+              <a
+                onclick="menuToggle(this)"
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2"
+                >pages</a
+              >
+              <ul
+                id
+                class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30"
+              >
+                <li class="relative group">
+                  <a
+                    href="causes.html"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Projects</a
+                  >
+                  <ul
+                    id
+                    class="absolute left-full top-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-slate-800 rounded z-30"
+                  >
+                    <li>
+                      <a
+                        href="projects-details.html"
+                        class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                        >Projects Details</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="donation.html"
+                    class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated"
+                    >Donation</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="relative">
+              <a
+                class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated"
+                >contact</a
+              >
+            </li>
+          </ul>
+          <ul class="2xl:flex hidden items-center pr-8">
+            <li class="mr-3.5">
+              <a href="" class="sl-btn">Make a Donation</a>
+            </li>
+            <li class="mr-3.5">
+              <a
+                onclick="hightSlide(searchDiv, 'h-full')"
+                class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li class="mr-3.5">
+              <a
+                href=""
+                class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li class="mr-3.5 text-sm leading-10">
+              <a href="" class="text-lime-100 hover:text-lime-500 sl-animated"
+                >Login</a
+              >
+              |
+              <a href="" class="text-lime-100 hover:text-lime-500 sl-animated"
+                >Signup</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- HERO STARTS -->
+    <section
+      class="py-24 sl-bg-cover"
+      style="background-image: url(./assets/images/hero/innerheader.jpg)"
+    >
+      <div class="sl-container">
+        <h1 class="mb-5 lg:text-5xl text-4xl font-bold">Stop Global Warming</h1>
+        <ul class="sl-flex-wrap">
+          <li>
+            <a
+              href=""
+              class="text-2xl after:mx-2.5 after:text-2xl after:content-['::']"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-2xl after:mx-2.5 after:text-2xl after:content-['::']"
+              >Causes</a
+            >
+          </li>
+          <li><a href="" class="text-2xl">Stop Global Warming</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- HERO ENDS -->
+
+    <!-- MAIN STARTS -->
+    <main class="sl-container flex flex-wrap py-20">
+      <div class="lg:basis-3/4 md:basis-2/3 basis-full md:px-4 px-2">
+        <div class="overflow-hiddenb text-center mb-6 w-full">
+          <img src="assets/images/blog/bf1.jpg" alt="" class="rounded w-full" />
+        </div>
+        <div class="sl-flex-wrap bg-slate-700 rounded py-8 px-5 mb-6">
+          <div class="xl:basis-1/2 basis-full xl:pr-3.5 pr-0">
+            <div class="h-2.5 rounded-full mb-5 bg-slate-600">
+              <div
+                class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"
+              ></div>
+            </div>
+            <ul class="sl-flex-between">
+              <li class="basis-1/3 text-sm text-white/80 text-left">
+                <strong class="block lg:text-lg text-sm text-white">47%</strong>
+                Funded
+              </li>
+              <li class="basis-1/3 text-sm text-white/80 text-center">
+                <strong class="block lg:text-lg text-sm text-white"
+                  >$638.00</strong
+                >
+                Raised
+              </li>
+              <li class="basis-1/3 text-sm text-white/80 text-right">
+                <strong class="block lg:text-lg text-sm text-white"
+                  >$9750.00</strong
+                >
+                Required
+              </li>
+            </ul>
+          </div>
+          <div class="xl:basis-1/2 basis-full xl:pl-3.5 pl-0 xl:pt-0 pt-2.5">
+            <form action="">
+              <div class="grid xs:grid-cols-6 grid-cols-3 gap-x-1 gap-y-2">
+                <div class="radio-box">
+                  <input id="d1" type="radio" name="donation" class="hidden" />
+                  <label
+                    for="d1"
+                    class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated"
+                    >$5</label
+                  >
+                </div>
+                <div class="radio-box">
+                  <input id="d2" type="radio" name="donation" class="hidden" />
+                  <label
+                    for="d2"
+                    class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated"
+                    >$20</label
+                  >
+                </div>
+                <div class="radio-box">
+                  <input id="d3" type="radio" name="donation" class="hidden" />
+                  <label
+                    for="d3"
+                    class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated"
+                    >$50</label
+                  >
+                </div>
+                <div class="radio-box">
+                  <input id="d4" type="radio" name="donation" class="hidden" />
+                  <label
+                    for="d4"
+                    class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated"
+                    >$100</label
+                  >
+                </div>
+                <div class="col-span-2">
+                  <input
+                    type="submit"
+                    value="donate"
+                    class="sl-btn w-full text-base leading-[50px]"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="mb-5">
+          <ul class="sl-flex-wrap">
+            <li class="w-auto text-sm text-white/80 mr-5">
+              <p class="text-white/40">
+                <span class="text-lime-500 mr-1"
+                  ><i class="fa-solid fa-circle-user"></i
+                ></span>
+                John Ashley
+              </p>
+            </li>
+            <li class="w-auto text-sm text-white/80 mr-5">
+              <p class="text-white/40">
+                <span class="text-lime-500 mr-1"
+                  ><i class="fa-solid fa-calendar-days"></i
+                ></span>
+                29 September, 2018
+              </p>
+            </li>
+            <li class="w-auto text-sm text-white/80 mr-5">
+              <p class="text-white/40">
+                <span class="text-lime-500 mr-1"
+                  ><i class="fa-solid fa-comments"></i
+                ></span>
+                134 Comments
+              </p>
+            </li>
+            <li class="w-auto text-sm text-white/80 mr-5">
+              <p class="text-white/40">
+                <span class="text-lime-500 mr-1"
+                  ><i class="fa-solid fa-tags"></i
+                ></span>
+                <span class="text-sm text-white/40 capitalize">
+                  <a
+                    href=""
+                    class="after:content-[','] hover:text-lime-500 sl-animated"
+                    >plant</a
+                  >
+                  <a
+                    href=""
+                    class="after:content-[','] hover:text-lime-500 sl-animated"
+                    >trees</a
+                  >
+                  <a
+                    href=""
+                    class="after:content-[','] hover:text-lime-500 sl-animated"
+                    >water</a
+                  >
+                  <a href="" class="hover:text-lime-500 sl-animated"
+                    >Recycling</a
+                  >
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-white/80 mb-6">
+            The environment includes; the surface of the earth, natural
+            re­sources, land and water, mountains and plains, fertile lands and
+            deserts, oceans, storms and cy­clones, weather and climatic factors,
+            seasons, etc. It also includes biological conditions such as plants,
+            animals with all their complexities.
+          </p>
+          <p class="text-white/80 mb-6">
+            We are going to run a solid educational campaign for the orphan
+            children study. There are many variations of passages of Lorem Ipsum
+            available, but the majority have suffered alteration in some form,
+            by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem
+            Ipsum.
+          </p>
+          <p class="text-white/80 mb-6">
+            You need to be sure there isn't anything embarrassing hidden in the
+            middle of text. To take a trivial example, which of us ever
+            undertakes laborious physical exercise, except to obtain some
+            advantage.
+          </p>
+          <blockquote
+            class="relative bg-slate-700 overflow-hidden mx-auto mb-7 lg:w-4/5 w-full"
+          >
+            <p
+              class="text-white/80 lg:text-2xl text-base italic font-light lg:p-10 p-2.5"
+            >
+              The inner environment is the society itself. It is the social
+              envi­ronment & endures only so long as the society endures. It
+              consists of the organisations and regula­tions, the traditions and
+              institutions.
+            </p>
+            <span
+              class="absolute lg:block hidden bottom-1 right-5 text-6xl text-white/50"
+              ><i class="fa-solid fa-caret-right"></i
+            ></span>
+          </blockquote>
+          <p class="text-white/80 mb-6">
+            Nor again is there anyone who loves or pursues or desires to obtain
+            pain of itself, because it is pain, but because occasionally
+            circumstances occur in which toil and pain can procure him some
+            great pleasure. because it is pain, but because occasionally
+            circumstances occur in which toil and pain can procure him some
+            great pleasure.
+          </p>
+          <p class="text-white/80 mb-6">
+            Temporibus autem quibusdam et aut officiis debitis aut rerum
+            necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+            molestiae non recusandae. Itaque earum rerum hic tenetur a sapien
+            delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+            aut perferendis.
+          </p>
+        </div>
+        <div class="sl-flex-wrap items-center mb-16">
+          <strong class="font-semibold mr-2.5">Share:</strong>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#3b5998] hover:text-white hover:bg-[#3b5998] sl-animated"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#00aced] hover:text-white hover:bg-[#00aced] sl-animated"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#dc4a38] hover:text-white hover:bg-[#dc4a38] sl-animated"
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#0077b5] hover:text-white hover:bg-[#0077b5] sl-animated"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#d93175] hover:text-white hover:bg-[#d93175] sl-animated"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#fe0002] hover:text-white hover:bg-[#fe0002] sl-animated"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a
+            href=""
+            class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#bd081b] hover:text-white hover:bg-[#bd081b] sl-animated"
+            ><i class="fa-brands fa-pinterest-p"></i
+          ></a>
+        </div>
+        <div>
+          <h2 class="font-bold lg:text-3xl sm:text-2xl text-xl text-white mb-6">
+            Leave a Comment
+          </h2>
+          <form action="" class="relative overflow-hidden">
+            <ul class="sl-flex-wrap">
+              <li class="lg:basis-1/3 basis-full lg:pr-3.5 lg:mb-8 mb-4">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+                />
+              </li>
+              <li class="lg:basis-1/3 basis-full lg:pr-3.5 lg:mb-8 mb-4">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+                />
+              </li>
+              <li class="lg:basis-1/3 basis-full lg:pr-3.5 lg:mb-8 mb-4">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+                />
+              </li>
+              <li class="basis-full lg:mb-8 mb-4">
+                <textarea
+                  placeholder="Write Comments"
+                  class="w-full h-40 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded p-5"
+                ></textarea>
+              </li>
+              <li class="basis-full">
+                <button class="sl-btn w-full text-base leading-[3rem] h-12">
+                  post your comment
+                </button>
+              </li>
+            </ul>
           </form>
-     </div>
-     <!-- SEARCH ENDS -->
-
-     <!-- HEADER STARTS -->
-     <header class="bg-green-900">
-          <div class="w-full flex items-center lg:flex-nowrap flex-wrap lg:justify-start justify-between">
-               <a href="index.html" class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
-               <button onclick="hightSlide(mainNav, 'h-[27rem]')" class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i class="fa-solid fa-bars"></i></button>
-               <nav id="mainNav"
-                    class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
-                    <ul class="flex lg:flex-row flex-col mr-auto">
-                         <li class="relative"><a onclick="menuToggle(this)"
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
-                                   <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
-                                        <li><a href="/" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Home One</a></li>
-                                        <li><a href="home-two.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Home Two</a></li>
-                                   </ul>
-                         </li>
-                         <li class="relative"><a
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a>
-                         </li>
-                         <li class="relative"><a
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a>
-                         </li>
-                         <li class="relative"><a onclick="menuToggle(this)"
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a>
-                                   <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
-                                        <li><a href="causes.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes Grid</a></li>
-                                        <li><a href="causes-list.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes List</a></li>
-                                        <li><a href="causes-details.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes Details</a></li>
-                                   </ul>
-                         </li>
-                         <li class="relative"><a
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a>
-                         </li>
-                         <li class="relative"><a onclick="menuToggle(this)"
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a>
-                                   <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
-                                        <li class="relative group">
-                                             <a href="causes.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Projects</a>
-                                             <ul id class="absolute left-full top-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-slate-800 rounded z-30">
-                                                  <li><a href="projects-details.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Projects Details</a></li>
-                                             </ul>
-                                        </li>
-                                        <li><a href="donation.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Donation</a></li>
-                                   </ul>
-                         </li>
-                         <li class="relative"><a
-                                   class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
-                         </li>
-                    </ul>
-                    <ul class="2xl:flex hidden items-center pr-8">
-                         <li class="mr-3.5">
-                              <a href="" class="sl-btn">Make a Donation</a>
-                         </li>
-                         <li class="mr-3.5"><a onclick="hightSlide(searchDiv, 'h-full')"
-                                   class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
-                                        class="fa-solid fa-magnifying-glass"></i></a></li>
-                         <li class="mr-3.5"><a href="" class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
-                                        class="fa-solid fa-cart-shopping"></i></a></li>
-                         <li class="mr-3.5 text-sm leading-10"><a href="" class="text-lime-100 hover:text-lime-500 sl-animated">Login</a> | <a href=""
-                                   class="text-lime-100 hover:text-lime-500 sl-animated">Signup</a></li>
-                    </ul>
-               </nav>
+        </div>
+      </div>
+      <div
+        class="lg:basis-1/4 md:basis-1/3 basis-full md:px-4 px-2 lg:mt-0 mt-8"
+      >
+        <div class="mb-10">
+          <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Search</h3>
+          <form action="" class="relative overflow-hidden">
+            <input
+              type="search"
+              placeholder="Search"
+              class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+            />
+            <button
+              class="absolute right-0 top-0 rounded-tl-none rounded-bl-none h-12 w-12 px-0 text-base text-center sl-btn"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="mb-10">
+          <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Text Widget</h3>
+          <p class="text-white/80">
+            We are Ecova: eco & environmental community. We need your support
+            and help to Stop Globar Warning. Few generations ago it to seemed
+            like world’s resources were infinite, and the people needed only to
+            access them to create business, Lorem ipsum dolor it amet consect
+            adipiscing.
+          </p>
+        </div>
+        <div class="mb-10 bg-slate-700 rounded p-5">
+          <h3 class="mb-3 font-semibold lg:text-2xl text-xl">
+            Current Projects
+          </h3>
+          <ul>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Waste Management</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Solar Energy</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Eco Ideas</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Recycling Materials</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Plant Ecology</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Saving Wildlife</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Water Resources</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Forest & Tree Planting</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-white hover:text-lime-500 sl-animated leading-8"
+                ><span class="mr-2"
+                  ><i class="fa-solid fa-caret-right"></i
+                ></span>
+                Wing Energy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mb-10">
+          <div
+            class="group bg-slate-900 relative overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20"
+          >
+            <div
+              class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10"
+            >
+              <a
+                href=""
+                class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+              <img
+                src="assets/images/news-posts/news1.jpg"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="p-3.5 rounded-b">
+              <h2
+                class="text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"
+              >
+                <a href="">Let’s Safe Global Warming</a>
+              </h2>
+              <ul class="flex items-center mb-6">
+                <li class="w-8 h-8 -ml-1.5">
+                  <img
+                    src="assets/images/ul/insta2.jpg"
+                    alt=""
+                    class="w-full h-full rounded-full"
+                  />
+                </li>
+                <li class="w-8 h-8 -ml-1.5">
+                  <img
+                    src="assets/images/ul/u2.jpg"
+                    alt=""
+                    class="w-full h-full rounded-full"
+                  />
+                </li>
+                <li class="w-8 h-8 -ml-1.5">
+                  <img
+                    src="assets/images/ul/u3.jpg"
+                    alt=""
+                    class="w-full h-full rounded-full"
+                  />
+                </li>
+                <li class="w-8 h-8 -ml-1.5">
+                  <span
+                    class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black"
+                    >+16</span
+                  >
+                </li>
+                <li class="xl:block md:hidden block">
+                  <strong class="ml-5 text-sm text-white/80"
+                    ><span class="text-green-400">21</span> Backers</strong
+                  >
+                </li>
+              </ul>
+              <div class="h-2.5 rounded-full mb-5 bg-slate-600">
+                <div
+                  class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"
+                ></div>
+              </div>
+              <ul class="sl-flex-between">
+                <li class="basis-1/3 text-sm text-white/80 text-left">
+                  <strong class="block lg:text-lg text-sm text-white"
+                    >47%</strong
+                  >
+                  Funded
+                </li>
+                <li class="basis-1/3 text-sm text-white/80 text-center">
+                  <strong class="block lg:text-lg text-sm text-white"
+                    >$638</strong
+                  >
+                  Raised
+                </li>
+                <li class="basis-1/3 text-sm text-white/80 text-right">
+                  <strong class="block lg:text-lg text-sm text-white"
+                    >$9750</strong
+                  >
+                  Required
+                </li>
+              </ul>
+            </div>
+            <button
+              class="sl-btn rounded-t-none w-full text-base leading-[3.125rem]"
+            >
+              donate now
+            </button>
           </div>
-     </header>
-     <!-- HEADER ENDS -->
+        </div>
+        <div class="mb-10">
+          <h3 class="mb-3 font-semibold lg:text-2xl text-xl">
+            Become a Volunteer
+          </h3>
+          <form action="" class="relative overflow-hidden">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+            />
+            <input
+              type="text"
+              placeholder="Contact"
+              class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5"
+            />
+            <button class="sl-btn w-full text-base leading-[3rem] h-12">
+              sing to join us now
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- MAIN ENDS -->
 
-     <!-- HERO STARTS -->
-     <section class="py-24 sl-bg-cover" style="background-image: url(./assets/images/hero/innerheader.jpg);">
-          <div class="sl-container">
-               <h1 class="mb-5 lg:text-5xl text-4xl font-bold">Stop Global Warming</h1>
-               <ul class="sl-flex-wrap">
-                    <li><a href="" class="text-2xl after:mx-2.5 after:text-2xl after:content-['::']">Home</a></li>
-                    <li><a href="" class="text-2xl after:mx-2.5 after:text-2xl after:content-['::']">Causes</a></li>
-                    <li><a href="" class="text-2xl">Stop Global Warming</a></li>
-               </ul>
+    <!-- FOOTER STARTS -->
+    <footer
+      class="pt-16 sl-bg-cover"
+      style="background-image: url(./assets/images/hero/footerbg.jpg)"
+    >
+      <div class="sl-container">
+        <div class="sl-flex-wrap">
+          <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
+            <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">
+              About Ecova
+            </h3>
+            <p class="text-white/80 mb-4">
+              If anything’s hot in today’s economy, it’s saving money, including
+              a broad range of green businesses helping people save energy,
+              water, and other resources. Definitely, you can go with this
+              business as it is a nothing but the future.
+            </p>
+            <a href="" class="sl-btn">about us</a>
           </div>
-     </section>
-     <!-- HERO ENDS -->
-
-     <!-- MAIN STARTS -->
-     <main class="sl-container flex flex-wrap py-20">
-          <div class="lg:basis-3/4 md:basis-2/3 basis-full md:px-4 px-2">
-               <div class="overflow-hiddenb text-center mb-6 w-full">
-                    <img src="assets/images/blog/bf1.jpg" alt="" class="rounded w-full">
-               </div>
-               <div class="sl-flex-wrap bg-slate-700 rounded py-8 px-5 mb-6">
-                    <div class="xl:basis-1/2 basis-full xl:pr-3.5 pr-0">
-                         <div class="h-2.5 rounded-full mb-5 bg-slate-600">
-                              <div class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"></div>
-                         </div>
-                         <ul class="sl-flex-between">
-                              <li class="basis-1/3 text-sm text-white/80 text-left">
-                                   <strong class="block lg:text-lg text-sm text-white">47%</strong>
-                                   Funded
-                              </li>
-                              <li class="basis-1/3 text-sm text-white/80 text-center">
-                                   <strong class="block lg:text-lg text-sm text-white">$638.00</strong>
-                                   Raised
-                              </li>
-                              <li class="basis-1/3 text-sm text-white/80 text-right">
-                                   <strong class="block lg:text-lg text-sm text-white">$9750.00</strong>
-                                   Required
-                              </li>
-                         </ul>
-                    </div>
-                    <div class="xl:basis-1/2 basis-full xl:pl-3.5 pl-0 xl:pt-0 pt-2.5">
-                         <form action="">
-                              <div class="grid xs:grid-cols-6 grid-cols-3 gap-x-1 gap-y-2">
-                                   <div class="radio-box">
-                                        <input id="d1" type="radio" name="donation" class="hidden">
-                                        <label for="d1"
-                                             class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated">$5</label>
-                                   </div>
-                                   <div class="radio-box">
-                                        <input id="d2" type="radio" name="donation" class="hidden">
-                                        <label for="d2"
-                                             class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated">$20</label>
-                                   </div>
-                                   <div class="radio-box">
-                                        <input id="d3" type="radio" name="donation" class="hidden">
-                                        <label for="d3"
-                                             class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated">$50</label>
-                                   </div>
-                                   <div class="radio-box">
-                                        <input id="d4" type="radio" name="donation" class="hidden">
-                                        <label for="d4"
-                                             class="w-full block px-1 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-black/70 bg-gray-200 hover:bg-green-500 sl-animated">$100</label>
-                                   </div>
-                                   <div class="col-span-2">
-                                        <input type="submit" value="donate" class="sl-btn w-full text-base leading-[50px]">
-                                   </div>
-                              </div>
-                         </form>
-                    </div>
-               </div>
-               <div class="mb-5">
-                    <ul class="sl-flex-wrap">
-                         <li class="w-auto text-sm text-white/80 mr-5">
-                              <p class="text-white/40"><span class="text-lime-500 mr-1"><i class="fa-solid fa-circle-user"></i></span> John
-                                   Ashley</p>
-                         </li>
-                         <li class="w-auto text-sm text-white/80 mr-5">
-                              <p class="text-white/40"><span class="text-lime-500 mr-1"><i class="fa-solid fa-calendar-days"></i></span> 29
-                                   September, 2018</p>
-                         </li>
-                         <li class="w-auto text-sm text-white/80 mr-5">
-                              <p class="text-white/40"><span class="text-lime-500 mr-1"><i class="fa-solid fa-comments"></i></span> 134
-                                   Comments</p>
-                         </li>
-                         <li class="w-auto text-sm text-white/80 mr-5">
-                              <p class="text-white/40"><span class="text-lime-500 mr-1"><i class="fa-solid fa-tags"></i></span>
-                              <span class="text-sm text-white/40 capitalize">
-                                   <a href="" class="after:content-[','] hover:text-lime-500 sl-animated">plant</a>
-                                   <a href="" class="after:content-[','] hover:text-lime-500 sl-animated">trees</a>
-                                   <a href="" class="after:content-[','] hover:text-lime-500 sl-animated">water</a>
-                                   <a href="" class="hover:text-lime-500 sl-animated">Recycling</a>
-                              </span>
-                              </p>
-                         </li>
-                    </ul>
-               </div>
-               <div>
-                    <p class="text-white/80 mb-6">The environment includes; the surface of the earth, natural
-                         re­sources, land and water, mountains and plains, fertile lands and deserts, oceans,
-                         storms and cy­clones, weather and climatic factors, seasons, etc. It also includes biological
-                         conditions such as plants, animals with all their complexities.</p>
-                    <p class="text-white/80 mb-6">We are going to run a solid educational campaign for the orphan
-                         children study. There are many variations of passages of Lorem Ipsum available, but
-                         the majority have suffered alteration in some form, by injected humour, or randomised words
-                         which don't look even slightly believable. If you are going to use a passage of
-                         Lorem Ipsum.</p>
-                    <p class="text-white/80 mb-6">You need to be sure there isn't anything embarrassing hidden in the
-                         middle of text. To take a trivial example, which of us ever undertakes laborious
-                         physical exercise, except to obtain some advantage. </p>
-                    <blockquote class="relative bg-slate-700 overflow-hidden mx-auto mb-7 lg:w-4/5 w-full">
-                         <p class="text-white/80 lg:text-2xl text-base italic font-light lg:p-10 p-2.5">The inner
-                              environment is the society itself. It is the social envi­ronment & endures only so long as
-                              the society
-                              endures. It consists of the organisations and regula­tions, the traditions and
-                              institutions. </p>
-                         <span class="absolute lg:block hidden bottom-1 right-5 text-6xl text-white/50"><i class="fa-solid fa-caret-right"></i></span>
-                    </blockquote>
-                    <p class="text-white/80 mb-6"> Nor again is there anyone who loves or pursues or desires to obtain
-                         pain of itself, because it is pain, but because occasionally circumstances occur
-                         in which toil and pain can procure him some great pleasure. because it is pain, but because
-                         occasionally circumstances occur in which toil and pain can procure him some great
-                         pleasure. </p>
-                    <p class="text-white/80 mb-6"> Temporibus autem quibusdam et aut officiis debitis aut rerum
-                         necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-                         recusandae. Itaque earum rerum hic tenetur a sapien delectus, ut aut reiciendis voluptatibus
-                         maiores alias consequatur aut perferendis. </p>
-               </div>
-               <div class="sl-flex-wrap items-center mb-16">
-                    <strong class="font-semibold mr-2.5">Share:</strong>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#3b5998] hover:text-white hover:bg-[#3b5998] sl-animated"><i
-                              class="fa-brands fa-facebook-f"></i></a>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#00aced] hover:text-white hover:bg-[#00aced] sl-animated"><i
-                              class="fa-brands fa-twitter"></i></a>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#dc4a38] hover:text-white hover:bg-[#dc4a38] sl-animated"><i
-                              class="fa-brands fa-google-plus-g"></i></a>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#0077b5] hover:text-white hover:bg-[#0077b5] sl-animated"><i
-                              class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#d93175] hover:text-white hover:bg-[#d93175] sl-animated"><i
-                              class="fa-brands fa-instagram"></i></a>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#fe0002] hover:text-white hover:bg-[#fe0002] sl-animated"><i
-                              class="fa-brands fa-youtube"></i></a>
-                    <a href="" class="w-8 h-8 my-1 sl-flex-center border border-slate-500 mx-1 rounded-full text-center text-sm text-[#bd081b] hover:text-white hover:bg-[#bd081b] sl-animated"><i
-                              class="fa-brands fa-pinterest-p"></i></a>
-               </div>
-               <div>
-                    <h2 class="font-bold lg:text-3xl sm:text-2xl text-xl text-white mb-6">Leave a Comment</h2>
-                    <form action="" class="relative overflow-hidden">
-                         <ul class="sl-flex-wrap">
-                              <li class="lg:basis-1/3 basis-full lg:pr-3.5 lg:mb-8 mb-4">
-                                   <input type="text" placeholder="Full Name" class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                              </li>
-                              <li class="lg:basis-1/3 basis-full lg:pr-3.5 lg:mb-8 mb-4">
-                                   <input type="email" placeholder="Email" class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                              </li>
-                              <li class="lg:basis-1/3 basis-full lg:pr-3.5 lg:mb-8 mb-4">
-                                   <input type="text" placeholder="Subject" class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                              </li>
-                              <li class="basis-full lg:mb-8 mb-4">
-                                   <textarea placeholder="Write Comments" class="w-full h-40 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded p-5"></textarea>
-                              </li>
-                              <li class="basis-full">
-                                   <button class="sl-btn w-full text-base leading-[3rem] h-12">post your
-                                        comment</button>
-                              </li>
-                         </ul>
-                    </form>
-               </div>
+          <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
+            <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">
+              Our Promises
+            </h3>
+            <ul>
+              <li>
+                <a
+                  href=""
+                  class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"
+                  ><span class="mr-1"
+                    ><i class="fa-solid fa-caret-right"></i
+                  ></span>
+                  Solar Energy</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"
+                  ><span class="mr-1"
+                    ><i class="fa-solid fa-caret-right"></i
+                  ></span>
+                  Waste Management</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"
+                  ><span class="mr-1"
+                    ><i class="fa-solid fa-caret-right"></i
+                  ></span>
+                  Eco Ideas</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"
+                  ><span class="mr-1"
+                    ><i class="fa-solid fa-caret-right"></i
+                  ></span>
+                  Recycling Materials</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"
+                  ><span class="mr-1"
+                    ><i class="fa-solid fa-caret-right"></i
+                  ></span>
+                  Plant Ecology</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"
+                  ><span class="mr-1"
+                    ><i class="fa-solid fa-caret-right"></i
+                  ></span>
+                  Saving Wildlife</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="lg:basis-1/4 md:basis-1/3 basis-full md:px-4 px-2 lg:mt-0 mt-8">
-               <div class="mb-10">
-                    <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Search</h3>
-                    <form action="" class="relative overflow-hidden">
-                         <input type="search" placeholder="Search" class="w-full h-12 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <button class="absolute right-0 top-0 rounded-tl-none rounded-bl-none h-12 w-12 px-0 text-base text-center sl-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-               </div>
-               <div class="mb-10">
-                    <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Text Widget</h3>
-                    <p class="text-white/80"> We are Ecova: eco & environmental community. We need your support and help
-                         to Stop Globar Warning. Few generations ago it to seemed like world’s resources
-                         were infinite, and the people needed only to access them to create business, Lorem ipsum dolor
-                         it amet consect adipiscing. </p>
-               </div>
-               <div class="mb-10 bg-slate-700 rounded p-5">
-                    <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Current Projects</h3>
-                    <ul>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Waste
-                                   Management</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Solar
-                                   Energy</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Eco
-                                   Ideas</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span>
-                                   Recycling
-                                   Materials</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Plant
-                                   Ecology</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span>
-                                   Saving
-                                   Wildlife</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Water
-                                   Resources</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span>
-                                   Forest & Tree Planting</a></li>
-                         <li><a href="" class="text-white hover:text-lime-500 sl-animated leading-8"><span class="text-green-500 mr-2"><i class="fa-solid fa-caret-right"></i></span> Wing
-                                   Energy</a></li>
-                    </ul>
-               </div>
-               <div class="mb-10">
-                    <div class="group bg-slate-900 relative overflow-hidden shadow-2xl shadow-slate-700/20 hover:shadow-slate-500/20">
-                         <div
-                              class="relative overflow-hidden rounded-t after:absolute after:top-0 after:left-0 after:w-full after:h-0 after:group-hover:h-full after:opacity-0 after:group-hover:opacity-100 after:bg-black/50 after:transition-all after:duration-500 after:z-10">
-                              <a href=""
-                                   class="absolute left-1/2 top-0 group-hover:top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 opacity-0 group-hover:opacity-100 border-white border-2 rounded-full sl-flex-center hover:bg-green-500 hover:border-green-500 z-30 sl-animated-slide"><i
-                                        class="fa-solid fa-link"></i></a>
-                              <img src="assets/images/news-posts/news1.jpg" alt="" class="w-full">
-                         </div>
-                         <div class="p-3.5 rounded-b">
-                              <h2 class="text-xl text-white/80 group-hover:text-green-500 mb-6 font-bold sl-animated"><a href="">Let’s Safe Global Warming</a></h2>
-                              <ul class="flex items-center mb-6">
-                                   <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/insta2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                                   <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u2.jpg" alt="" class="w-full h-full rounded-full"></li>
-                                   <li class="w-8 h-8 -ml-1.5"><img src="assets/images/ul/u3.jpg" alt="" class="w-full h-full rounded-full"></li>
-                                   <li class="w-8 h-8 -ml-1.5"><span class="bg-green-400 w-full h-full block rounded-full leading-8 text-center text-xs text-black">+16</span>
-                                   </li>
-                                   <li class="xl:block md:hidden block">
-                                        <strong class="ml-5 text-sm text-white/80"><span class="text-green-400">21</span> Backers</strong>
-                                   </li>
-                              </ul>
-                              <div class="h-2.5 rounded-full mb-5 bg-slate-600">
-                                   <div class="h-full w-[55%] rounded-full bg-green-400 group-hover:bg-green-500"></div>
-                              </div>
-                              <ul class="sl-flex-between">
-                                   <li class="basis-1/3 text-sm text-white/80 text-left">
-                                        <strong class="block lg:text-lg text-sm text-white">47%</strong>
-                                        Funded
-                                   </li>
-                                   <li class="basis-1/3 text-sm text-white/80 text-center">
-                                        <strong class="block lg:text-lg text-sm text-white">$638</strong>
-                                        Raised
-                                   </li>
-                                   <li class="basis-1/3 text-sm text-white/80 text-right">
-                                        <strong class="block lg:text-lg text-sm text-white">$9750</strong>
-                                        Required
-                                   </li>
-                              </ul>
-                         </div>
-                         <button class="sl-btn rounded-t-none w-full text-base leading-[3.125rem]">donate now</button>
-                    </div>
-               </div>
-               <div class="mb-10">
-                    <h3 class="mb-3 font-semibold lg:text-2xl text-xl">Become a Volunteer</h3>
-                    <form action="" class="relative overflow-hidden">
-                         <input type="text" placeholder="Your Name" class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <input type="email" placeholder="Email Address" class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <input type="text" placeholder="Contact" class="w-full h-12 mb-3 leading-[3rem] text-white/80 border border-slate-600 focus:border-green-500 rounded px-3.5">
-                         <button class="sl-btn w-full text-base leading-[3rem] h-12">sing to join us now</button>
-                    </form>
-               </div>
+          <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
+            <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">
+              Latest Posts
+            </h3>
+            <ul>
+              <li class="flex mb-5">
+                <img
+                  src="assets/images/news-posts/h2news2.jpg"
+                  alt=""
+                  class="rounded w-[4.25rem] h-[4.25rem]"
+                />
+                <p class="ml-2.5">
+                  <a
+                    href=""
+                    class="text-sm font-medium hover:text-lime-500 sl-animated"
+                    >How you can keep alive wild animals for...</a
+                  >
+                  <span class="block font-light text-xs text-white/80"
+                    ><strong class="text-lime-500 font-semibold"
+                      >Posted:</strong
+                    >
+                    29 September, 2018</span
+                  >
+                </p>
+              </li>
+              <li class="flex mb-5">
+                <img
+                  src="assets/images/news-posts/h2news3.jpg"
+                  alt=""
+                  class="rounded w-[4.25rem] h-[4.25rem]"
+                />
+                <p class="ml-2.5">
+                  <a
+                    href=""
+                    class="text-sm font-medium hover:text-lime-500 sl-animated"
+                    >Eliminate your plastic bottle pollution & keep...</a
+                  >
+                  <span class="block font-light text-xs text-white/80"
+                    ><strong class="text-lime-500 font-semibold"
+                      >Posted:</strong
+                    >
+                    29 September, 2018</span
+                  >
+                </p>
+              </li>
+              <li class="flex mb-5">
+                <img
+                  src="assets/images/news-posts/h2news4.jpg"
+                  alt=""
+                  class="rounded w-[4.25rem] h-[4.25rem]"
+                />
+                <p class="ml-2.5">
+                  <a
+                    href=""
+                    class="text-sm font-medium hover:text-lime-500 sl-animated"
+                    >How you can keep alive wild animals for...</a
+                  >
+                  <span class="block font-light text-xs text-white/80"
+                    ><strong class="text-lime-500 font-semibold"
+                      >Posted:</strong
+                    >
+                    29 September, 2018</span
+                  >
+                </p>
+              </li>
+            </ul>
           </div>
-     </main>
-     <!-- MAIN ENDS -->
-
-     <!-- FOOTER STARTS -->
-     <footer class="pt-16 sl-bg-cover" style="background-image: url(./assets/images/hero/footerbg.jpg);">
-          <div class="sl-container">
-               <div class="sl-flex-wrap">
-                    <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
-                         <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">About Ecova</h3>
-                         <p class="text-white/80 mb-4"> If anything’s hot in today’s economy, it’s saving money,
-                              including a broad range of green businesses helping people save energy, water, and
-                              other
-                              resources. Definitely, you can go with this business as it is a nothing but the future.
-                         </p>
-                         <a href="" class="sl-btn">about us</a>
-                    </div>
-                    <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
-                         <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">Our Promises</h3>
-                         <ul>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Solar
-                                        Energy</a>
-                              </li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Waste
-                                        Management</a></li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Eco Ideas</a>
-                              </li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Recycling
-                                        Materials</a></li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Plant
-                                        Ecology</a></li>
-                              <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Saving
-                                        Wildlife</a></li>
-                         </ul>
-                    </div>
-                    <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
-                         <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">Latest Posts</h3>
-                         <ul>
-                              <li class="flex mb-5">
-                                   <img src="assets/images/news-posts/h2news2.jpg" alt="" class="rounded w-[4.25rem] h-[4.25rem]">
-                                   <p class="ml-2.5">
-                                        <a href="" class="text-sm font-medium hover:text-lime-500 sl-animated">How you can keep alive wild animals
-                                             for...</a>
-                                        <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September,
-                                             2018</span>
-                                   </p>
-                              </li>
-                              <li class="flex mb-5">
-                                   <img src="assets/images/news-posts/h2news3.jpg" alt="" class="rounded w-[4.25rem] h-[4.25rem]">
-                                   <p class="ml-2.5">
-                                        <a href="" class="text-sm font-medium hover:text-lime-500 sl-animated">Eliminate your plastic bottle pollution &
-                                             keep...</a>
-                                        <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September,
-                                             2018</span>
-                                   </p>
-                              </li>
-                              <li class="flex mb-5">
-                                   <img src="assets/images/news-posts/h2news4.jpg" alt="" class="rounded w-[4.25rem] h-[4.25rem]">
-                                   <p class="ml-2.5">
-                                        <a href="" class="text-sm font-medium hover:text-lime-500 sl-animated">How you can keep alive wild animals
-                                             for...</a>
-                                        <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September,
-                                             2018</span>
-                                   </p>
-                              </li>
-                         </ul>
-                    </div>
-                    <!-- Swiper Slider (Footer) STARTS -->
-                    <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12 swiper footerSlider">
-                         <div class="swiper footerSlider">
-                              <div class="swiper-wrapper">
-                                   <div class="swiper-slide relative rounded overflow-hidden">
-                                        <img src="assets/images/item/pro1.jpg" alt="" class="w-full">
-                                        <div class="flex items-center bg-slate-900 p-5">
-                                             <h3 class="text-xl"><a href="">Buy T-Shirts</a></h3>
-                                             <strong class="text-lime-500 ml-auto">$19.00</strong>
-                                        </div>
-                                   </div>
-                                   <div class="swiper-slide relative rounded overflow-hidden">
-                                        <img src="assets/images/item/pro1.jpg" alt="" class="w-full">
-                                        <div class="flex items-center bg-slate-900 p-5">
-                                             <h3 class="text-xl"><a href="">Buy T-Shirts</a></h3>
-                                             <strong class="text-lime-500 ml-auto">$19.00</strong>
-                                        </div>
-                                   </div>
-                                   <div class="swiper-slide relative rounded overflow-hidden">
-                                        <img src="assets/images/item/pro1.jpg" alt="" class="w-full">
-                                        <div class="flex items-center bg-slate-900 p-5">
-                                             <h3 class="text-xl"><a href="">Buy T-Shirts</a></h3>
-                                             <strong class="text-lime-500 ml-auto">$19.00</strong>
-                                        </div>
-                                   </div>
-
-                              </div>
-                              <!--Footer SLider Pagination-->
-                              <div class="swiper-pagination text-right top-[75%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1">
-                              </div>
-                         </div>
-                    </div>
-                    <!-- Swiper Slider (Footer) ENDS -->
-               </div>
+          <!-- Swiper Slider (Footer) STARTS -->
+          <div
+            class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12 swiper footerSlider"
+          >
+            <div class="swiper footerSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide relative rounded overflow-hidden">
+                  <img
+                    src="assets/images/item/pro1.jpg"
+                    alt=""
+                    class="w-full"
+                  />
+                  <div class="flex items-center bg-slate-900 p-5">
+                    <h3 class="text-xl"><a href="">Buy T-Shirts</a></h3>
+                    <strong class="text-lime-500 ml-auto">$19.00</strong>
+                  </div>
+                </div>
+                <div class="swiper-slide relative rounded overflow-hidden">
+                  <img
+                    src="assets/images/item/pro1.jpg"
+                    alt=""
+                    class="w-full"
+                  />
+                  <div class="flex items-center bg-slate-900 p-5">
+                    <h3 class="text-xl"><a href="">Buy T-Shirts</a></h3>
+                    <strong class="text-lime-500 ml-auto">$19.00</strong>
+                  </div>
+                </div>
+                <div class="swiper-slide relative rounded overflow-hidden">
+                  <img
+                    src="assets/images/item/pro1.jpg"
+                    alt=""
+                    class="w-full"
+                  />
+                  <div class="flex items-center bg-slate-900 p-5">
+                    <h3 class="text-xl"><a href="">Buy T-Shirts</a></h3>
+                    <strong class="text-lime-500 ml-auto">$19.00</strong>
+                  </div>
+                </div>
+              </div>
+              <!--Footer SLider Pagination-->
+              <div
+                class="swiper-pagination text-right top-[75%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1"
+              ></div>
+            </div>
           </div>
-          <div class="border-t border-white/30 py-5">
-               <div class="sl-container sl-flex-between sm:flex-row flex-col">
-                    <img src="assets/images/logo/logo.png" alt="" class="">
-                    <p class="text-sm sm:text-right text-center text-white/80 mt-3.5"> All Rights Reserved of Ecova ©
-                         2018, Design & Developed By: GramoTech </p>
-               </div>
-          </div>
-     </footer>
-     <!-- FOOTER ENDS -->
+          <!-- Swiper Slider (Footer) ENDS -->
+        </div>
+      </div>
+      <div class="border-t border-white/30 py-5">
+        <div class="sl-container sl-flex-between sm:flex-row flex-col">
+          <img src="assets/images/logo/logo.png" alt="" class="" />
+          <p class="text-sm sm:text-right text-center text-white/80 mt-3.5">
+            All Rights Reserved of Ecova © 2018, Design & Developed By:
+            GramoTech
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
 
-
-     <!-- SCRIPT LINKS -->
-     <script src="./assets/js/app.js"></script>
-     <script src="assets/js/counter.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-     <script>
-          var swiper = new Swiper(".footerSlider", {
-               centeredSlides: true,
-               autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-               },
-               loop: true,
-               pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-               },
-          });
-     </script>
-</body>
-
+    <!-- SCRIPT LINKS -->
+    <script src="./assets/js/app.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".footerSlider", {
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
