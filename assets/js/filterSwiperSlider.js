@@ -1,49 +1,73 @@
-$(document).ready(function () {
-    currentProjectSwiper('all');
-});
+/**
+ * To Filter Activities Gallery Data
+ * @param {String} item
+ *  @return Element, Class Name
+ */
+const filterGallery = (item) => {
+
+     // Set active button
+     var buttons = document.getElementsByClassName('filterBtn');
+     for (let j = 0; j < buttons.length; j++) {
+          hideGallery(buttons[j], "hidden");
+          if (buttons[j].id == item) {
+               showGallery(buttons[j], "bg-green-500")
+          } else {
+               hideGallery(buttons[j], "bg-green-500")
+          };
+     }
+     // Data filtering
+     var x, i;
+     var activeElement = [];
+     x = document.getElementsByClassName("showAll");
+     if (item == "all") item = "";
+     for (i = 0; i < x.length; i++) {
+          hideGallery(x[i], "hidden");
+          if (x[i].className.indexOf(item) > -1) {
+               showGallery(x[i], "block");
+               activeElement.push(x[i]);
+          } else {
+               showGallery(x[i], "hidden");
+               hideGallery(x[i], "block");
+          };
+     }
+
+     if (activeElement.length < 4) {
+          document.getElementById("swiperSliderBtn").style.display = "none";
+     } else {
+          document.getElementById("swiperSliderBtn").style.display = "block";
+     }
+}
+
 
 /**
- * Current Project Slider
+ * Set active or block class to filtered data
+ * @param {element} element 
+ * @param {String} name 
  */
- function currentProjectSwiper(item) {
-    var swiper = new Swiper(".current-project", {
-         slidesPerView: 1,
-         spaceBetween: 1,
-         loop: true,
-         pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-         },
-         breakpoints: {
-              640: {
-                   slidesPerView: 2,
-              },
-              768: {
-                   slidesPerView: 2,
-              },
-              1024: {
-                   slidesPerView: 4,
-              },
-         },
-         navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-         },
-    });
-
-    // Filter Slider
-    $(".current-project button").addClass("bg-transparent border-white/80");
-    $(".current-project button").removeClass("bg-green-500 border-green-500");
-    $(`#${item}`).addClass("bg-green-500 border-green-500");
-    $(`#${item}`).removeClass("bg-transparent border-white/80");
-
-    if (item == "all") {
-         $("[data-filter]").removeClass("non-swiper-slide").addClass("swiper-slide").show();
-         swiper.destroy();
-    }
-    else {
-         $(".swiper-slide").not("[data-filter='" + item + "']").addClass("non-swiper-slide").removeClass("swiper-slide").hide();
-         $("[data-filter='" + item + "']").removeClass("non-swiper-slide").addClass("swiper-slide").attr("style", null).show();
-         // swiper.destroy();
-    }
+const showGallery = (element, name) => {
+     var i, elementArray, classArray;
+     elementArray = element.className.split(" ");
+     classArray = name.split(" ");
+     for (i = 0; i < classArray.length; i++) {
+          if (elementArray.indexOf(classArray[i]) == -1) { element.className += " " + classArray[i]; }
+     }
 }
+
+/**
+ * Set Inactive or hidden classes to unfiltered data
+ * @param {element} element 
+ * @param {String} name 
+ */
+const hideGallery = (element, name) => {
+     var i, elementArray, classArray;
+     elementArray = element.className.split(" ");
+     classArray = name.split(" ");
+     for (i = 0; i < classArray.length; i++) {
+          while (elementArray.indexOf(classArray[i]) > -1) {
+               elementArray.splice(elementArray.indexOf(classArray[i]), 1);
+          }
+     }
+     element.className = elementArray.join(" ");
+}
+
+filterGallery("all");
