@@ -72,11 +72,6 @@
   .sl-btn {
     @apply bg-green-500 hover:bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;
   }
-
-  /*GALLERY ACTIVE STATE*/
-  .gallery-active {
-    @apply bg-[#80b744];
-  }
 }
 
 @layer base {
@@ -104,22 +99,30 @@
 }
 
 @layer utilities {
+  /* SELF MADE CSS */
+  .bg-center-bottom {
+    background-position: center bottom !important;
+    background-repeat: no-repeat !important;
+  }
+  .sidebarHidden {
+    transform: translateX(100%) !important;
+    transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .sidebarShow {
+    transform: translateX(0) !important;
+  }
+
   /* SLIDER BUTTON STYLE RESET */
   .swiper-button-next::after,
   .swiper-button-prev::after {
     content: "";
   }
 
-  /* SELF MADE CSS */
-  .bg-center-bottom {
-    background-position: center bottom !important;
-    background-repeat: no-repeat !important;
-  }
-
   /*Active swiper slider*/
   .swiper-slide.swiper-slide-active {
-    filter: grayscale(0)!important;
+    filter: grayscale(0) !important;
   }
+
   /* PAGINATION BUTTON */
   .swiper-pagination .swiper-pagination-bullet {
     width: 10px !important;

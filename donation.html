@@ -5,37 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- TITLE & FAVICON -->
-    <link rel="icon" href="assets/images/icon/tdba_favicon.png" />
-    <title>ECOVA</title>
+    <link rel="icon" href="assets/images/logo/favicon.png" />
+    <title>ECOVA || Donation</title>
 
     <!-- FONT AWESOME -->
     <script src="./assets/ventors/fontAwesome/fontawesome.js" crossorigin="anonymous"></script>
-
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="./assets/ventors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <!-- TAILWIND CSS -->
     <link href="assets/css/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-slate-800 text-white text-base font-normal">
-
     <!-- SEARCH STARTS -->
     <div id="searchDiv" class="fixed inset-0 w-screen h-0 opacity-0 invisible bg-slate-900 z-[99999]">
-        <button onclick="hightSlide(searchDiv, 'h-full')"
-            class="absolute top-3.5 right-3.5 text-slate-900 text-3xl bg-green-500 border border-green-500 py-2.5 px-4"><i
+        <button onclick="hightSlide(searchDiv, 'h-full')" class="absolute top-3.5 right-8 text-slate-900 text-2xl bg-green-500 border border-green-500 py-1 px-3"><i
                 class="fa-solid fa-xmark"></i></button>
         <form action="" class="absolute inset-0 m-auto w-3/5 h-16">
-            <input type="text" placeholder="type keyword(s) here"
-                class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
-            <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i
-                    class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" placeholder="type keyword(s) here" class="w-full leading-[3.75rem] text-slate-100 text-4xl text-center font-light py-1 border-b border-slate-300">
+            <button class="absolute right-0 top-1.5 w-12 h-12 bg-green-500"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
     <!-- SEARCH ENDS -->
@@ -43,52 +37,64 @@
     <!-- HEADER STARTS -->
     <header class="bg-green-900">
         <div class="w-full flex items-center lg:flex-nowrap flex-wrap lg:justify-start justify-between">
-            <a href="index.html"
-                class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img
-                    src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
-            <button onclick="hightSlide(mainNav, 'h-[27rem]')"
-                class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i
-                    class="fa-solid fa-bars"></i></button>
-            <nav id="mainNav"
-                class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
-                <ul class="flex lg:flex-row flex-col mr-auto">
-                    <li><a href="index.html"
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
-                    </li>
-                    <li><a href="about.html"
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a>
-                    </li>
-                    <li><a href="events"
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a>
-                    </li>
-                    <li><a href="causes.html"
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a>
-                    </li>
-                    <li><a href="blogs.html"
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a>
-                    </li>
-                    <li><a href=""
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[2px] after:w-0 after:h-[12px] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a>
-                    </li>
-                    <li><a href="contact.html"
-                            class="relative w-full sm:py-5 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
-                    </li>
-                </ul>
-                <ul class="2xl:flex hidden items-center pr-8">
-                    <li class="mr-3.5">
-                        <a href="" class="sl-btn">Make a Donation</a>
-                    </li>
-                    <li class="mr-3.5"><a onclick="hightSlide(searchDiv, 'h-full')"
-                            class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
-                                class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="mr-3.5"><a href=""
-                            class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
-                                class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li class="mr-3.5 text-sm leading-10"><a href=""
-                            class="text-lime-100 hover:text-lime-500 sl-animated">Login</a> | <a href=""
-                            class="text-lime-100 hover:text-lime-500 sl-animated">Signup</a></li>
-                </ul>
-            </nav>
+             <a href="index.html" class="py-4 lg:mr-24 bg-lime-800 text-center w-full lg:max-w-[17rem] max-w-[15rem]"><img src="assets/images/logo/h2logo.png" alt="logo" class="mx-auto"></a>
+             <button onclick="hightSlide(mainNav, 'h-[27rem]')" class="lg:hidden bg-green-500 text-white text-2xl mr-5 py-2 px-4 rounded"><i class="fa-solid fa-bars"></i></button>
+             <nav id="mainNav"
+                  class="flex lg:basis-auto basis-full grow items-center lg:h-fit h-0 lg:opacity-100 lg:visible opacity-0 invisible lg:overflow-visible overflow-hidden sl-animated-slide">
+                  <ul class="flex lg:flex-row flex-col mr-auto">
+                       <li class="relative"><a onclick="menuToggle(this)"
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">home</a>
+                                 <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
+                                      <li><a href="/" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Home One</a></li>
+                                      <li><a href="home-two.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Home Two</a></li>
+                                 </ul>
+                       </li>
+                       <li class="relative"><a
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">about</a>
+                       </li>
+                       <li class="relative"><a
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">events</a>
+                       </li>
+                       <li class="relative"><a onclick="menuToggle(this)"
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">causes</a>
+                                 <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
+                                      <li><a href="causes.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes Grid</a></li>
+                                      <li><a href="causes-list.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes List</a></li>
+                                      <li><a href="causes-details.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Causes Details</a></li>
+                                 </ul>
+                       </li>
+                       <li class="relative"><a
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">blogs</a>
+                       </li>
+                       <li class="relative"><a onclick="menuToggle(this)"
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-green-lime hover:border-lime-500 sl-animated lg:after:w-[0.125rem] after:w-0 after:h-[0.75rem] after:bg-green-100 after:absolute after:right-0 after:top-1/2 after:-translate-y-1/2">pages</a>
+                                 <ul id class="absolute right-0 top-full w-56 h-0 opacity-0 invisible bg-slate-900 rounded z-30">
+                                      <li class="relative group">
+                                           <a href="causes.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Projects</a>
+                                           <ul id class="absolute left-full top-0 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-slate-800 rounded z-30">
+                                                <li><a href="projects-details.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Projects Details</a></li>
+                                           </ul>
+                                      </li>
+                                      <li><a href="donation.html" class="hover:text-green-500 text-sm leading-[3rem] px-5 border-b border-slate-700 w-full sl-animated">Donation</a></li>
+                                 </ul>
+                       </li>
+                       <li class="relative"><a
+                                 class="relative w-full sm:py-6 py-3 px-6 text-green-100 text-sm font-medium uppercase border-b-2 border-green-900 hover:text-lime-500 hover:border-lime-500 sl-animated">contact</a>
+                       </li>
+                  </ul>
+                  <ul class="2xl:flex hidden items-center pr-8">
+                       <li class="mr-3.5">
+                            <a href="" class="sl-btn">Make a Donation</a>
+                       </li>
+                       <li class="mr-3.5"><a onclick="hightSlide(searchDiv, 'h-full')"
+                                 class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
+                                      class="fa-solid fa-magnifying-glass"></i></a></li>
+                       <li class="mr-3.5"><a href="" class="h-9 w-9 leading-9 rounded-full border border-lime-500 text-center text-sm text-lime-200 hover:text-white hover:bg-lime-500 sl-animated"><i
+                                      class="fa-solid fa-cart-shopping"></i></a></li>
+                       <li class="mr-3.5 text-sm leading-10"><a href="" class="text-lime-100 hover:text-lime-500 sl-animated">Login</a> | <a href=""
+                                 class="text-lime-100 hover:text-lime-500 sl-animated">Signup</a></li>
+                  </ul>
+             </nav>
         </div>
     </header>
     <!-- HEADER ENDS -->
@@ -105,88 +111,129 @@
     </section>
     <!-- HERO ENDS -->
 
-    <!-- Donation STARTS -->
-    <section class="sl-container">
-        <div class="mt-16">
-            <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">donation amount</h2>
-            <div class="overflow-hidden">
-                <ul class="font-roboto font-light text-2xl grid grid-cols-4 gap-2 sm:grid-cols-6 sm:gap-1.5 md:grid-cols-7 lg:grid-cols-8 md:w-[95%] lg:w-[80%] xl:w-[68%]">
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>5</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>20</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>50</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>100</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>250</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>500</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center bg-slate-700 rounded-sm cursor-pointer hover:bg-green-500 hover:border-green-500 hover:ease-in-out duration-300">$<span>1000</span></li>
-                    <li class="border border-solid border-gray-500 py-2 text-center rounded-sm "><input type="text" placeholder="$ Others" class="placeholder:text-base text-base px-1"></li>
-                </ul>
+    <!-- MAIN CONTENT STARTS -->
+    <main>
+        <!-- Donation STARTS -->
+        <section class="sl-container">
+            <div class="mt-16">
+                <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">donation amount</h2>
+                    <form action="">
+                         <div class="grid grid-cols-4 gap-2 sm:grid-cols-6 sm:gap-1.5 md:grid-cols-7 lg:grid-cols-8 md:w-[95%] lg:w-[80%] xl:w-[68%]">
+                              <div class="radio-box">
+                                   <input id="d1" type="radio" name="donation" class="hidden">
+                                   <label for="d1"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$5</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d2" type="radio" name="donation" class="hidden">
+                                   <label for="d2"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$20</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d3" type="radio" name="donation" class="hidden">
+                                   <label for="d3"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$50</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d4" type="radio" name="donation" class="hidden">
+                                   <label for="d4"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$100</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d5" type="radio" name="donation" class="hidden">
+                                   <label for="d5"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$250</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d6" type="radio" name="donation" class="hidden">
+                                   <label for="d6"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$500</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d7" type="radio" name="donation" class="hidden">
+                                   <label for="d7"
+                                        class="w-full block px-2 cursor-pointer rounded-sm font-medium sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] text-center sm:text-2xl xs:text-xl text-lg text-white/80 bg-slate-700 border border-gray-500 sl-animated">$1000</label>
+                              </div>
+                              <div class="radio-box">
+                                   <input id="d8" type="text" placeholder="$ other"
+                                        class="w-full px-2 block rounded-sm sm:leading-[3rem] xs:leading-[3rem] leading-[2.5rem] sm:text-2xl xs:text-xl text-lg placeholder:text-sm text-white/80 border border-gray-500 sl-animated">
+                              </div>
+                         </div>
+                    </form>
             </div>
-        </div>
 
-        <div class="mt-10 md:grid md:grid-cols-2 gap-x-8">
-            <div class="capitalize">
-                <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">payment methods 
-                    <span class="text-white/80 font-light text-sm">select the payment method</span></h2>
-                <div class="flex items-center mt-4">
-                    <input type="checkbox" class="default:ring-2" id="oneTime">
-                    <label for="oneTime" class="mr-5 ml-2 font-light">one time</label>
-                    <input type="checkbox" class="default:ring-2" id="offlinePayment">
-                    <label for="offlinePayment" class="ml-2 font-light">offline payment</label>
-                </div>
-                <div class="font-roboto" >
-                    <select class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 py-4 px-5 rounded-md font-light capitalize focus:outline-none focus:border-green-600" name=""id="" defaultValue='DEFAULT'>
+            <div class="mt-10 md:grid md:grid-cols-2 gap-x-8">
+                <div class="capitalize">
+                    <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">payment methods
+                        <span class="text-white/80 font-light text-sm">select the payment method</span>
+                    </h2>
+                    <div class="flex items-center mt-4">
+                        <input type="checkbox" class="default:ring-2" id="oneTime">
+                        <label for="oneTime" class="mr-5 ml-2 font-light">one time</label>
+                        <input type="checkbox" class="default:ring-2" id="offlinePayment">
+                        <label for="offlinePayment" class="ml-2 font-light">offline payment</label>
+                    </div>
+                    <div class="font-roboto">
+                        <select class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 py-4 px-5 rounded-md font-light capitalize focus:outline-none focus:border-green-600"
+                            name="" id="" defaultValue='DEFAULT'>
                             <option value="DEFAULT">one time or weekly</option>
                             <option value="">monthly</option>
                             <option value="">weekly</option>
-                    </select>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-5 md:mt-0">
+                    <div class=" capitalize">
+                        <h2 class="font-sans font-semibold mb-[0.813rem] lg:mb-8 xl:mb-4 text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">causes & Projects
+                        </h2>
+                        <p class=" mt-3 font-thin text-base text-gray-400 md:mb-[0.688rem] lg:mb-[1rem] xl:mb-0">please select the cause of project for contribution</p>
+                    </div>
+                    <div class="font-roboto">
+                        <select class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 py-4 px-5 rounded-md font-light capitalize focus:outline-none focus:border-green-600"
+                            name="" id="" defaultValue='DEFAULT'>
+                            <option value="DEFAULT">one time or weekly</option>
+                            <option value="">monthly</option>
+                            <option value="">weekly</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="mt-5 md:mt-0">
-                <div class=" capitalize">
-                    <h2 class="font-sans font-semibold mb-[0.813rem] lg:mb-8 xl:mb-4 text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">causes & Projects</h2>
-                    <p class=" mt-3 font-thin text-base text-gray-400 md:mb-[0.688rem] lg:mb-[1rem] xl:mb-0">please select the cause of project for contribution</p>
-                </div>
-                <div class="font-roboto">
-                    <select class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 py-4 px-5 rounded-md font-light capitalize focus:outline-none focus:border-green-600"
-                        name="" id="" defaultValue='DEFAULT'>
-                        <option value="DEFAULT">one time or weekly</option>
-                        <option value="">monthly</option>
-                        <option value="">weekly</option>
-                    </select>
-                </div>
-            </div>
-        </div>
 
-        <div class=" font-roboto mt-8 capitalize">
-            <h2
-                class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">
-                your comments</h2>
-            <textarea
-                class="w-full mt-3 p-[0.93rem] border border-solid border-gray-500 rounded-md placeholder:capitalize focus:outline-none focus:border-green-600 "
-                name="" id="" cols="30" rows="8" placeholder="write you comments or message"></textarea>
-            <div class="mt-3 flex">
-                <input type="checkbox" class="default:ring-2" id="checkDonator">
-                <label for="checkDonator" class="mr-5 ml-2 text-white/80 font-sans font-semibold text-xl">Check this Box to
-                    Anonymous Donator</label>
-            </div>
-        </div>
-
-        <div class="mt-10 capitalize mb-24">
-            <form action="">
-                <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">donator details</h2>
-                <div class="mt-6 font-roboto text-[1rem] font-normal grid gap-y-8 md:grid-cols-2 md:gap-x-8">
-                    <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="text" placeholder="first name">
-                    <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="text" placeholder="last name">
-                    <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="email" placeholder="enter email address">
-                    <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="text" placeholder="your postal / zip code">
-                    <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="email" placeholder="enter email address">
-                    <button class="w-full py-3 px-4 bg-green-500 rounded-[0.25rem] text-base font-medium uppercase hover:bg-green-900 hover:ease-in-out duration-500">continue to donate</button>
+            <div class=" font-roboto mt-8 capitalize">
+                <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">
+                    your comments</h2>
+                <textarea class="w-full mt-3 p-[0.93rem] border border-solid border-gray-500 rounded-md placeholder:capitalize focus:outline-none focus:border-green-600 " name="" id="" cols="30"
+                    rows="8" placeholder="write you comments or message"></textarea>
+                <div class="mt-3 flex">
+                    <input type="checkbox" class="default:ring-2" id="checkDonator">
+                    <label for="checkDonator" class="mr-5 ml-2 text-white/80 font-sans font-semibold text-xl">Check this Box to
+                        Anonymous Donator</label>
                 </div>
-                
-            </form>
-        </div>
-    </section>
-    <!-- DONATION ENDS -->
+            </div>
+
+            <div class="mt-10 capitalize mb-24">
+                <form action="">
+                    <h2 class="font-sans font-semibold mb-[0.813rem] text-[1.375rem] sm:text-[1.75rem] md:text-2xl lg:text-[1.75rem] leading-[1.2] capitalize">donator details</h2>
+                    <div class="mt-6 font-roboto text-[1rem] font-normal grid gap-y-8 md:grid-cols-2 md:gap-x-8">
+                        <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="text"
+                            placeholder="first name">
+                        <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="text"
+                            placeholder="last name">
+                        <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600"
+                            type="email" placeholder="enter email address">
+                        <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600" type="text"
+                            placeholder="your postal / zip code">
+                        <input class="w-full text-white/80 py-3 px-4 border border-solid border-gray-500 rounded-[0.25rem] placeholder:capitalize focus:outline-none focus:border-green-600"
+                            type="email" placeholder="enter email address">
+                        <button class="w-full py-3 px-4 bg-green-500 rounded-[0.25rem] text-base font-medium uppercase hover:bg-green-900 hover:ease-in-out duration-500">continue to donate</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <!-- DONATION ENDS -->
+    </main>
+    <!-- MAIN CONTENT ENDS -->
 
     <!-- FOOTER STARTS -->
     <footer class="pt-16 sl-bg-cover" style="background-image: url(./assets/images/hero/footerbg.jpg);">
@@ -204,23 +251,17 @@
                 <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12">
                     <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">Our Promises</h3>
                     <ul>
-                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
-                                    class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Solar Energy</a>
+                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Solar Energy</a>
                         </li>
-                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
-                                    class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Waste
+                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Waste
                                 Management</a></li>
-                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
-                                    class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Eco Ideas</a>
+                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Eco Ideas</a>
                         </li>
-                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
-                                    class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Recycling
+                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Recycling
                                 Materials</a></li>
-                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
-                                    class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Plant
+                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Plant
                                 Ecology</a></li>
-                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span
-                                    class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Saving
+                        <li><a href="" class="py-2 font-semibold text-white/80 hover:text-lime-500 sl-animated"><span class="mr-1"><i class="fa-solid fa-caret-right"></i></span> Saving
                                 Wildlife</a></li>
                     </ul>
                 </div>
@@ -228,37 +269,36 @@
                     <h3 class="text-2xl text-lime-500 font-semibold mb-3.5">Latest Posts</h3>
                     <ul>
                         <li class="flex mb-5">
-                            <img src="assets/images/flp1.jpg" alt="" class="rounded">
+                            <img src="assets/images/news-posts/h2news2.jpg" alt="" class="w-[4.25rem] h-[4.25rem] rounded">
                             <p class="ml-2.5">
-                                <a href="" class="text-sm font-medium hover:text-green-500 sl-animated">How you can keep alive wild animals for...</a>
-                                <span class="block font-light text-xs text-white/80"><strong
-                                        class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
+                                <a href="" class="text-sm font-medium hover:text-lime-500 sl-animated">How you can keep alive wild animals for...</a>
+                                <span class="block font-light text-xs text-white/80">
+                                    <strong class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018
+                                </span>
                             </p>
                         </li>
                         <li class="flex mb-5">
-                            <img src="assets/images/flp2.jpg" alt="" class="rounded">
+                            <img src="assets/images/news-posts/h2news3.jpg" alt="" class="w-[4.25rem] h-[4.25rem] rounded">
                             <p class="ml-2.5">
-                                <a href="" class="text-sm font-medium hover:text-green-500 sl-animated">Eliminate your plastic bottle pollution &
+                                <a href="" class="text-sm font-medium hover:text-lime-500 sl-animated">Eliminate your plastic bottle pollution &
                                     keep...</a>
-                                <span class="block font-light text-xs text-white/80"><strong
-                                        class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
+                                <span class="block font-light text-xs text-white/80"><strong class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
                             </p>
                         </li>
                         <li class="flex mb-5">
-                            <img src="assets/images/flp3.jpg" alt="" class="rounded">
+                            <img src="assets/images/news-posts/h2news4.jpg" alt="" class="w-[4.25rem] h-[4.25rem] rounded">
                             <p class="ml-2.5">
-                                <a href="" class="text-sm font-medium hover:text-green-500 sl-animated">How you can keep alive wild animals for...</a>
+                                <a href="" class="text-sm font-medium hover:text-lime-500 sl-animated">How you can keep alive wild animals for...</a>
                                 <span class="block font-light text-xs text-white/80"><strong
                                         class="text-lime-500 font-semibold">Posted:</strong> 29 September, 2018</span>
                             </p>
                         </li>
                     </ul>
                 </div>
-                <!-- Swiper Slider (Footer) STARTS -->
+                <!-- SWIPER SLIDER (FOOTER) STARTS -->
                 <div class="lg:basis-1/4 sm:basis-1/2 basis-full px-2 mb-12 swiper footerSlider">
                     <div class="swiper footerSlider">
                         <div class="swiper-wrapper">
-                            <!-- Slider - 1 -->
                             <div class="swiper-slide relative rounded overflow-hidden">
                                 <img src="assets/images/item/pro1.jpg" alt="" class="w-full">
                                 <div class="flex items-center bg-slate-900 p-5">
@@ -266,7 +306,6 @@
                                     <strong class="text-lime-500 ml-auto">$19.00</strong>
                                 </div>
                             </div>
-                            <!-- Slider - 2 -->
                             <div class="swiper-slide relative rounded overflow-hidden">
                                 <img src="assets/images/item/pro1.jpg" alt="" class="w-full">
                                 <div class="flex items-center bg-slate-900 p-5">
@@ -274,7 +313,6 @@
                                     <strong class="text-lime-500 ml-auto">$19.00</strong>
                                 </div>
                             </div>
-                            <!-- Slider - 3 -->
                             <div class="swiper-slide relative rounded overflow-hidden">
                                 <img src="assets/images/item/pro1.jpg" alt="" class="w-full">
                                 <div class="flex items-center bg-slate-900 p-5">
@@ -285,12 +323,11 @@
 
                         </div>
                         <!--Footer SLider Pagination-->
-                        <div
-                            class="swiper-pagination text-right top-[78%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1">
+                        <div class="swiper-pagination text-right top-[78%] sm:top-[70%] md:top-[78%] lg:top-[68%] xl:top-[72%] -ml-1">
                         </div>
                     </div>
                 </div>
-                <!-- Swiper Slider (Footer) ENDS -->
+                <!-- SWIPER SLIDER (FOOTER) ENDS -->
             </div>
         </div>
         <div class="border-t border-white/30 py-5">
@@ -305,16 +342,23 @@
 
 
     <!-- SCRIPT LINKS -->
-    <script src="./assets/ventors/jquery/jquery-3.6.1.min.js"></script>
-    <script src="./assets/ventors/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/ventors/counter/jquery.counterup.min.js"></script>
-    <script src="./assets/ventors/counter/jquery.waypoints.js"></script>
-    <script src="./assets/ventors/counter/jquery.waypoints.min.js"></script>
-
     <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/swiperSetting.js"></script>
-
-
+    <script src="assets/js/counter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".footerSlider", {
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
