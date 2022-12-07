@@ -908,6 +908,42 @@ img {
   right: 12.5%;
 }
 
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.right-\[45\%\] {
+  right: 45%;
+}
+
+.right-\[40\%\] {
+  right: 40%;
+}
+
+.right-\[48\%\] {
+  right: 48%;
+}
+
+.right-\[45\.5\%\] {
+  right: 45.5%;
+}
+
+.right-\[46\%\] {
+  right: 46%;
+}
+
+.right-\[45\.8\%\] {
+  right: 45.8%;
+}
+
+.right-\[47\%\] {
+  right: 47%;
+}
+
+.right-\[46\.5\%\] {
+  right: 46.5%;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -1314,6 +1350,10 @@ img {
 
 .h-\[93vh\] {
   height: 93vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-screen {
@@ -1747,6 +1787,14 @@ img {
   border-top-width: 0px;
 }
 
+.border-l-4 {
+  border-left-width: 4px;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1825,6 +1873,14 @@ img {
 
 .border-white\/80 {
   border-color: rgb(255 255 255 / 0.8);
+}
+
+.border-gray-500\/80 {
+  border-color: rgb(107 114 128 / 0.8);
+}
+
+.border-gray-500\/40 {
+  border-color: rgb(107 114 128 / 0.4);
 }
 
 .bg-slate-800 {
@@ -4596,6 +4652,10 @@ img {
     left: 0px;
   }
 
+  .lg\:right-\[46\.5\%\] {
+    right: 46.5%;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -5085,6 +5145,10 @@ img {
 
   .xl\:left-\[1\.875rem\] {
     left: 1.875rem;
+  }
+
+  .xl\:right-\[46\%\] {
+    right: 46%;
   }
 
   .xl\:mb-4 {
