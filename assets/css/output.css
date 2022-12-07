@@ -1448,6 +1448,14 @@ img {
   width: 33.33%;
 }
 
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .min-w-\[1\.75rem\] {
   min-width: 1.75rem;
 }
@@ -4322,6 +4330,10 @@ img {
     width: 40%;
   }
 
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .md\:basis-2\/3 {
     flex-basis: 66.666667%;
   }
@@ -4500,6 +4512,11 @@ img {
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:pt-\[2rem\] {
