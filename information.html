@@ -66,13 +66,15 @@
               </ol>
             </nav>
             <div class="mt-8 text-center px-4 sm:px-16">
-              <h2 class="font-robot font-medium text-[1rem] capitalize before:border-l-0  before:mr-[1rem]
-              before:content-[''] before:border-t before:border-solid before:border-gray-500 before:border-r-0
-              after:border-l-0 after:ml-[1rem] after:content-[''] after:border-t after:border-solid after:border-gray-500 after:border-r-0">
-                express checkout
+              <div class="relative">
+                <h2 class="absolute -top-3 left-[30%] xl:left-[35%] md:left-[39%] lg:left-[30%] sm:left-[35%] font-robot font-medium text-[1rem] capitalize 
+                  before:absolute before:-left-[1.5rem] before:w-[12rem] before:top-[0.6rem] before:h-[0.325rem] before:content-[''] before:bg-slate-800 z-10">
+                <p class="relative">Express checkout</p>
               </h2>
+              </div>
+              
               <div
-                class="font-roboto font-medium text-[1rem] leading-4 capitalize grid md:grid-cols-3 gap-y-2 gap-x-2 p-[1.428rem] border-t-0 border border-solid border-gray-500 rounded-[5px]"
+                class="-z-50 font-roboto font-medium text-[1rem] leading-4 capitalize grid md:grid-cols-3 gap-y-2 gap-x-2 p-[1.428rem] border border-solid border-gray-500 rounded-[5px] mt-10"
               >
                 <div
                   class="px-[12px] py-[10px] bg-purple-500 text-center rounded-[4px] cursor-pointer"
@@ -103,8 +105,9 @@
                 <a href="" class="font-roboto font-light text-red-500">log in</a>
               </span>
             </div>
-            <div class="mt-5">
-              <input type="email" placeholder="email" class="w-full font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
+            <div class="relative mt-5 w-auto h-auto">
+              <input type="email" id="emailBox" placeholder="email" class="w-full font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600
+              ">
               <div class="mt-4 flex items-center gap-x-3">
                 <input type="checkbox" class="w-4 h-4 rounded cursor-pointer" id="checkEmail">
                 <label for="checkEmail" class=" cursor-pointer font-roboto text-[14px]">Email me with news and offers</label>
