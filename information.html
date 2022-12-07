@@ -33,7 +33,7 @@
           </div>
           <div class="lg:hidden mt-10 border-y border-solid border-gray-500">
             <div class="sl-flex-between py-5 md:px-20 sm:px-16 px-4">
-              <div class="text-red-500 text-[14px] sl-flex-center">
+              <div class="text-red-500 text-[14px] sl-flex-center" onclick="toggleOrderSummery(orderSummery)">
                 <i class="fa-solid fa-cart-shopping mr-4"></i>
                 <span class="font-roboto capitalize">show order summary</span>
                 <i class="fa-solid fa-chevron-up ml-2"></i>
@@ -41,6 +41,72 @@
               <span>$41.90</span>
             </div>
           </div>
+
+
+          <div id="orderSummery"
+            class="hidden lg:hidden lg:basis-[40%] mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
+            <div class="">
+              <table class="table-auto w-full border-b-2 border-solid border-gray-500">
+                <tbody class="text-start table-cell pb-5 ">
+                  <tr class="font-roboto">
+                    <td class="relative w-[15%]">
+                      <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
+                      <span
+                        class="font-roboto font-medium text-[0.8571428571rem] leading-[1.75rem] absolute -top-[0.75rem] -right-[0.75rem] text-white min-w-[1.75rem] h-[1.75rem] bg-gray-500 text-center rounded-full">1</span>
+                    </td>
+                    <td class="px-3">
+                      <h2 class="font-roboto text-[0.857rem]">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
+                      <span class="font-roboto text-[0.75rem] text-white/80">Heather Navy / S</span>
+                    </td>
+                    <td class="px-3"></td>
+                    <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="py-10 flex gap-x-4 justify-between border-b border-solid border-gray-500">
+              <input type="text"
+                class="w-full font-roboto text-[0.857rem] px-[0.785rem] py-[0.8rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600"
+                placeholder="Gift card or discount code">
+              <button class="sl-btn">apply</button>
+            </div>
+            <div class="mt-5">
+              <table class="table-auto w-full border-b border-solid border-gray-500">
+                <tbody class="text-start pb-5 flex flex-col">
+                  <tr class="font-roboto sl-flex-between">
+                    <th class="text-left text-[0.857rem] capitalize">
+                      subtotal
+                    </th>
+                    <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
+                  </tr>
+                  <tr class="font-roboto sl-flex-between">
+                    <th class="text-left text-[0.857rem] capitalize">
+                      shipping
+                    </th>
+                    <td class="font-roboto text-[0.857rem] text-white/80">Calculated at next step</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mt-5">
+              <table class="table-auto w-full">
+                <tbody class="text-start pb-5 flex flex-col">
+                  <tr class="font-roboto sl-flex-between">
+                    <th class="text-left capitalize">
+                      total
+                    </th>
+                    <td class="font-roboto">
+                      <span class="text-[0.857rem] mr-[0.5rem] text-white/80">usd</span>
+                      <span class="text-[1.714rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+
           <nav class="mt-5">
             <ol class="flex items-center justify-center font-roboto text-[0.857rem] capitalize">
               <li class="mr-2">
@@ -152,7 +218,8 @@
                 <input type="text" id="apartment" name="apartment"
                   class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
                   placeholder=" ">
-                <label for="apartment" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Apartment, suite, etc. (optional)</label>
+                <label for="apartment" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Apartment, suite, etc.
+                  (optional)</label>
               </div>
 
               <div class="grid md:grid-cols-3 gap-x-4 gap-y-4 md:gap-y-0">
@@ -163,7 +230,7 @@
                     placeholder=" ">
                   <label for="city" class="absolute top-4 left-2 -z-1 duration-300 origin-0">City</label>
                 </div>
-                
+
                 <select
                   class="w-full text-white/80 border border-solid border-gray-500 bg-slate-800 px-[0.785rem] py-[0.928rem] rounded-[5px] font-light capitalize focus:outline-none focus:border-red-600"
                   name="" id="" defaultValue='DEFAULT'>
@@ -290,6 +357,7 @@
   </main>
 
   <script>
+    /*TO TOGGLE NEWS LETTER SECTION WITH CHECKBOX*/
     function toggleNewsletter() {
       let checkValue = document.getElementById("checkNewsletter");
       let content = document.getElementById("newLetterArea");
@@ -299,6 +367,17 @@
       } else {
         content.classList.add("hidden");
         content.classList.remove("block");
+      }
+    }
+
+    /*TO TOGGLE ORDER SUMMERY*/
+    function toggleOrderSummery(id) {
+      if (id.classList.contains("hidden")) {
+        id.classList.remove("hidden");
+        id.classList.add("block h-full");
+      } else {
+        id.classList.remove("block");
+        id.classList.add("hidden");
       }
     }
   </script>
