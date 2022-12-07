@@ -68,6 +68,16 @@
     @apply bg-green-500 text-white;
   }
 
+    /*FLOATING INPUT PLACEHOLDER*/
+    .floating-input:focus-within ~ label,
+    .floating-input:not(:placeholder-shown) ~ label {
+      @apply transform scale-90 -translate-y-4;
+   }
+
+   .floating-input:focus-within ~ label {
+     @apply text-white;
+   }
+
   /* BUTTON */
   .sl-btn {
     @apply bg-green-500 hover:bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;

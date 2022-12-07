@@ -90,14 +90,18 @@
               <a href="" class="font-roboto font-light text-red-500">log in</a>
             </span>
           </div>
+
           <div class="relative mt-5 w-auto h-auto">
-            <input type="email" id="emailBox" placeholder="email" class="w-full font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600
-              ">
-            <div class="mt-4 flex items-center gap-x-3">
-              <input type="checkbox" class="w-4 h-4 rounded cursor-pointer" id="checkEmail">
-              <label for="checkEmail" class=" cursor-pointer font-roboto text-[14px]">Email me with news and
-                offers</label>
-            </div>
+            <input type="email" id="email" name="email"
+              class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+              placeholder=" ">
+            <label for="email" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Email</label>
+          </div>
+
+          <div class="mt-4 flex items-center gap-x-3">
+            <input type="checkbox" class="w-4 h-4 rounded cursor-pointer" id="checkEmail">
+            <label for="checkEmail" class=" cursor-pointer font-roboto text-[14px]">Email me with news and
+              offers</label>
           </div>
 
           <div class="mt-10">
@@ -113,28 +117,66 @@
                 </select>
               </div>
               <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-0">
-                <input type="text" placeholder="first name"
-                  class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
-                <input type="text" placeholder="last name"
-                  class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
+
+                <div class="relative">
+                  <input type="text" id="firstName" name="firstName"
+                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="firstName" class="absolute top-4 left-2 -z-1 duration-300 origin-0">First Name</label>
+                </div>
+
+                <div class="relative">
+                  <input type="text" id="lastName" name="lastName"
+                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="lastName" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Last Name</label>
+                </div>
+
               </div>
-              <input type="text" placeholder="company (optional)"
-                class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
-              <input type="text" placeholder="address"
-                class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
-              <input type="text" placeholder="apartment, suite, etc. (optional)"
-                class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
+
+              <div class="relative">
+                <input type="text" id="company" name="company"
+                  class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                  placeholder=" ">
+                <label for="company" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Company (optional)</label>
+              </div>
+
+              <div class="relative">
+                <input type="text" id="address" name="address"
+                  class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                  placeholder=" ">
+                <label for="address" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Address</label>
+              </div>
+
+              <div class="relative">
+                <input type="text" id="apartment" name="apartment"
+                  class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                  placeholder=" ">
+                <label for="apartment" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Apartment, suite, etc. (optional)</label>
+              </div>
+
               <div class="grid md:grid-cols-3 gap-x-4 gap-y-4 md:gap-y-0">
-                <input type="text" placeholder="city"
-                  class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
+
+                <div class="relative">
+                  <input type="text" id="city" name="city"
+                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="city" class="absolute top-4 left-2 -z-1 duration-300 origin-0">City</label>
+                </div>
+                
                 <select
                   class="w-full text-white/80 border border-solid border-gray-500 bg-slate-800 px-[0.785rem] py-[0.928rem] rounded-[5px] font-light capitalize focus:outline-none focus:border-red-600"
                   name="" id="" defaultValue='DEFAULT'>
                   <option value="DEFAULT">state</option>
                   <option value="">dhaka</option>
                 </select>
-                <input type="text" placeholder="postal code"
-                  class="w-full px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600">
+
+                <div class="relative">
+                  <input type="text" id="portalCode" name="portalCode"
+                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="portalCode" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Postal code</label>
+                </div>
               </div>
 
               <div class="flex items-center gap-x-3">
