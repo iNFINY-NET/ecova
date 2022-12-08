@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- TITLE & FAVICON -->
+  <link rel="icon" href="assets/images/logo/favicon.png" />
+  <title>ECOVA || Information</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- TAILWIND CSS -->
+  <link href="assets/css/output.css" rel="stylesheet" />
+</head>
+
+<body class=" text-white text-base font-normal">
+  <main class="flex">
+    <section class="w-full lg:w-[55%] h-auto bg-slate-800 lg:pt-[4rem] lg:pl-[5%] lg:pr-[5%] 2xl:pl-[19.5%] 2xl:pr-[4%]">
+        <div class=" mt-10">
+        <header>
+          <div>
+            <img src="./assets/images/logo/logo.png" class="block m-auto" alt="" />
+          </div>
+          <div class="lg:hidden mt-10 border-y border-solid border-gray-500">
+            <div class="sl-flex-between py-5 md:px-20 sm:px-10 px-4">
+              <div class="text-red-500 text-[0.875rem] sl-flex-center" onclick="toggleOrderSummery(orderSummery)">
+                <i class="fa-solid fa-cart-shopping mr-4"></i>
+                <span class="font-roboto capitalize">show order summary</span>
+                <i class="fa-solid fa-chevron-up ml-2"></i>
+              </div>
+              <span>$41.90</span>
+            </div>
+          </div>
+
+          <div id="orderSummery"
+            class="hidden lg:hidden lg:basis-[40%] pt-5 sm:px-10 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
+            <div class="">
+              <table class="table-auto w-full border-b-2 border-solid border-gray-500">
+                <tbody class="text-start table-cell pb-5 ">
+                  <tr class="font-roboto">
+                    <td class="relative w-[15%]">
+                      <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
+                      <span
+                        class="font-roboto font-medium text-[0.8571428571rem] leading-[1.75rem] absolute -top-[0.75rem] -right-[0.75rem] text-white min-w-[1.75rem] h-[1.75rem] bg-gray-500 text-center rounded-full">1</span>
+                    </td>
+                    <td class="px-3">
+                      <h2 class="font-roboto text-[0.857rem]">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
+                      <span class="font-roboto text-[0.75rem] text-white/80">Heather Navy / S</span>
+                    </td>
+                    <td class="px-3"></td>
+                    <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="py-10 flex gap-x-4 justify-between border-b border-solid border-gray-500">
+              <input type="text"
+                class="w-full font-roboto text-[0.857rem] px-[0.785rem] py-[0.8rem] border border-solid border-gray-500 rounded-[0.313rem] placeholder:capitalize focus:outline-none focus:border-red-600"
+                placeholder="Gift card or discount code">
+              <button class="sl-btn">apply</button>
+            </div>
+            <div class="mt-5">
+              <table class="table-auto w-full border-b border-solid border-gray-500">
+                <tbody class="text-start pb-5 flex flex-col">
+                  <tr class="font-roboto sl-flex-between">
+                    <th class="text-left text-[0.857rem] capitalize">
+                      subtotal
+                    </th>
+                    <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
+                  </tr>
+                  <tr class="font-roboto sl-flex-between">
+                    <th class="text-left text-[0.857rem] capitalize">
+                      shipping
+                    </th>
+                    <td class="font-roboto text-[0.857rem] text-white/80">Calculated at next step</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="mt-5">
+              <table class="table-auto w-full">
+                <tbody class="text-start pb-5 flex flex-col">
+                  <tr class="font-roboto sl-flex-between">
+                    <th class="text-left capitalize">
+                      total
+                    </th>
+                    <td class="font-roboto">
+                      <span class="text-[0.857rem] mr-[0.5rem] text-white/80">usd</span>
+                      <span class="text-[1.714rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <nav class="mt-5">
+            <ol class="flex items-center justify-center font-roboto font-light text-[0.757rem] capitalize">
+              <li class="mr-2">
+                <a href="information-two.html">information</a>
+                <i class="fa-solid fa-chevron-right mx-1"></i>
+              </li>
+              <li class="">
+                <a href="shipping.html" class="text-red-500">shipping</a>
+                <i class="fa-solid fa-chevron-right mx-1"></i>
+              </li>
+              <li class="mx-1">
+                <a href="" class="text-white/80">payment</a>
+              </li>
+            </ol>
+          </nav>
+          <div class="w-full mt-8 px-4 sm:px-0">
+           <div class="relative">
+              <h2
+                class="absolute -top-3 left-[30%] xl:left-[36%] md:left-[39%] lg:left-[30%] sm:left-[35%] font-robot text-[0.875rem] capitalize 
+                  before:absolute before:-left-[1.6rem] before:w-[11rem] before:top-[0.6rem] before:h-[0.325rem] before:content-[''] before:bg-slate-800 z-10 ">
+                <span class="relative">Express checkout</span>
+              </h2>
+            </div>
+
+            <ul class="w-full flex gap-x-2 border border-solid border-gray-500 rounded-[0.313rem] p-5">
+              <li class="block m-auto w-full py-3 px-3 hover:bg-white/80 sl-animated text-center rounded-[0.25rem] bg-purple-500 cursor-pointer">
+                <img src="./assets/images/information/shop-pay-seeklogo.com.svg" class="w-[65%] block m-auto" alt="">
+              </li>
+              <li class="block m-auto w-full py-3 px-3 hover:bg-white/80 sl-animated text-center rounded-[0.25rem] bg-yellow-500 cursor-pointer">
+                <img src="./assets/images/information/PayPal.png" class="w-[60%] block m-auto" alt="">
+              </li>
+              <li class="block m-auto w-full py-3 px-3 hover:bg-white/80 sl-animated text-center rounded-[0.25rem] bg-black cursor-pointer">
+                <img src="./assets/images/information/google-pay-seeklogo.com.svg" class="w-[40%] block m-auto" alt="">
+              </li>
+            </ul>
+            <div class="relative mt-5 text-center capitalize">
+              <h2 class="before:absolute before:left-0 before:w-full before:top-[0.75rem] before:h-[0.06rem] before:content-[''] before:bg-gray-500 
+                        after:absolute after:left-[45%] after:w-[10%] after:top-[0.75rem] after:h-[0.06rem] after:content-[''] after:bg-slate-800">
+              </h2>
+              <span class="relative text-white/80 text-[0.775rem] uppercase">or</span>
+            </div>
+          </div>
+        </header>
+
+        <form action="" class="mt-5 md:px-20 sm:px-10 px-4 lg:px-0">
+          <div class="font-roboto capitalize sm:sl-flex-between">
+            <h2 class="text-[1.285rem] leading-[1.3rem] mb-2">contact information</h2>
+            <span class="leading-[1.5rem] text-[0.875rem]">already have an account?
+              <a href="" class="font-roboto font-light text-red-500">log in</a>
+            </span>
+          </div>
+
+          <div class="relative mt-5 w-auto h-auto text-white/80 font-roboto text-[0.875rem]">
+            <input type="email" id="email" name="email"
+              class="floating-input w-full block  text-[0.875rem] px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+              placeholder=" ">
+            <label for="email" class="absolute font-light top-4 left-2 -z-1 duration-300 origin-0">Email</label>
+          </div>
+
+          <div class="mt-4 flex items-center gap-x-3">
+            <input type="checkbox" class="w-4 h-4 rounded cursor-pointer" id="checkEmail">
+            <label for="checkEmail" class=" cursor-pointer font-roboto text-[0.875rem]">Email me with news and
+              offers</label>
+          </div>
+
+          <div class="mt-10">
+            <h2 class="font-roboto text-[1.285rem] leading-[1.3rem]">Shipping address</h2>
+
+            <div class="grid gap-y-4 font-roboto text-[0.875rem]">
+              <div class="mt-5">
+                <select
+                  class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 px-[0.7rem] py-[0.82rem] rounded-[0.313rem] font-light capitalize focus:outline-none focus:border-red-600"
+                  name="" id="" defaultValue='DEFAULT'>
+                  <option value="DEFAULT">Country/region</option>
+                  <option value="">bangladesh</option>
+                </select>
+              </div>
+              <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-0">
+
+                <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                  <input type="text" id="firstName" name="firstName"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="firstName" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">First name</label>
+                </div>
+
+                <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                  <input type="text" id="lastName" name="lastName"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="lastName" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Last name</label>
+                </div>
+
+              </div>
+
+              <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                <input type="text" id="company" name="company"
+                  class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                  placeholder=" ">
+                <label for="company" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Company (optional)</label>
+              </div>
+
+              <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                <input type="text" id="address" name="address"
+                  class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                  placeholder=" ">
+                <label for="address" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Address</label>
+              </div>
+
+              <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                <input type="text" id="apartment" name="apartment"
+                  class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                  placeholder=" ">
+                <label for="apartment" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Apartment, suite, etc.
+                  (optional)</label>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-0">
+                <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                  <input type="text" id="city" name="city"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="city" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">City</label>
+                </div>
+
+                <div class="relative text-white/80 font-roboto text-[0.875rem]">
+                  <input type="text" id="portalCode" name="portalCode"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] focus:outline-none focus:border-red-600 appearance-none"
+                    placeholder=" ">
+                  <label for="portalCode" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Postal code</label>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-x-3">
+                <input type="checkbox" class="w-4 h-4 rounded cursor-pointer" id="checkNewsletter"
+                  onclick="toggleNewsletter()">
+                <label for="checkNewsletter" class=" cursor-pointer font-roboto text-[0.875rem]">Text me with news and
+                  offers</label>
+              </div>
+            </div>
+            <div class="hidden md:px-6" id="newLetterArea">
+              <div class="relative">
+                <i class="fa-solid fa-mobile-screen-button text-[1.25rem] absolute left-2 top-10"></i>
+                <img src="./assets/images/information/af.svg" class=" absolute right-[35%] top-10 w-[5%]" alt="">
+                <select class="mt-5 w-full md:w-[70%] text-white/80 border border-solid border-gray-500 bg-slate-800 px-[1.5rem] py-[0.89rem] rounded-[0.313rem] font-light focus:outline-none focus:border-red-600";
+                name="" id="" defaultValue='DEFAULT'>
+                <option value="DEFAULT">
+                  <span class="block">Mobile Phone Number +1</span>
+                </option>
+                <option value="">bangladesh(+880)</option>
+              </select>
+              </div>
+              <p class="mt-4 font-roboto text-[0.8571428571rem] text-white/80">
+                By signing up via text, you agree to receive recurring automated marketing messages, including cart
+                reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to
+                unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply.
+                View our <a href=""class="text-red-500">Privacy Policy</a> and <a href="" class="text-red-500">Terms of
+                  Service.</a>
+              </p>
+            </div>
+
+          </div>
+          <div class="mt-10 md:text-right">
+            <button class="w-full md:w-[50%] py-[1.4rem] leading-none sl-btn normal-case">Continue to
+              shipping</button>
+          </div>
+        </form>
+
+        <footer class="mt-20 sm:px-10 md:px-20 px-4 lg:px-0 border-t border-solid border-gray-500">
+          <ul class="font-roboto font-light text-xs text-red-500 capitalize py-4 flex flex-wrap">
+            <li><a href="" class="mr-3">refund policy</a></li>
+            <li><a href="" class="mr-3">privacy policy</a></li>
+            <li><a href="" class="mr-3">terms of service</a></li>
+            <li><a href="" class="mr-3">purchase options cancellation policy</a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <section class="hidden lg:block w-[45%] h-auto bg-slate-700 lg:pt-[4rem] lg:pl-[4%] lg:pr-[4%] 2xl:pr-[20.5%] 2xl:pl-[2%]  border-l border-solid border-gray-500">
+        <div class="hidden lg:block mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0">
+        <div class="">
+          <table class="table-auto w-full border-b-2 border-solid border-gray-500">
+            <tbody class="text-start table-cell pb-5 ">
+              <tr class="font-roboto">
+                <td class="relative w-[15%]">
+                  <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
+                  <span
+                    class="font-roboto font-medium text-[0.8571428571rem] leading-[1.75rem] absolute -top-[0.75rem] -right-[0.75rem] text-white min-w-[1.75rem] h-[1.75rem] bg-gray-500 text-center rounded-full">1</span>
+                </td>
+                <td class="px-3">
+                  <h2 class="font-roboto text-[0.857rem]">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
+                  <span class="font-roboto text-[0.75rem] text-white/80">Heather Navy / S</span>
+                </td>
+                <td class="px-3"></td>
+                <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="py-6 flex gap-x-4 justify-between border-b border-solid border-gray-500">
+          <input type="text"
+            class="w-full font-roboto text-[0.82rem] px-[0.785rem] py-[0.82rem] border border-solid border-gray-500 rounded-[0.313rem] placeholder:capitalize focus:outline-none focus:border-red-600"
+            placeholder="Gift card or discount code">
+          <button class="sl-btn capitalize">apply</button>
+        </div>
+        <div class="mt-5">
+          <table class="table-auto w-full border-b border-solid border-gray-500">
+            <tbody class="text-start pb-5 flex flex-col">
+              <tr class="font-roboto sl-flex-between text-white/80">
+                <th class="text-left font-light text-[0.94rem] capitalize">
+                  subtotal
+                </th>
+                <td class="font-roboto text-white text-[0.857rem]">$28.95</td>
+              </tr>
+              <tr class="font-roboto sl-flex-between text-white/80">
+                <th class="text-left font-light text-[0.94rem] capitalize">
+                  shipping
+                </th>
+                <td class="text-[0.82rem] font-light">Calculated at next step</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mt-5">
+          <table class="table-auto w-full">
+            <tbody class="text-start pb-5 flex flex-col">
+              <tr class="font-roboto sl-flex-between">
+                <th class="text-left font-light capitalize">
+                  total
+                </th>
+                <td class="font-roboto">
+                  <span class="text-[0.857rem] mr-[0.5rem] text-white/80">usd</span>
+                  <span class="text-[1.5rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /*TO TOGGLE NEWS LETTER SECTION WITH CHECKBOX*/
+    function toggleNewsletter() {
+      let checkValue = document.getElementById("checkNewsletter");
+      let content = document.getElementById("newLetterArea");
+      if (checkValue.checked == true) {
+        content.classList.add("block");
+        content.classList.remove("hidden");
+      } else {
+        content.classList.add("hidden");
+        content.classList.remove("block");
+      }
+    }
+
+    /*TO TOGGLE ORDER SUMMERY*/
+    function toggleOrderSummery(id) {
+      if (id.classList.contains("hidden")) {
+        id.classList.remove("hidden");
+        id.classList.add("block h-full");
+      } else {
+        id.classList.remove("block");
+        id.classList.add("hidden");
+      }
+    }
+  </script>
+</body>
+
+</html>
