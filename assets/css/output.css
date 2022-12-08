@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1246,6 +1246,10 @@ img {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-\[30rem\] {
+  height: 30rem;
 }
 
 .w-screen {
@@ -2524,6 +2528,10 @@ img {
 .sidebarHidden {
   transform: translateX(100%) !important;
   transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.sidebarShow {
+  transform: translateX(0) !important;
 }
 
 /* SLIDER BUTTON STYLE RESET */
