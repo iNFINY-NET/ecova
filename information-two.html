@@ -23,16 +23,16 @@
   <link href="assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body class="bg-slate-800 text-white text-base font-normal">
-  <main class="lg:sl-container">
-    <section class="flex flex-col pt-[4rem] lg:pr-[4rem] lg:items-start justify-between lg:flex-row">
-      <div class="basis-full lg:basis-[55%]">
+<body class=" text-white text-base font-normal">
+  <main class="flex">
+    <section class="w-full lg:w-1/2 h-auto bg-slate-800 lg:pt-[4rem] lg:pl-[19.5%] lg:pr-[6%]">
+        <div class=" mt-10">
         <header>
           <div>
             <img src="./assets/images/logo/logo.png" class="block m-auto" alt="" />
           </div>
           <div class="lg:hidden mt-10 border-y border-solid border-gray-500">
-            <div class="sl-flex-between py-5 md:px-20 sm:px-16 px-4">
+            <div class="sl-flex-between py-5 md:px-20 sm:px-10 px-4">
               <div class="text-red-500 text-[14px] sl-flex-center" onclick="toggleOrderSummery(orderSummery)">
                 <i class="fa-solid fa-cart-shopping mr-4"></i>
                 <span class="font-roboto capitalize">show order summary</span>
@@ -44,7 +44,7 @@
 
 
           <div id="orderSummery"
-            class="hidden lg:hidden lg:basis-[40%] mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
+            class="hidden lg:hidden lg:basis-[40%] pt-5 sm:px-10 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
             <div class="">
               <table class="table-auto w-full border-b-2 border-solid border-gray-500">
                 <tbody class="text-start table-cell pb-5 ">
@@ -122,7 +122,7 @@
               </li>
             </ol>
           </nav>
-          <div class="mt-8 text-center px-4 sm:px-16">
+          <div class="mt-8 text-center px-4 sm:px-10">
             <div class="relative">
               <h2
                 class="absolute -top-3 left-[30%] xl:left-[35%] md:left-[39%] lg:left-[30%] sm:left-[35%] font-robot font-medium text-[1rem] capitalize 
@@ -149,7 +149,7 @@
           </div>
         </header>
 
-        <form action="" class="mt-10 md:px-20 sm:px-16 px-4 lg:px-0">
+        <form action="" class="mt-10 md:px-20 sm:px-10 px-4 lg:px-0">
           <div class="font-roboto capitalize sm:sl-flex-between">
             <h2 class="text-[1.285rem] leading-[1.3rem] mb-2">contact information</h2>
             <span class="leading-[1.5rem] text-[14px]">already have an account?
@@ -253,7 +253,7 @@
                   offers</label>
               </div>
             </div>
-            <div class=" md:px-6" id="newLetterArea">
+            <div class="hidden md:px-6" id="newLetterArea">
               <div class="relative">
                 <i class="fa-solid fa-mobile-screen-button text-[20px] absolute left-2 top-10"></i>
                 <img src="./assets/images/information/af.svg" class=" absolute right-[35%] top-10 w-[5%]" alt="">
@@ -281,7 +281,7 @@
           </div>
         </form>
 
-        <footer class="mt-20 sm:px-16 md:px-20 px-4 lg:px-0 border-t border-solid border-gray-500">
+        <footer class="mt-20 sm:px-10 md:px-20 px-4 lg:px-0 border-t border-solid border-gray-500">
           <ul
             class="font-roboto font-light text-[0.857rem] text-red-500 capitalize flex items-center flex-wrap gap-x-5 py-4">
             <li><a href="">refund policy</a></li>
@@ -290,12 +290,10 @@
             <li><a href="">purchase options cancellation policy</a></li>
           </ul>
         </footer>
-        <div
-          class="hidden lg:block border-l border-solid border-gray-500/40 h-full absolute right-[45.8%] xl:right-[46%] lg:right-[46.5%] top-0 bottom-0">
-
-        </div>
       </div>
-      <div class="hidden lg:block lg:basis-[40%] mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0 bg-slate-700">
+    </section>
+    <section class="hidden lg:block w-1/2 h-auto bg-slate-700 pt-[4rem] pr-[20.5%] pl-[3%]">
+        <div class="hidden lg:block mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0">
         <div class="">
           <table class="table-auto w-full border-b-2 border-solid border-gray-500">
             <tbody class="text-start table-cell pb-5 ">

@@ -890,6 +890,14 @@ img {
   left: 0.5rem;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
+.right-\[35\%\] {
+  right: 35%;
+}
+
 .right-\[45\.8\%\] {
   right: 45.8%;
 }
@@ -912,42 +920,6 @@ img {
 
 .bottom-1\.5 {
   bottom: 0.375rem;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.left-3 {
-  left: 0.75rem;
-}
-
-.top-2 {
-  top: 0.5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.right-\[50\%\] {
-  right: 50%;
-}
-
-.right-\[40\%\] {
-  right: 40%;
-}
-
-.right-\[30\%\] {
-  right: 30%;
-}
-
-.right-\[35\%\] {
-  right: 35%;
-}
-
-.top-\[10\%\] {
-  top: 10%;
 }
 
 .z-\[99999\] {
@@ -1225,10 +1197,6 @@ img {
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -1438,6 +1406,14 @@ img {
   width: 1rem;
 }
 
+.w-\[5\%\] {
+  width: 5%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-\[17\.25rem\] {
   width: 17.25rem;
 }
@@ -1456,18 +1432,6 @@ img {
 
 .w-\[33\.33\%\] {
   width: 33.33%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[10\%\] {
-  width: 10%;
-}
-
-.w-\[5\%\] {
-  width: 5%;
 }
 
 .min-w-\[1\.75rem\] {
@@ -1982,6 +1946,11 @@ img {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2022,18 +1991,6 @@ img {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-\[50\%\] {
-  background-position: 50%;
-}
-
-.bg-\[10\%\] {
-  background-position: 10%;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .p-2\.5 {
@@ -2249,6 +2206,16 @@ img {
   padding-bottom: 0.928rem;
 }
 
+.px-\[1\.5rem\] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-\[0\.89rem\] {
+  padding-top: 0.89rem;
+  padding-bottom: 0.89rem;
+}
+
 .py-\[1\.4rem\] {
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
@@ -2257,36 +2224,6 @@ img {
 .px-\[1\.7rem\] {
   padding-left: 1.7rem;
   padding-right: 1.7rem;
-}
-
-.px-\[1rem\] {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-\[1\.5rem\] {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.px-\[2rem\] {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-\[1rem\] {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-\[2rem\] {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.py-\[0\.89rem\] {
-  padding-top: 0.89rem;
-  padding-bottom: 0.89rem;
 }
 
 .pr-8 {
@@ -2369,16 +2306,56 @@ img {
   padding-top: 0.75rem;
 }
 
-.pt-\[2rem\] {
-  padding-top: 2rem;
+.pr-\[6\%\] {
+  padding-right: 6%;
 }
 
-.pt-\[1\.5rem\] {
-  padding-top: 1.5rem;
+.pl-\[10\%\] {
+  padding-left: 10%;
 }
 
-.pt-\[1rem\] {
-  padding-top: 1rem;
+.pl-\[20\%\] {
+  padding-left: 20%;
+}
+
+.pl-\[16\%\] {
+  padding-left: 16%;
+}
+
+.pl-\[18\%\] {
+  padding-left: 18%;
+}
+
+.pl-\[19\%\] {
+  padding-left: 19%;
+}
+
+.pl-\[19\.5\%\] {
+  padding-left: 19.5%;
+}
+
+.pr-\[19\.5\%\] {
+  padding-right: 19.5%;
+}
+
+.pl-\[6\%\] {
+  padding-left: 6%;
+}
+
+.pl-\[3\%\] {
+  padding-left: 3%;
+}
+
+.pr-\[20\%\] {
+  padding-right: 20%;
+}
+
+.pr-\[21\%\] {
+  padding-right: 21%;
+}
+
+.pr-\[20\.5\%\] {
+  padding-right: 20.5%;
 }
 
 .text-left {
@@ -2519,16 +2496,16 @@ img {
   font-size: 1.285rem;
 }
 
+.text-\[20px\] {
+  font-size: 20px;
+}
+
 .text-\[0\.625rem\] {
   font-size: 0.625rem;
 }
 
 .text-\[0\.88rem\] {
   font-size: 0.88rem;
-}
-
-.text-\[20px\] {
-  font-size: 20px;
 }
 
 .font-normal {
@@ -3891,6 +3868,10 @@ img {
     flex-direction: column;
   }
 
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .sm\:items-start {
     align-items: flex-start;
   }
@@ -4005,6 +3986,16 @@ img {
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .sm\:pt-14 {
@@ -4667,6 +4658,10 @@ img {
     width: 53%;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
   .lg\:max-w-\[17rem\] {
     max-width: 17rem;
   }
@@ -4855,6 +4850,18 @@ img {
 
   .lg\:pr-\[4rem\] {
     padding-right: 4rem;
+  }
+
+  .lg\:pt-\[4rem\] {
+    padding-top: 4rem;
+  }
+
+  .lg\:pl-\[19\.5\%\] {
+    padding-left: 19.5%;
+  }
+
+  .lg\:pr-\[6\%\] {
+    padding-right: 6%;
   }
 
   .lg\:text-left {
