@@ -942,6 +942,18 @@ img {
   left: 35%;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
+.top-\[15px\] {
+  top: 15px;
+}
+
+.top-\[0\.938rem\] {
+  top: 0.938rem;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -2319,6 +2331,26 @@ img {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-\[0\.725rem\] {
+  padding-top: 0.725rem;
+  padding-bottom: 0.725rem;
+}
+
+.py-\[0\.825rem\] {
+  padding-top: 0.825rem;
+  padding-bottom: 0.825rem;
+}
+
+.py-\[0\.82rem\] {
+  padding-top: 0.82rem;
+  padding-bottom: 0.82rem;
+}
+
+.px-\[0\.7rem\] {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
 }
 
 .pr-8 {
