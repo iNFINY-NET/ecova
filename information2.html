@@ -22,44 +22,93 @@
 </head>
 
 <body class="bg-slate-800 text-white text-base font-roboto">
-     <div class="flex flex-row justify-center max-w-7xl w-11/12 mx-auto">
-          <div class="w-[52%] pt-16 pr-[6%]">
-               <header class="mb-8 text-center">
-                    <a href=""><img src="./assets/images/logo/logo.png" class="block m-auto" alt="" /></a>
-                    <nav class="mt-5">
-                         <ul class="sl-flex-center font-light text-xs capitalize">
-                              <li class="mr-2">
-                                   <a href="information-two.html">information</a>
-                                   <i class="fa-solid fa-chevron-right ml-1"></i>
-                              </li>
-                              <li class="mr-2">
-                                   <a href="shipping.html" class="text-red-500">shipping</a>
-                                   <i class="fa-solid fa-chevron-right ml-1"></i>
-                              </li>
-                              <li class="mr-2">
-                                   <a href="" class="text-white/80">payment</a>
-                              </li>
-                         </ul>
-                    </nav>
-               </header>
-          </div>
-          <aside class="relative w-[38%] pt-16 pl-[4%] after:absolute after:top-0 after:left-0 after:bottom-0 after:w-[300%] -z-10 after:bg-slate-900">
-               <div class="relative z-10">
-                    <div class="sl-flex-between">
-                         <div class="relative w-20 h-20">
-                              <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
-                              <span class="absolute -top-[0.75rem] -right-[0.75rem] sl-flex-center h-7 w-7 bg-gray-500 font-medium text-sm rounded-full">1</span>
+     <div class="flex overflow-hidden">
+          <div class="flex flex-row justify-center max-w-7xl w-11/12 mx-auto">
+               <div class="w-[52%] pt-16 pr-[6%]">
+                    <header class="mb-8 text-center">
+                         <a href=""><img src="./assets/images/logo/logo.png" class="block m-auto" alt="" /></a>
+                         <nav class="mt-5">
+                              <ul class="sl-flex-center font-light text-xs capitalize">
+                                   <li class="mr-2">
+                                        <a href="information-two.html">information</a>
+                                        <i class="fa-solid fa-chevron-right ml-1"></i>
+                                   </li>
+                                   <li class="mr-2">
+                                        <a href="shipping.html" class="text-red-500">shipping</a>
+                                        <i class="fa-solid fa-chevron-right ml-1"></i>
+                                   </li>
+                                   <li class="mr-2">
+                                        <a href="" class="text-white/80">payment</a>
+                                   </li>
+                              </ul>
+                         </nav>
+                    </header>
+               </div>
+               <aside class="relative w-[38%] pt-16 pl-[4%] after:absolute after:top-0 after:left-0 after:bottom-0 after:w-[300%] after:-z-10 after:bg-slate-900">
+                    <div class="relative">
+                         <div class="mb-5">
+                              <table class="w-full">
+                                   <tbody>
+                                        <tr class="sl-flex-between">
+                                             <td>
+                                                  <div class="relative w-20 h-20">
+                                                       <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
+                                                       <span class="absolute -top-[0.75rem] -right-[0.75rem] sl-flex-center h-7 w-7 bg-gray-500 font-medium text-sm rounded-full">1</span>
+                                                  </div>
+                                             </td>
+                                             <td>
+                                                  <h2 class="text-sm">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
+                                                  <span class="text-xs text-white/80">Heather Navy / S</span>
+                                             </td>
+                                             <td>
+                                                  <p class="font-medium text-sm">$28.95</p>
+                                             </td>
+                                        </tr>
+                                   </tbody>
+                              </table>
                          </div>
-                         <div>
-                              <h2 class="text-sm">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
-                              <span class="text-xs text-white/80">Heather Navy / S</span>
+                         <div class="mb-5 pt-6 border-t-2 border-gray-500">
+                              <form class="flex">
+                                   <input type="text" class="w-full text-sm px-3 py-4 border border-gray-500 rounded-md focus:border-red-600 mr-4" placeholder="Gift card or discount code">
+                                   <button class="sl-btn capitalize">apply</button>
+                              </form>
                          </div>
-                         <div>
-                              <p class="font-medium text-sm">$28.95</p>
+                         <div class="mb-5 pt-6 border-t border-gray-500">
+                              <table class="w-full">
+                                   <tbody>
+                                        <tr class="sl-flex-between text-white/80">
+                                             <th class="font-light">
+                                                  Subtotal
+                                             </th>
+                                             <td class="text-sm text-white">$28.95</td>
+                                        </tr>
+                                        <tr class="sl-flex-between text-white/80">
+                                             <th class="font-light">
+                                                  Shipping
+                                             </th>
+                                             <td class="text-sm font-light">Calculated at next step</td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                         </div>
+                         <div class="mb-5 pt-6 border-t border-gray-500">
+                              <table class="w-full">
+                                   <tbody>
+                                        <tr class="sl-flex-between">
+                                             <th class="font-light">
+                                                  Total
+                                             </th>
+                                             <td>
+                                                  <span class="text-sm mr-2 mb-2 text-white/80">usd</span>
+                                                  <span class="text-2xl font-medium tracking-tighter">$28.95</span>
+                                             </td>
+                                        </tr>
+                                   </tbody>
+                              </table>
                          </div>
                     </div>
-               </div>
-          </aside>
+               </aside>
+          </div>
      </div>
 </body>
 
