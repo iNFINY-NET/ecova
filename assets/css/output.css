@@ -2599,6 +2599,10 @@ img {
   font-size: 0.82rem;
 }
 
+.text-\[0\.94rem\] {
+  font-size: 0.94rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -2721,6 +2725,10 @@ img {
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-\[0\.94rem\] {
+  line-height: 0.94rem;
 }
 
 .tracking-\[0\.313rem\] {
