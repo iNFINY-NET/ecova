@@ -23,16 +23,16 @@
   <link href="assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body class="bg-slate-800 text-white text-base font-normal">
-  <main class="lg:sl-container">
-    <section class="flex flex-col pt-[4rem] lg:pr-[4rem] lg:items-start justify-between lg:flex-row">
-      <div class="basis-full lg:basis-[55%]">
+<body class=" text-white text-base font-normal">
+  <main class="flex">
+    <section class="w-full lg:w-[55%] h-auto bg-slate-800 lg:pt-[4rem] lg:pl-[5%] lg:pr-[5%] 2xl:pl-[19.5%] 2xl:pr-[4%]">
+        <div class=" mt-10">
         <header>
           <div>
             <img src="./assets/images/logo/logo.png" class="block m-auto" alt="" />
           </div>
           <div class="lg:hidden mt-10 border-y border-solid border-gray-500">
-            <div class="sl-flex-between py-5 md:px-20 sm:px-16 px-4">
+            <div class="sl-flex-between py-5 md:px-20 sm:px-10 px-4">
               <div class="text-red-500 text-[14px] sl-flex-center" onclick="toggleOrderSummery(orderSummery)">
                 <i class="fa-solid fa-cart-shopping mr-4"></i>
                 <span class="font-roboto capitalize">show order summary</span>
@@ -42,9 +42,8 @@
             </div>
           </div>
 
-
           <div id="orderSummery"
-            class="hidden lg:hidden lg:basis-[40%] mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
+            class="hidden lg:hidden lg:basis-[40%] pt-5 sm:px-10 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
             <div class="">
               <table class="table-auto w-full border-b-2 border-solid border-gray-500">
                 <tbody class="text-start table-cell pb-5 ">
@@ -105,51 +104,51 @@
             </div>
           </div>
 
-
-
           <nav class="mt-5">
-            <ol class="flex items-center justify-center font-roboto text-[0.857rem] capitalize">
+            <ol class="flex items-center justify-center font-roboto font-light text-[0.757rem] capitalize">
               <li class="mr-2">
-                <span>information</span>
+                <a href="information-two.html">information</a>
                 <i class="fa-solid fa-chevron-right mx-1"></i>
               </li>
               <li class="">
-                <span class="text-red-500">shipping</span>
+                <a href="shipping.html" class="text-red-500">shipping</a>
                 <i class="fa-solid fa-chevron-right mx-1"></i>
               </li>
               <li class="mx-1">
-                <span class="text-white/80">payment</span>
+                <a href="" class="text-white/80">payment</a>
               </li>
             </ol>
           </nav>
-          <div class="mt-8 text-center px-4 sm:px-16">
-            <div class="relative">
+          <div class="w-full mt-8 px-4 sm:px-0">
+           <div class="relative">
               <h2
-                class="absolute -top-3 left-[30%] xl:left-[35%] md:left-[39%] lg:left-[30%] sm:left-[35%] font-robot font-medium text-[1rem] capitalize 
-                  before:absolute before:-left-[1.5rem] before:w-[12rem] before:top-[0.6rem] before:h-[0.325rem] before:content-[''] before:bg-slate-800 z-10">
-                <p class="relative">Express checkout</p>
+                class="absolute -top-3 left-[30%] xl:left-[36%] md:left-[39%] lg:left-[30%] sm:left-[35%] font-robot text-[0.875rem] capitalize 
+                  before:absolute before:-left-[1.6rem] before:w-[11rem] before:top-[0.6rem] before:h-[0.325rem] before:content-[''] before:bg-slate-800 z-10 ">
+                <span class="relative">Express checkout</span>
               </h2>
             </div>
 
-            <div
-              class="-z-50 font-roboto font-medium text-[1rem] leading-4 capitalize grid md:grid-cols-3 gap-y-2 gap-x-2 p-[1.428rem] border border-solid border-gray-500 rounded-[5px] mt-10">
-              <div class="px-[12px] py-[10px] bg-purple-500 text-center rounded-[4px] cursor-pointer">
-                shoppay
-              </div>
-              <div class="px-[12px] py-[10px] bg-yellow-500 text-center rounded-[4px] cursor-pointer">
-                paypal
-              </div>
-              <div class="px-[12px] py-[10px] bg-white text-center text-black rounded-[4px] cursor-pointer">
-                gplay
-              </div>
-            </div>
-            <div class="mt-10 text-center capitalize">
-              <span>or</span>
+            <ul class="w-full flex gap-x-2 border border-solid border-gray-500 rounded-[5px] p-5">
+              <li class="block m-auto w-full py-3 px-3 hover:bg-white/80 sl-animated text-center rounded-[4px] bg-purple-500 cursor-pointer">
+                <img src="./assets/images/information/shop-pay-seeklogo.com.svg" class="w-[65%] block m-auto" alt="">
+              </li>
+              <li class="block m-auto w-full py-3 px-3 hover:bg-white/80 sl-animated text-center rounded-[4px] bg-yellow-500 cursor-pointer">
+                <img src="./assets/images/information/PayPal.png" class="w-[60%] block m-auto" alt="">
+              </li>
+              <li class="block m-auto w-full py-3 px-3 hover:bg-white/80 sl-animated text-center rounded-[4px] bg-black cursor-pointer">
+                <img src="./assets/images/information/google-pay-seeklogo.com.svg" class="w-[40%] block m-auto" alt="">
+              </li>
+            </ul>
+            <div class="relative mt-5 text-center capitalize">
+              <h2 class="before:absolute before:left-0 before:w-full before:top-[0.75rem] before:h-[0.06rem] before:content-[''] before:bg-gray-500 
+                        after:absolute after:left-[45%] after:w-[10%] after:top-[0.75rem] after:h-[0.06rem] after:content-[''] after:bg-slate-800">
+              </h2>
+              <span class="relative text-white/80 text-[0.775rem] uppercase">or</span>
             </div>
           </div>
         </header>
 
-        <form action="" class="mt-10 md:px-20 sm:px-16 px-4 lg:px-0">
+        <form action="" class="mt-5 md:px-20 sm:px-10 px-4 lg:px-0">
           <div class="font-roboto capitalize sm:sl-flex-between">
             <h2 class="text-[1.285rem] leading-[1.3rem] mb-2">contact information</h2>
             <span class="leading-[1.5rem] text-[14px]">already have an account?
@@ -157,11 +156,11 @@
             </span>
           </div>
 
-          <div class="relative mt-5 w-auto h-auto">
+          <div class="relative mt-5 w-auto h-auto text-white/80 font-roboto text-[14px]">
             <input type="email" id="email" name="email"
-              class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+              class="floating-input w-full block  text-[14px] px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
               placeholder=" ">
-            <label for="email" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Email</label>
+            <label for="email" class="absolute font-light top-4 left-2 -z-1 duration-300 origin-0">Email</label>
           </div>
 
           <div class="mt-4 flex items-center gap-x-3">
@@ -176,7 +175,7 @@
             <div class="grid gap-y-4 font-roboto text-[14px]">
               <div class="mt-5">
                 <select
-                  class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 px-[0.785rem] py-[0.928rem] rounded-[5px] font-light capitalize focus:outline-none focus:border-red-600"
+                  class="mt-5 w-full text-white/80 border border-solid border-gray-500 bg-slate-800 px-[0.7rem] py-[0.82rem] rounded-[5px] font-light capitalize focus:outline-none focus:border-red-600"
                   name="" id="" defaultValue='DEFAULT'>
                   <option value="DEFAULT">Country/region</option>
                   <option value="">bangladesh</option>
@@ -184,65 +183,57 @@
               </div>
               <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-0">
 
-                <div class="relative">
+                <div class="relative text-white/80 font-roboto text-[14px]">
                   <input type="text" id="firstName" name="firstName"
-                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                     placeholder=" ">
-                  <label for="firstName" class="absolute top-4 left-2 -z-1 duration-300 origin-0">First Name</label>
+                  <label for="firstName" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">First name</label>
                 </div>
 
-                <div class="relative">
+                <div class="relative text-white/80 font-roboto text-[14px]">
                   <input type="text" id="lastName" name="lastName"
-                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                     placeholder=" ">
-                  <label for="lastName" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Last Name</label>
+                  <label for="lastName" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Last name</label>
                 </div>
 
               </div>
 
-              <div class="relative">
+              <div class="relative text-white/80 font-roboto text-[14px]">
                 <input type="text" id="company" name="company"
-                  class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                  class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                   placeholder=" ">
-                <label for="company" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Company (optional)</label>
+                <label for="company" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Company (optional)</label>
               </div>
 
-              <div class="relative">
+              <div class="relative text-white/80 font-roboto text-[14px]">
                 <input type="text" id="address" name="address"
-                  class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                  class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                   placeholder=" ">
-                <label for="address" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Address</label>
+                <label for="address" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Address</label>
               </div>
 
-              <div class="relative">
+              <div class="relative text-white/80 font-roboto text-[14px]">
                 <input type="text" id="apartment" name="apartment"
-                  class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                  class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                   placeholder=" ">
-                <label for="apartment" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Apartment, suite, etc.
+                <label for="apartment" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Apartment, suite, etc.
                   (optional)</label>
               </div>
 
-              <div class="grid md:grid-cols-3 gap-x-4 gap-y-4 md:gap-y-0">
-
-                <div class="relative">
+              <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-y-0">
+                <div class="relative text-white/80 font-roboto text-[14px]">
                   <input type="text" id="city" name="city"
-                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                     placeholder=" ">
-                  <label for="city" class="absolute top-4 left-2 -z-1 duration-300 origin-0">City</label>
+                  <label for="city" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">City</label>
                 </div>
 
-                <select
-                  class="w-full text-white/80 border border-solid border-gray-500 bg-slate-800 px-[0.785rem] py-[0.928rem] rounded-[5px] font-light capitalize focus:outline-none focus:border-red-600"
-                  name="" id="" defaultValue='DEFAULT'>
-                  <option value="DEFAULT">state</option>
-                  <option value="">dhaka</option>
-                </select>
-
-                <div class="relative">
+                <div class="relative text-white/80 font-roboto text-[14px]">
                   <input type="text" id="portalCode" name="portalCode"
-                    class="floating-input w-full block font-roboto text-[14px] px-[0.785rem] py-[0.928rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600 appearance-none"
+                    class="floating-input w-full block px-[0.7rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] focus:outline-none focus:border-red-600 appearance-none"
                     placeholder=" ">
-                  <label for="portalCode" class="absolute top-4 left-2 -z-1 duration-300 origin-0">Postal code</label>
+                  <label for="portalCode" class="absolute font-light top-[0.938rem] left-2 -z-1 duration-300 origin-0">Postal code</label>
                 </div>
               </div>
 
@@ -253,7 +244,7 @@
                   offers</label>
               </div>
             </div>
-            <div class=" md:px-6" id="newLetterArea">
+            <div class="hidden md:px-6" id="newLetterArea">
               <div class="relative">
                 <i class="fa-solid fa-mobile-screen-button text-[20px] absolute left-2 top-10"></i>
                 <img src="./assets/images/information/af.svg" class=" absolute right-[35%] top-10 w-[5%]" alt="">
@@ -269,33 +260,31 @@
                 By signing up via text, you agree to receive recurring automated marketing messages, including cart
                 reminders, at the phone number provided. Consent is not a condition of purchase. Reply STOP to
                 unsubscribe. Reply HELP for help. Message frequency varies. Msg & data rates may apply.
-                View our <span class="text-red-500">Privacy Policy</span> and <span class="text-red-500">Terms of
-                  Service.</span>
+                View our <a href=""class="text-red-500">Privacy Policy</a> and <a href="" class="text-red-500">Terms of
+                  Service.</a>
               </p>
             </div>
 
           </div>
           <div class="mt-10 md:text-right">
-            <button class="w-full md:w-[40%] py-[1.4rem] md:px-[1.7rem] leading-none sl-btn normal-case">Continue to
+            <button class="w-full md:w-[50%] py-[1.4rem] leading-none sl-btn normal-case">Continue to
               shipping</button>
           </div>
         </form>
 
-        <footer class="mt-20 sm:px-16 md:px-20 px-4 lg:px-0 border-t border-solid border-gray-500">
+        <footer class="mt-20 sm:px-10 md:px-20 px-4 lg:px-0 border-t border-solid border-gray-500">
           <ul
-            class="font-roboto font-light text-[0.857rem] text-red-500 capitalize flex items-center flex-wrap gap-x-5 py-4">
+            class="font-roboto font-light text-[0.775rem] text-red-500 capitalize flex items-center flex-wrap 2xl:flex-nowrap gap-x-3 py-4">
             <li><a href="">refund policy</a></li>
             <li><a href="">privacy policy</a></li>
             <li><a href="">terms of service</a></li>
             <li><a href="">purchase options cancellation policy</a></li>
           </ul>
         </footer>
-        <div
-          class="hidden lg:block border-l border-solid border-gray-500/40 h-full absolute right-[45.8%] xl:right-[46%] lg:right-[46.5%] top-0 bottom-0">
-
-        </div>
       </div>
-      <div class="hidden lg:block lg:basis-[40%] mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0 bg-slate-700">
+    </section>
+    <section class="hidden lg:block w-[45%] h-auto bg-slate-700 pt-[4rem] xl:pr-[20.5%] pl-[3%] border-l border-solid border-gray-500">
+        <div class="hidden lg:block mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0">
         <div class="">
           <table class="table-auto w-full border-b-2 border-solid border-gray-500">
             <tbody class="text-start table-cell pb-5 ">
@@ -315,26 +304,26 @@
             </tbody>
           </table>
         </div>
-        <div class="py-10 flex gap-x-4 justify-between border-b border-solid border-gray-500">
+        <div class="py-6 flex gap-x-4 justify-between border-b border-solid border-gray-500">
           <input type="text"
-            class="w-full font-roboto text-[0.857rem] px-[0.785rem] py-[0.8rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600"
+            class="w-full font-roboto text-[0.82rem] px-[0.785rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600"
             placeholder="Gift card or discount code">
-          <button class="sl-btn">apply</button>
+          <button class="sl-btn capitalize">apply</button>
         </div>
         <div class="mt-5">
           <table class="table-auto w-full border-b border-solid border-gray-500">
             <tbody class="text-start pb-5 flex flex-col">
-              <tr class="font-roboto sl-flex-between">
-                <th class="text-left text-[0.857rem] capitalize">
+              <tr class="font-roboto sl-flex-between text-white/80">
+                <th class="text-left font-light text-[0.94rem] capitalize">
                   subtotal
                 </th>
-                <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
+                <td class="font-roboto text-white text-[0.857rem]">$28.95</td>
               </tr>
-              <tr class="font-roboto sl-flex-between">
-                <th class="text-left text-[0.857rem] capitalize">
+              <tr class="font-roboto sl-flex-between text-white/80">
+                <th class="text-left font-light text-[0.94rem] capitalize">
                   shipping
                 </th>
-                <td class="font-roboto text-[0.857rem] text-white/80">Calculated at next step</td>
+                <td class="text-[0.82rem] font-light">Calculated at next step</td>
               </tr>
             </tbody>
           </table>
@@ -343,12 +332,12 @@
           <table class="table-auto w-full">
             <tbody class="text-start pb-5 flex flex-col">
               <tr class="font-roboto sl-flex-between">
-                <th class="text-left capitalize">
+                <th class="text-left font-light capitalize">
                   total
                 </th>
                 <td class="font-roboto">
                   <span class="text-[0.857rem] mr-[0.5rem] text-white/80">usd</span>
-                  <span class="text-[1.714rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
+                  <span class="text-[1.5rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
                 </td>
               </tr>
             </tbody>
