@@ -1763,6 +1763,10 @@ img {
   border-radius: 4px;
 }
 
+.rounded-\[0\.313rem\] {
+  border-radius: 0.313rem;
+}
+
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
