@@ -2301,6 +2301,26 @@ img {
   padding-right: 1.7rem;
 }
 
+.py-\[0\.7rem\] {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.py-\[0\.6rem\] {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pr-8 {
   padding-right: 2rem;
 }
@@ -2569,6 +2589,14 @@ img {
 
 .text-\[0\.775rem\] {
   font-size: 0.775rem;
+}
+
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
+}
+
+.text-\[0\.82rem\] {
+  font-size: 0.82rem;
 }
 
 .font-normal {
