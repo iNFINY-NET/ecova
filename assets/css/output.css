@@ -1070,6 +1070,10 @@ img {
   z-index: 10;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -2420,6 +2424,16 @@ img {
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000f16\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 15 22 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000b10\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 11 16 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
