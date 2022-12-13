@@ -2679,6 +2679,14 @@ img {
   padding-bottom: 3rem;
 }
 
+.pt-56 {
+  padding-top: 14rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .text-left {
   text-align: left;
 }
