@@ -1042,6 +1042,58 @@ img {
   top: 2rem;
 }
 
+.-top-\[50px\] {
+  top: -50px;
+}
+
+.-left-\[50px\] {
+  left: -50px;
+}
+
+.-left-\[500px\] {
+  left: -500px;
+}
+
+.-left-\[300px\] {
+  left: -300px;
+}
+
+.-top-\[10px\] {
+  top: -10px;
+}
+
+.-top-\[100px\] {
+  top: -100px;
+}
+
+.-top-\[200px\] {
+  top: -200px;
+}
+
+.-top-\[150px\] {
+  top: -150px;
+}
+
+.-left-\[100px\] {
+  left: -100px;
+}
+
+.-left-\[400px\] {
+  left: -400px;
+}
+
+.-top-\[180px\] {
+  top: -180px;
+}
+
+.-top-\[250px\] {
+  top: -250px;
+}
+
+.-top-\[300px\] {
+  top: -300px;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
@@ -1894,6 +1946,10 @@ img {
 
 .w-\[full\] {
   width: full;
+}
+
+.w-\[500px\] {
+  width: 500px;
 }
 
 .min-w-\[1\.75rem\] {
@@ -2803,6 +2859,21 @@ img {
   padding-bottom: 2.75rem;
 }
 
+.py-\[5\.625rem\] {
+  padding-top: 5.625rem;
+  padding-bottom: 5.625rem;
+}
+
+.py-\[5rem\] {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-\[5\.5rem\] {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
 .pr-8 {
   padding-right: 2rem;
 }
@@ -2965,6 +3036,10 @@ img {
 
 .pb-11 {
   padding-bottom: 2.75rem;
+}
+
+.pt-\[5\.625rem\] {
+  padding-top: 5.625rem;
 }
 
 .text-left {
