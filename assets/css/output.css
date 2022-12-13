@@ -1295,6 +1295,10 @@ img {
   margin-top: 7rem;
 }
 
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
 .block {
   display: block;
 }
@@ -2571,6 +2575,11 @@ img {
   padding-right: 2.25rem;
 }
 
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .pr-8 {
   padding-right: 2rem;
 }
@@ -2685,6 +2694,14 @@ img {
 
 .pb-20 {
   padding-bottom: 5rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pr-\[6\.5rem\] {
+  padding-right: 6.5rem;
 }
 
 .text-left {
