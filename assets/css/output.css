@@ -2187,6 +2187,11 @@ img {
        column-gap: 4rem;
 }
 
+.gap-x-\[4\.5rem\] {
+  -moz-column-gap: 4.5rem;
+       column-gap: 4.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -4201,6 +4206,41 @@ img {
 .after\:left-\[12\.5rem\]::after {
   content: var(--tw-content);
   left: 12.5rem;
+}
+
+.after\:left-\[120px\]::after {
+  content: var(--tw-content);
+  left: 120px;
+}
+
+.after\:left-\[115px\]::after {
+  content: var(--tw-content);
+  left: 115px;
+}
+
+.after\:left-\[210px\]::after {
+  content: var(--tw-content);
+  left: 210px;
+}
+
+.after\:left-\[280px\]::after {
+  content: var(--tw-content);
+  left: 280px;
+}
+
+.after\:left-\[250px\]::after {
+  content: var(--tw-content);
+  left: 250px;
+}
+
+.after\:left-\[260px\]::after {
+  content: var(--tw-content);
+  left: 260px;
+}
+
+.after\:left-\[16\.25rem\]::after {
+  content: var(--tw-content);
+  left: 16.25rem;
 }
 
 .after\:z-10::after {
