@@ -4003,6 +4003,11 @@ img {
   content: var(--tw-content);
 }
 
+.before\:content-\[\'\2c \'\]::before {
+  --tw-content: ',';
+  content: var(--tw-content);
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -4086,6 +4091,96 @@ img {
 .after\:top-\[0\.75rem\]::after {
   content: var(--tw-content);
   top: 0.75rem;
+}
+
+.after\:left-\[200px\]::after {
+  content: var(--tw-content);
+  left: 200px;
+}
+
+.after\:left-\[100px\]::after {
+  content: var(--tw-content);
+  left: 100px;
+}
+
+.after\:left-\[80px\]::after {
+  content: var(--tw-content);
+  left: 80px;
+}
+
+.after\:left-\[90px\]::after {
+  content: var(--tw-content);
+  left: 90px;
+}
+
+.after\:left-\[95px\]::after {
+  content: var(--tw-content);
+  left: 95px;
+}
+
+.after\:top-\[1546px\]::after {
+  content: var(--tw-content);
+  top: 1546px;
+}
+
+.after\:top-\[95px\]::after {
+  content: var(--tw-content);
+  top: 95px;
+}
+
+.after\:top-\[65px\]::after {
+  content: var(--tw-content);
+  top: 65px;
+}
+
+.after\:top-\[25px\]::after {
+  content: var(--tw-content);
+  top: 25px;
+}
+
+.after\:top-\[15px\]::after {
+  content: var(--tw-content);
+  top: 15px;
+}
+
+.after\:top-\[10px\]::after {
+  content: var(--tw-content);
+  top: 10px;
+}
+
+.after\:top-\[12px\]::after {
+  content: var(--tw-content);
+  top: 12px;
+}
+
+.after\:top-\[13px\]::after {
+  content: var(--tw-content);
+  top: 13px;
+}
+
+.after\:left-\[195px\]::after {
+  content: var(--tw-content);
+  left: 195px;
+}
+
+.after\:left-\[5\.938rem\]::after {
+  content: var(--tw-content);
+  left: 5.938rem;
+}
+
+.after\:top-\[0\.813rem\]::after {
+  content: var(--tw-content);
+  top: 0.813rem;
+}
+
+.after\:left-\[12\.5px\]::after {
+  content: var(--tw-content);
+  left: 12.5px;
+}
+
+.after\:left-\[12\.5rem\]::after {
+  content: var(--tw-content);
+  left: 12.5rem;
 }
 
 .after\:z-10::after {
@@ -4196,6 +4291,11 @@ img {
   border-radius: 0.5rem;
 }
 
+.after\:rounded-full::after {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
 .after\:bg-green-100::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
@@ -4233,6 +4333,12 @@ img {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.after\:bg-red-800::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .after\:bg-gradient-to-b::after {
@@ -4287,6 +4393,11 @@ img {
 
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:content-\[\'\.\'\]::after {
+  --tw-content: '.';
   content: var(--tw-content);
 }
 
@@ -6009,6 +6120,11 @@ img {
   .xl\:after\:h-\[0\.2rem\]::after {
     content: var(--tw-content);
     height: 0.2rem;
+  }
+
+  .xl\:after\:h-\[0\.313rem\]::after {
+    content: var(--tw-content);
+    height: 0.313rem;
   }
 }
 
