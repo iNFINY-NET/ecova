@@ -830,20 +830,16 @@ img {
   left: -500px;
 }
 
-.-top-\[8rem\] {
-  top: -8rem;
-}
-
-.left-0 {
-  left: 0px;
-}
-
 .top-\[4rem\] {
   top: 4rem;
 }
 
 .left-\[30rem\] {
   left: 30rem;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .top-40 {
@@ -948,10 +944,6 @@ img {
 
 .z-30 {
   z-index: 30;
-}
-
-.-z-\[10\] {
-  z-index: -10;
 }
 
 .z-40 {
@@ -2053,9 +2045,9 @@ img {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#000f16\] {
+.bg-\[\#00232e\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 15 22 / var(--tw-bg-opacity));
+  background-color: rgb(0 35 46 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -2063,13 +2055,13 @@ img {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-white\/5 {
-  background-color: rgb(255 255 255 / 0.05);
+.bg-\[\#fff\]\/\[5\%\] {
+  background-color: rgb(255 255 255 / 5%);
 }
 
-.bg-\[\#000b10\] {
+.bg-\[\#001c25\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 11 16 / var(--tw-bg-opacity));
+  background-color: rgb(0 28 37 / var(--tw-bg-opacity));
 }
 
 .bg-green-500\/80 {
@@ -2125,29 +2117,6 @@ img {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#00232e\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 35 46 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e30040\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 0 64 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#001c25\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 28 37 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fff\]\/\[5\%\] {
-  background-color: rgb(255 255 255 / 5%);
-}
-
-.bg-\[\#f3f\]\/\[5\%\] {
-  background-color: rgb(255 51 255 / 5%);
 }
 
 .bg-gradient-to-r {
@@ -2326,6 +2295,11 @@ img {
   padding-bottom: 1.75rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .px-9 {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
@@ -2441,11 +2415,6 @@ img {
   padding-right: 1.7rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .pr-8 {
   padding-right: 2rem;
 }
@@ -2478,14 +2447,6 @@ img {
   padding-bottom: 2.5rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -2494,8 +2455,8 @@ img {
   padding-bottom: 3rem;
 }
 
-.pt-56 {
-  padding-top: 14rem;
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .pl-20 {
@@ -3108,11 +3069,6 @@ img {
 .shadow-slate-700\/20 {
   --tw-shadow-color: rgb(51 65 85 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
-}
-
-.brightness-150 {
-  --tw-brightness: brightness(1.5);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .drop-shadow-md {
