@@ -37,7 +37,7 @@
     <!--HEADER SECTION START-->
     <section>
             <div class="max-w-[1650px] mx-auto" style="background-image: url(./assets/images/shadows/shadow.png); background-size: cover; background-repeat: no-repeat;">
-                <div class="sl-flex-between py-[5.5rem]">
+                <div class="max-w-full sl-flex-between py-[5.5rem]">
                     <ul class=" font-musticaPro font-semibold text-lg opacity-[14%] capitalize">
                         <li><a href="#">profile page</a></li>
                     </ul>
@@ -50,8 +50,8 @@
                         <li><a href="">twitter</a></li>
                     </ul>
                 </div>
-                <div class="flex items-end justify-center">
-                    <div class=" w-[40%]">
+                <div class="flex items-end 3xl:flex-row justify-center flex-col gap-y-20">
+                    <div class=" 3xl:w-[40%]">
                         <div class="w-52 -ml-10">
                             <img src="./assets/images/ul/user 1.png" class="" alt="profiel image">
                         </div>
@@ -74,11 +74,11 @@
                         </div>
                         <button type="" class="mt-14 w-52 h-12 font-musticaPro font-semibold text-2xl text-[#011f28] bg-white shadow-sm shadow-white">Follow</button>
                     </div>
-                    <div class="relative w-[60%]">
-                        <img src="./assets/images/hero/map.png" alt="map-image">
+                    <div class="relative 3xl:w-[60%] lg:w-full">
+                        <img src="./assets/images/hero/map.png" class="w-full" alt="map-image">
                     </div>
                 </div>
-                <div class="mt-16 sl-flex-between">
+                <div class="max-w-full mt-16 sl-flex-between">
                     <h3 class=" font-musticaPro font-semibold text-2xl leading-[0.4rem] opacity-[14%]">2022-2023</h3>
                     <img src="./assets/images/Icons/icon full white.png" class="w-16 opacity-[8%]" alt="">
                 </div>
@@ -88,11 +88,11 @@
 
     <main>
     
-        <!-- PROFILE SECTION STARTS -->
+        <!--MY TREE PROFILE SECTION STARTS -->
             <section>
                 <div class="max-w-[1650px] mx-auto mt-56">
                     <h2 class="font-musticaPro font-semibold text-[2.8rem] leading-[3rem] capitalize">my tree profile</h2>
-                    <div class="mt-6 grid grid-cols-4 gap-x-4 items-center justify-between">
+                    <div class="mt-6 grid 3xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-x-4 lg:gap-y-4 items-center justify-between">
                         <div class="h-[26.37rem] bg-[#fff]/[5%] flex flex-col items-center justify-center">
                             <img src="./assets/images/Icons/valley.png" class="w-[7.5rem] h-[7.5rem]" alt="valley-image">
                             <a href="" class=" font-musticaPro font-semibold opacity-[17%] text-4xl mt-12 capitalize">my goal</a>  
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </section>
-        <!-- PROFILE SECTION ENDS -->
+        <!--MY TREE PROFILE SECTION ENDS -->
 
         <!--FOREST IMPACT SECTION STARTS -->
             <section>
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="bg-[#fff]/[5%] mt-16">
-                        <div class="h-[43.5rem]">
+                        <div class="w-full h-full">
                             <canvas id="forestImpact" class="w-full"></canvas>
                         </div>
                     </div>
@@ -210,7 +210,7 @@
             <section class="bg-[#001c25] mt-24">
                 <div class="max-w-[1650px] mx-auto py-32">
                     <h2 class="font-musticaPro font-semibold text-[2.8rem] leading-[3rem] capitalize">forest impact</h2>
-                    <div class="font-musticaPro font-semibold mt-12 grid grid-cols-4 gap-4">
+                    <div class="font-musticaPro font-semibold mt-12 grid 3xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
                         <div class="text-3xl bg-[#fff]/[5%] capitalize pt-14 pb-12 px-9">
                             <h3 class="opacity-[60%]">total carbon footprint</h3>
                             <span class="block my-4 text-[3.9rem] opacity-100">5000</span>
@@ -323,9 +323,9 @@
         <!-- CARBON-OFFSET PROJECT STARTS -->
             <section class="bg-[#001c25]">
                 <div class="max-w-[1650px] mx-auto pt-32">
-                    <h2 class="font-musticaPro font-semibold text-[2.8rem] leading-[3rem] capitalize">carbon-offset project typed I'have backed.</h2>
+                    <h2 class="font-musticaPro font-semibold text-[2.8rem] leading-[3rem] capitalize">carbon-offset project typed I've backed.</h2>
                     <div class=" mt-[4.37rem]">
-                        <ul class="grid grid-cols-3 gap-10">
+                        <ul class="grid 3xl:grid-cols-3 md:grid-cols-2 gap-10">
                             <li class=" font-musticaPro font-semibold capitalize bg-[#fff]/[5%] text-center py-11 pl-20 pr-[6.5rem]"><a href="" class="text-4xl opacity-[18%]">avoid deforestation</a></li>
                             <li class=" font-musticaPro font-semibold capitalize bg-[#fff]/[5%] text-center py-11 pl-20 pr-[6.5rem]"><a href="" class="text-4xl opacity-[18%]">avoid deforestation</a></li>
                             <li class=" font-musticaPro font-semibold capitalize bg-[#fff]/[5%] text-center py-11 pl-20 pr-[6.5rem]"><a href="" class="text-4xl opacity-[18%]">avoid deforestation</a></li>
@@ -337,29 +337,30 @@
                 </div>
             </section>
         <!-- CARBON-OFFSET PROJECT STARTS -->
-    </main>
+            <section class="bg-[#001c25]">
+            <div class="max-w-[1650px] mx-auto">
+                <div class="font-musticaPro font-semibold">
+                    <div class="relative pt-[16.875rem]">
+                        <img src="./assets/images/logo/f3logo.png" class="block m-auto shadow-2xl" alt="footer-brand-logo">
+                        <img src="./assets/images/shadows/shadow-2.png" class="absolute w-[40%] top-[4rem] left-[30rem] brightness-" alt="shadow-image">
+                    </div>
 
-    <section class="bg-[#001c25]">
-        <div class="max-w-[1650px] mx-auto">
-            <div class="font-musticaPro font-semibold">
-                <div class="relative pt-[16.875rem]">
-                    <img src="./assets/images/logo/f3logo.png" class="block m-auto shadow-2xl" alt="footer-brand-logo">
-                    <img src="./assets/images/shadows/shadow-2.png" class="absolute w-[40%] top-[4rem] left-[30rem] brightness-" alt="shadow-image">
-                </div>
+                    <p class="pt-36 text-[3.4rem] leading-[5.5rem] opacity-[18%] text-center mb-20">
+                        I've been doing fantastic work to combat climate change and savethe planet. Why are you hesitating? Make a change in your future by first demonstrating your support.
+                    </p>
 
-                <p class="pt-36 text-[3.4rem] leading-[5.5rem] opacity-[18%] text-center mb-20">
-                    I've been doing fantastic work to combat climate change and savethe planet. Why are you hesitating? Make a change in your future by first demonstrating your support.
-                </p>
-
-                <div>
-                    <ul class="mt-5 pb-32 flex flex-col items-center justify-center gap-y-8">
-                        <li class="w-1/3 py-11 border-4 border-soild border-white text-center"><a href="" class="text-4xl">Offsett Your Carbon</a></li>
-                        <li class="w-1/3 py-11 bg-white text-center"><a href="" class="text-4xl text-[#011f28]">Planet A Tree</a></li>
-                    </ul>
+                    <div>
+                        <ul class="mt-5 pb-32 flex flex-col items-center justify-center gap-y-8">
+                            <li class="w-1/3 py-11 border-4 border-soild border-white text-center"><a href="" class="text-4xl">Offsett Your Carbon</a></li>
+                            <li class="w-1/3 py-11 bg-white text-center"><a href="" class="text-4xl text-[#011f28]">Planet A Tree</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+            </section>
+    </main>
+
+    
     
 
 
@@ -382,7 +383,7 @@
                     slidesPerView: 1,
                 },
                 768: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                 },
                 1024: {
                     slidesPerView: 3,
