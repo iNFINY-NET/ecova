@@ -2127,6 +2127,29 @@ img {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#00232e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 35 46 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e30040\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 0 64 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#001c25\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 28 37 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff\]\/\[5\%\] {
+  background-color: rgb(255 255 255 / 5%);
+}
+
+.bg-\[\#f3f\]\/\[5\%\] {
+  background-color: rgb(255 51 255 / 5%);
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2416,6 +2439,11 @@ img {
 .px-\[1\.7rem\] {
   padding-left: 1.7rem;
   padding-right: 1.7rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pr-8 {
