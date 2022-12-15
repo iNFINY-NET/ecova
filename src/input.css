@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "MusticaPro-SemiBold";
-  src: url("../assets/fonts/MusticaPro-SemiBold.otf");
-}
-
 @layer components {
   .sl-container {
     @apply xl:max-w-[1170px] md:max-w-[960px] max-w-[540px] w-full sm:px-4 px-2 mx-auto relative z-[1];
@@ -106,6 +101,12 @@
 
   img {
     @apply object-cover;
+  }
+
+  @font-face {
+    font-family: "MusticaPro";
+    font-weight: 400;
+    src: url("../assets/fonts/MusticaPro-SemiBold.otf") format("otf");;
   }
 }
 
