@@ -5996,6 +5996,26 @@ img {
     left: -450px;
   }
 
+  .xl\:-left-\[500px\] {
+    left: -500px;
+  }
+
+  .xl\:-left-\[430px\] {
+    left: -430px;
+  }
+
+  .xl\:-left-\[440px\] {
+    left: -440px;
+  }
+
+  .xl\:-top-\[360px\] {
+    top: -360px;
+  }
+
+  .xl\:-top-\[370px\] {
+    top: -370px;
+  }
+
   .xl\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -6396,6 +6416,14 @@ img {
 
   .\33xl\:-top-\[600px\] {
     top: -600px;
+  }
+
+  .\33xl\:-top-\[620px\] {
+    top: -620px;
+  }
+
+  .\33xl\:-top-\[700px\] {
+    top: -700px;
   }
 
   .\33xl\:w-1\/3 {
