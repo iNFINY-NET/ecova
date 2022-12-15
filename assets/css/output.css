@@ -1818,6 +1818,16 @@ img {
   row-gap: 1.5rem;
 }
 
+.gap-x-\[2rem\] {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.gap-x-\[3rem\] {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -3701,6 +3711,76 @@ img {
   left: 15.75rem;
 }
 
+.after\:left-\[3rem\]::after {
+  content: var(--tw-content);
+  left: 3rem;
+}
+
+.after\:left-\[90px\]::after {
+  content: var(--tw-content);
+  left: 90px;
+}
+
+.after\:left-\[95px\]::after {
+  content: var(--tw-content);
+  left: 95px;
+}
+
+.after\:top-\[5px\]::after {
+  content: var(--tw-content);
+  top: 5px;
+}
+
+.after\:left-\[200px\]::after {
+  content: var(--tw-content);
+  left: 200px;
+}
+
+.after\:left-\[210px\]::after {
+  content: var(--tw-content);
+  left: 210px;
+}
+
+.after\:left-\[215px\]::after {
+  content: var(--tw-content);
+  left: 215px;
+}
+
+.after\:left-\[13\.125rem\]::after {
+  content: var(--tw-content);
+  left: 13.125rem;
+}
+
+.after\:left-\[5\.938\]::after {
+  content: var(--tw-content);
+  left: 5.938;
+}
+
+.after\:left-\[5\.938rem\]::after {
+  content: var(--tw-content);
+  left: 5.938rem;
+}
+
+.after\:left-\[13\.75rem\]::after {
+  content: var(--tw-content);
+  left: 13.75rem;
+}
+
+.after\:left-\[13\.7rem\]::after {
+  content: var(--tw-content);
+  left: 13.7rem;
+}
+
+.after\:left-\[13\.5rem\]::after {
+  content: var(--tw-content);
+  left: 13.5rem;
+}
+
+.after\:left-\[13\.4rem\]::after {
+  content: var(--tw-content);
+  left: 13.4rem;
+}
+
 .after\:z-10::after {
   content: var(--tw-content);
   z-index: 10;
@@ -4374,6 +4454,10 @@ img {
     width: 150%;
   }
 
+  .sm\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .sm\:max-w-\[640px\] {
     max-width: 640px;
   }
@@ -4485,6 +4569,11 @@ img {
 
   .sm\:gap-y-4 {
     row-gap: 1rem;
+  }
+
+  .sm\:gap-x-\[4\.5rem\] {
+    -moz-column-gap: 4.5rem;
+         column-gap: 4.5rem;
   }
 
   .sm\:border-r {
@@ -4639,6 +4728,21 @@ img {
 
   .sm\:leading-8 {
     line-height: 2rem;
+  }
+
+  .sm\:after\:left-\[6\.875rem\]::after {
+    content: var(--tw-content);
+    left: 6.875rem;
+  }
+
+  .sm\:after\:top-\[0\.625rem\]::after {
+    content: var(--tw-content);
+    top: 0.625rem;
+  }
+
+  .sm\:after\:left-\[15\.75rem\]::after {
+    content: var(--tw-content);
+    left: 15.75rem;
   }
 }
 
