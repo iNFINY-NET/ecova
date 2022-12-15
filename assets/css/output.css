@@ -2903,6 +2903,10 @@ img {
   letter-spacing: -0.05em;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -5978,6 +5982,14 @@ img {
 
   .\33xl\:text-\[2\.4rem\] {
     font-size: 2.4rem;
+  }
+
+  .\33xl\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .\33xl\:text-\[1\.8rem\] {
+    font-size: 1.8rem;
   }
 
   .\33xl\:font-normal {
