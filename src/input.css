@@ -69,14 +69,10 @@
   }
 
     /*FLOATING INPUT PLACEHOLDER*/
-    .floating-input:focus-within ~ label,
-    .floating-input:not(:placeholder-shown) ~ label {
-      @apply transform scale-90 -translate-y-4;
-   }
+    .input-group input:focus + label{
+      @apply text-xs -translate-y-3 sl-animated-fade;
+    }
 
-   .floating-input:focus-within ~ label {
-     @apply text-white;
-   }
 
   /* BUTTON */
   .sl-btn {
