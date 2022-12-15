@@ -1513,6 +1513,26 @@ img {
   height: 450px;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[24rem\] {
+  height: 24rem;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2594,6 +2614,11 @@ img {
 .px-\[1\.7rem\] {
   padding-left: 1.7rem;
   padding-right: 1.7rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pr-8 {
@@ -4416,6 +4441,30 @@ img {
     top: -95px;
   }
 
+  .xs\:-left-\[100px\] {
+    left: -100px;
+  }
+
+  .xs\:-left-\[80px\] {
+    left: -80px;
+  }
+
+  .xs\:-top-\[80px\] {
+    top: -80px;
+  }
+
+  .xs\:-top-\[100px\] {
+    top: -100px;
+  }
+
+  .xs\:-top-\[110px\] {
+    top: -110px;
+  }
+
+  .xs\:-left-\[110px\] {
+    left: -110px;
+  }
+
   .xs\:basis-1\/4 {
     flex-basis: 25%;
   }
@@ -5291,6 +5340,11 @@ img {
          column-gap: 1rem;
   }
 
+  .md\:gap-x-2 {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+
   .md\:border-r {
     border-right-width: 1px;
   }
@@ -6100,6 +6154,10 @@ img {
     height: 100%;
   }
 
+  .xl\:h-80 {
+    height: 20rem;
+  }
+
   .xl\:w-\[68\%\] {
     width: 68%;
   }
@@ -6476,6 +6534,10 @@ img {
 
   .\33xl\:-top-\[450px\] {
     top: -450px;
+  }
+
+  .\33xl\:h-\[24rem\] {
+    height: 24rem;
   }
 
   .\33xl\:w-1\/3 {
