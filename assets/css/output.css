@@ -1497,8 +1497,28 @@ img {
   height: 1.5rem;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[50\%\] {
+  height: 50%;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-\[50\%\] {
+  min-height: 50%;
 }
 
 .w-screen {
@@ -2352,6 +2372,14 @@ img {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .py-1 {
