@@ -3557,6 +3557,51 @@ img {
   top: 0.75rem;
 }
 
+.after\:left-\[150px\]::after {
+  content: var(--tw-content);
+  left: 150px;
+}
+
+.after\:left-\[120px\]::after {
+  content: var(--tw-content);
+  left: 120px;
+}
+
+.after\:left-\[130px\]::after {
+  content: var(--tw-content);
+  left: 130px;
+}
+
+.after\:left-\[8rem\]::after {
+  content: var(--tw-content);
+  left: 8rem;
+}
+
+.after\:left-\[8\.125rem\]::after {
+  content: var(--tw-content);
+  left: 8.125rem;
+}
+
+.after\:left-\[300px\]::after {
+  content: var(--tw-content);
+  left: 300px;
+}
+
+.after\:left-\[280px\]::after {
+  content: var(--tw-content);
+  left: 280px;
+}
+
+.after\:left-\[290px\]::after {
+  content: var(--tw-content);
+  left: 290px;
+}
+
+.after\:left-\[18\.125rem\]::after {
+  content: var(--tw-content);
+  left: 18.125rem;
+}
+
 .after\:z-10::after {
   content: var(--tw-content);
   z-index: 10;
