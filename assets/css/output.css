@@ -1557,6 +1557,14 @@ img {
   width: 80px;
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[33\%\] {
+  width: 33%;
+}
+
 .min-w-\[1\.75rem\] {
   min-width: 1.75rem;
 }
