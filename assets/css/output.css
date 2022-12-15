@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1766,6 +1766,10 @@ img {
   row-gap: 0.75rem;
 }
 
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2703,6 +2707,16 @@ img {
 
 .text-\[14px\] {
   font-size: 14px;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .font-normal {
@@ -4257,6 +4271,26 @@ img {
          column-gap: 1.25rem;
   }
 
+  .sm\:gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+
+  .sm\:gap-x-7 {
+    -moz-column-gap: 1.75rem;
+         column-gap: 1.75rem;
+  }
+
+  .sm\:gap-x-9 {
+    -moz-column-gap: 2.25rem;
+         column-gap: 2.25rem;
+  }
+
+  .sm\:gap-x-10 {
+    -moz-column-gap: 2.5rem;
+         column-gap: 2.5rem;
+  }
+
   .sm\:border-r {
     border-right-width: 1px;
   }
@@ -5229,6 +5263,11 @@ img {
     line-height: 2.5rem;
   }
 
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .lg\:font-medium {
     font-weight: 500;
   }
@@ -5384,6 +5423,26 @@ img {
     width: 100%;
   }
 
+  .xl\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .xl\:w-\[48\%\] {
+    width: 48%;
+  }
+
+  .xl\:w-\[52\%\] {
+    width: 52%;
+  }
+
+  .xl\:w-\[46\%\] {
+    width: 46%;
+  }
+
+  .xl\:w-\[54\%\] {
+    width: 54%;
+  }
+
   .xl\:max-w-\[1280px\] {
     max-width: 1280px;
   }
@@ -5479,6 +5538,11 @@ img {
   .xl\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .xl\:font-semibold {
@@ -5619,11 +5683,59 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .\33xl\:items-start {
+    align-items: flex-start;
+  }
+
   .\33xl\:items-end {
     align-items: flex-end;
   }
 
+  .\33xl\:items-center {
+    align-items: center;
+  }
+
+  .\33xl\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
   .\33xl\:pt-\[16\.875rem\] {
     padding-top: 16.875rem;
+  }
+
+  .\33xl\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .\33xl\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\33xl\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\33xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .\33xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\33xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\33xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
