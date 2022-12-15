@@ -9,6 +9,7 @@ module.exports = {
       mono: ["ui-monospace", "SFMono-Regular"],
       roboto: ["Roboto", "ui-sans-serif", "system-ui"],
       robotoSlab: ["Roboto Slab", "serif"],
+      musticaPro: ["Mustica-Pro", "geometric-sans-serif",],
     },
     screens: {
       xs: "380px",
@@ -16,7 +17,8 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl":"1536px",
+      "3xl": "1650px",
     },
   },
   plugins: [],
