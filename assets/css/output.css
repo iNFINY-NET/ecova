@@ -1509,6 +1509,10 @@ img {
   height: 200px;
 }
 
+.h-\[450px\] {
+  height: 450px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -6193,6 +6197,14 @@ img {
     background-color: transparent;
   }
 
+  .xl\:p-12 {
+    padding: 3rem;
+  }
+
+  .xl\:p-16 {
+    padding: 4rem;
+  }
+
   .xl\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -6497,6 +6509,10 @@ img {
   .\33xl\:gap-x-12 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
+  }
+
+  .\33xl\:p-16 {
+    padding: 4rem;
   }
 
   .\33xl\:py-20 {
