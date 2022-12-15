@@ -1244,6 +1244,10 @@ img {
   margin-top: 10rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -3602,6 +3606,61 @@ img {
   left: 18.125rem;
 }
 
+.after\:left-\[100px\]::after {
+  content: var(--tw-content);
+  left: 100px;
+}
+
+.after\:left-\[110px\]::after {
+  content: var(--tw-content);
+  left: 110px;
+}
+
+.after\:top-\[10px\]::after {
+  content: var(--tw-content);
+  top: 10px;
+}
+
+.after\:left-\[6\.875rem\]::after {
+  content: var(--tw-content);
+  left: 6.875rem;
+}
+
+.after\:top-\[0\.625rem\]::after {
+  content: var(--tw-content);
+  top: 0.625rem;
+}
+
+.after\:left-\[220px\]::after {
+  content: var(--tw-content);
+  left: 220px;
+}
+
+.after\:left-\[250px\]::after {
+  content: var(--tw-content);
+  left: 250px;
+}
+
+.after\:left-\[260px\]::after {
+  content: var(--tw-content);
+  left: 260px;
+}
+
+.after\:left-\[255px\]::after {
+  content: var(--tw-content);
+  left: 255px;
+}
+
+.after\:left-\[252px\]::after {
+  content: var(--tw-content);
+  left: 252px;
+}
+
+.after\:left-\[15\.75rem\]::after {
+  content: var(--tw-content);
+  left: 15.75rem;
+}
+
 .after\:z-10::after {
   content: var(--tw-content);
   z-index: 10;
@@ -5636,6 +5695,26 @@ img {
     line-height: 2rem;
   }
 
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:font-semibold {
     font-weight: 600;
   }
@@ -5852,6 +5931,11 @@ img {
     font-size: 2.5rem;
   }
 
+  .\33xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .\33xl\:leading-10 {
     line-height: 2.5rem;
   }
@@ -5866,5 +5950,20 @@ img {
 
   .\33xl\:text-\[\] {
     color: ;
+  }
+
+  .\33xl\:after\:left-\[8\.125rem\]::after {
+    content: var(--tw-content);
+    left: 8.125rem;
+  }
+
+  .\33xl\:after\:top-\[0\.813rem\]::after {
+    content: var(--tw-content);
+    top: 0.813rem;
+  }
+
+  .\33xl\:after\:left-\[18\.125rem\]::after {
+    content: var(--tw-content);
+    left: 18.125rem;
   }
 }
