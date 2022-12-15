@@ -1236,6 +1236,14 @@ img {
   margin-bottom: 7rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -2530,6 +2538,14 @@ img {
   padding-top: 56.25%;
 }
 
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2719,6 +2735,10 @@ img {
   line-height: 1;
 }
 
+.text-\[2rem\] {
+  font-size: 2rem;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -2845,6 +2865,14 @@ img {
 
 .leading-none {
   line-height: 1;
+}
+
+.leading-\[4rem\] {
+  line-height: 4rem;
+}
+
+.leading-\[2rem\] {
+  line-height: 2rem;
 }
 
 .tracking-\[0\.313rem\] {
@@ -5375,6 +5403,10 @@ img {
     margin-top: -6.5rem;
   }
 
+  .xl\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -5453,6 +5485,10 @@ img {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:flex-row {
@@ -5700,6 +5736,11 @@ img {
          column-gap: 3rem;
   }
 
+  .\33xl\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .\33xl\:pt-\[16\.875rem\] {
     padding-top: 16.875rem;
   }
@@ -5737,5 +5778,38 @@ img {
   .\33xl\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .\33xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .\33xl\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
+  }
+
+  .\33xl\:text-\[3rem\] {
+    font-size: 3rem;
+  }
+
+  .\33xl\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
+
+  .\33xl\:leading-10 {
+    line-height: 2.5rem;
+  }
+
+  .\33xl\:leading-\[3\.5rem\] {
+    line-height: 3.5rem;
+  }
+
+  .\33xl\:leading-\[3rem\] {
+    line-height: 3rem;
+  }
+
+  .\33xl\:text-\[\] {
+    color: ;
   }
 }
