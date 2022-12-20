@@ -145,4 +145,10 @@
   .swiper-pagination .swiper-pagination-bullet-active {
     background: #869791 !important;
   }
+
+  /* DROPDOWN MENU */
+  .dropdown:hover
+  .dropdown-menu{
+    display: block;
+  }
 }
