@@ -3994,6 +3994,16 @@ img {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xs\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xs\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .xs\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -4316,6 +4326,16 @@ img {
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:pt-14 {
@@ -4724,6 +4744,21 @@ img {
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .md\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pt-\[2rem\] {
@@ -5135,6 +5170,11 @@ img {
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:pr-3\.5 {
