@@ -27,3 +27,34 @@ function menuToggle(btn) {
      const dropdown = btn.nextElementSibling;
      hightSlide(dropdown, 'h-fit');
 }
+
+// INPUT TOGGLE
+function inputToggle(field) {
+     const input = field.target
+     const label = input.nextElementSibling;
+
+     if (field.key == "Backspace" && input.value.length <= 1) {
+          input.classList.remove("pt-3");
+          label.classList.add("opacity-0", "invisible");
+          label.classList.remove("opacity-100", "visible");
+     } else {
+          input.classList.add("pt-3");
+          label.classList.remove("opacity-0", "invisible");
+          label.classList.add("opacity-100", "visible");
+     }
+}
+
+// DROPDOWN TOGGLE
+function dropdown(btn) {
+     const dropdownMenu = document.getElementById("dropdownMenu");
+
+     if (btn.classList.contains("fa-chevron-down")) {
+          hightSlide(dropdownMenu, 'h-[27rem]');
+          btn.classList.remove("fa-chevron-down");
+          btn.classList.add("fa-chevron-up");
+     }else{
+          hightSlide(dropdownMenu, 'h-[27rem]');
+          btn.classList.remove("fa-chevron-up");
+          btn.classList.add("fa-chevron-down");
+     }
+}

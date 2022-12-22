@@ -2,263 +2,254 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- TITLE & FAVICON -->
-  <link rel="icon" href="assets/images/logo/favicon.png" />
-  <title>ECOVA || Shipping</title>
+     <!-- TITLE & FAVICON -->
+     <link rel="icon" href="assets/images/logo/favicon.png" />
+     <title>ECOVA || Information</title>
 
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
-    rel="stylesheet" />
+     <!-- FONT AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 
-  <!-- TAILWIND CSS -->
-  <link href="assets/css/output.css" rel="stylesheet" />
+     <!-- TAILWIND CSS -->
+     <link href="assets/css/output.css" rel="stylesheet" />
 </head>
 
-<body class=" text-white text-base font-normal">
-  <main class="flex">
-    <!-- div -->
-    <section class="relative w-full lg:w-[55%] min-h-screen bg-slate-800 lg:pt-[4rem] lg:pl-[5%] lg:pr-[5%] 2xl:pl-[19.5%] 2xl:pr-[4%]">
-        <div class=" mt-10">
-        <header>
-          <div>
-            <img src="./assets/images/logo/logo.png" class="block m-auto" alt="" />
-          </div>
-          <div class="lg:hidden mt-10 border-y border-solid border-gray-500">
-            <div class="sl-flex-between py-5 md:px-20 sm:px-10 px-4">
-              <div class="text-red-500 text-[14px] sl-flex-center" onclick="toggleOrderSummery(orderSummery)">
-                <i class="fa-solid fa-cart-shopping mr-4"></i>
-                <span class="font-roboto capitalize">show order summary</span>
-                <i class="fa-solid fa-chevron-up ml-2"></i>
-              </div>
-              <span>$41.90</span>
-            </div>
-          </div>
+<body class="bg-slate-800 text-white text-base font-roboto">
+     <div class="flex w-full overflow-hidden">
+          <div class="flex flex-row justify-center lg:max-w-7xl lg:w-11/12 w-full min-h-screen h-auto mx-auto">
+               <main class="relative lg:w-[52%] w-full md:pt-16 lg:pr-[6%] py-6">
+                    <header class="w-full mb-8 text-center">
+                         <a href=""><img src="./assets/images/logo/logo.png" class="block m-auto" alt="" /></a>
 
-          <div id="orderSummery"
-            class="hidden lg:hidden lg:basis-[40%] pt-5 sm:px-10 md:px-20 px-4 lg:px-0 bg-slate-700 lg:bg-slate-800 sl-animated-slide">
-            <div class="">
-              <table class="table-auto w-full border-b-2 border-solid border-gray-500">
-                <tbody class="text-start table-cell pb-5 ">
-                  <tr class="font-roboto">
-                    <td class="relative w-[15%]">
-                      <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
-                      <span
-                        class="font-roboto font-medium text-[0.8571428571rem] leading-[1.75rem] absolute -top-[0.75rem] -right-[0.75rem] text-white min-w-[1.75rem] h-[1.75rem] bg-gray-500 text-center rounded-full">1</span>
-                    </td>
-                    <td class="px-3">
-                      <h2 class="font-roboto text-[0.857rem]">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
-                      <span class="font-roboto text-[0.75rem] text-white/80">Heather Navy / S</span>
-                    </td>
-                    <td class="px-3"></td>
-                    <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="py-10 flex gap-x-4 justify-between border-b border-solid border-gray-500">
-              <input type="text"
-                class="w-full font-roboto text-[0.857rem] px-[0.785rem] py-[0.8rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600"
-                placeholder="Gift card or discount code">
-              <button class="sl-btn">apply</button>
-            </div>
-            <div class="mt-5">
-              <table class="table-auto w-full border-b border-solid border-gray-500">
-                <tbody class="text-start pb-5 flex flex-col">
-                  <tr class="font-roboto sl-flex-between">
-                    <th class="text-left text-[0.857rem] capitalize">
-                      subtotal
-                    </th>
-                    <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
-                  </tr>
-                  <tr class="font-roboto sl-flex-between">
-                    <th class="text-left text-[0.857rem] capitalize">
-                      shipping
-                    </th>
-                    <td class="font-roboto text-[0.857rem] text-white/80">Calculated at next step</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="mt-5">
-              <table class="table-auto w-full">
-                <tbody class="text-start pb-5 flex flex-col">
-                  <tr class="font-roboto sl-flex-between">
-                    <th class="text-left capitalize">
-                      total
-                    </th>
-                    <td class="font-roboto">
-                      <span class="text-[0.857rem] mr-[0.5rem] text-white/80">usd</span>
-                      <span class="text-[1.714rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+                         <button onclick="dropdown(dropdownIcon)" class="lg:hidden block w-full border-y border-slate-600 sm:mt-10 mt-6 bg-slate-900/50">
+                              <div class="sl-flex-between max-w-2xl w-full sm:py-5 py-3 mx-auto px-4">
+                                   <div class="sl-flex-center text-red-500 text-sm">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span class="font-roboto capitalize mx-2">show order summary</span>
+                                        <i id="dropdownIcon" class="fa-solid fa-chevron-down"></i>
+                                   </div>
+                                   <span class="text-lg text-white/80 font-medium text-right">$41.90</span>
+                              </div>
+                         </button>
 
-          <nav class="mt-5">
-            <ol class="flex items-center justify-center font-roboto font-light text-[0.757rem] capitalize">
-              <li class="mr-2">
-                <a href="information-two.html">information</a>
-                <i class="fa-solid fa-chevron-right mx-1"></i>
-              </li>
-              <li class="">
-                <a href="shipping.html" class="text-red-500">shipping</a>
-                <i class="fa-solid fa-chevron-right mx-1"></i>
-              </li>
-              <li class="mx-1">
-                <a href="" class="text-white/80">payment</a>
-              </li>
-            </ol>
-          </nav>
-        </header>
-        <div class="mt-5 px-4 sm:px-10 md:px-20 lg:px-0">
-            <div class="border border-solid border-gray-500 rounded-[0.313rem] flex flex-col gap-y-3 px-3 py-2">
-                <div class="flex items-start sl-flex-between">
-                    <div class="font-roboto font-light text-[0.875rem] text-white/80 capitalize md:flex">
-                        <h3 class="w-[80px]">contact</h3>
-                        <p class="normal-case text-[0.875rem] md:px-2">email@gmail.com</p>
+                         <div id="dropdownMenu" class="opacity-0 invisible h-0 bg-slate-900/50 border-b border-slate-600 sl-animated-fade">
+                              <div class="max-w-2xl w-full mx-auto py-8 px-4">
+                                   <div class="mb-5">
+                                        <table class="w-full">
+                                             <tbody>
+                                                  <tr class="sl-flex-between">
+                                                       <td class="flex items-center text-left">
+                                                            <div class="relative w-20 h-20 mx-4">
+                                                                 <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
+                                                                 <span class="absolute -top-[0.75rem] -right-[0.75rem] sl-flex-center h-7 w-7 bg-gray-500 font-medium text-sm rounded-full">1</span>
+                                                            </div>
+                                                            <div>
+                                                                 <h2 class="text-sm">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
+                                                                 <span class="text-xs text-white/80">Heather Navy / S</span>
+                                                            </div>
+                                                       </td>
+                                                       <td>
+                                                            <p class="font-medium text-sm">$28.95</p>
+                                                       </td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                                   <div class="mb-5 pt-6 border-t-2 border-gray-500">
+                                        <form class="flex">
+                                             <div class="relative w-full mr-4">
+                                                  <input onkeydown="inputToggle(event)" type="text" id="card" placeholder="Gift card or discount code"
+                                                       class="relative w-full h-14 text-sm px-4 border border-slate-600 rounded focus:border-red-600 z-10 sl-animated">
+                                                  <label for="card" class="absolute top-2 left-0 invisible opacity-0 flex items-center px-4 text-xs text-gray-400 sl-animated-fade">Gift card or
+                                                       discount
+                                                       code</label>
+                                             </div>
+                                             <button class="sl-btn bg-gray-400 hover:bg-gray-400 capitalize">apply</button>
+                                        </form>
+                                   </div>
+                                   <div class="mb-5 pt-6 border-t border-gray-500">
+                                        <table class="w-full">
+                                             <tbody>
+                                                  <tr class="sl-flex-between text-white/80">
+                                                       <th class="font-light">
+                                                            Subtotal
+                                                       </th>
+                                                       <td class="text-sm text-white">$28.95</td>
+                                                  </tr>
+                                                  <tr class="sl-flex-between text-white/80">
+                                                       <th class="font-light">
+                                                            Shipping
+                                                       </th>
+                                                       <td class="text-sm font-light">Calculated at next step</td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                                   <div class="mb-5 pt-6 border-t border-gray-500">
+                                        <table class="w-full">
+                                             <tbody>
+                                                  <tr class="sl-flex-between">
+                                                       <th class="font-light">
+                                                            Total
+                                                       </th>
+                                                       <td>
+                                                            <span class="text-sm mr-2 mb-2 text-white/80">usd</span>
+                                                            <span class="text-2xl font-medium tracking-tighter">$28.95</span>
+                                                       </td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <nav class="mt-5">
+                              <ul class="sl-flex-center font-light text-xs capitalize">
+                                   <li class="mr-2">
+                                        <a href="information-two.html" class="text-red-500">information</a>
+                                        <i class="fa-solid fa-chevron-right ml-1"></i>
+                                   </li>
+                                   <li class="mr-2">
+                                        <a href="shipping.html">shipping</a>
+                                        <i class="fa-solid fa-chevron-right ml-1"></i>
+                                   </li>
+                                   <li class="mr-2">
+                                        <a href="" class="text-white/80">payment</a>
+                                   </li>
+                              </ul>
+                         </nav>
+                    </header>
+                    <div class="max-w-2xl w-full mx-auto px-4">
+                         <section class="mb-24">
+                              <form class="mb-8">
+                                   <div class="mt-5 font-light text-sm text-white/80">
+                                       <div class="border border-slate-600 rounded flex flex-col gap-y-3 px-3 py-2">
+                                           <div class="sl-flex-between">
+                                               <div class="md:flex">
+                                                   <h3 class="w-20">Contact</h3>
+                                                   <p class="md:px-2">email@gmail.com</p>
+                                               </div>
+                                               <a href="" class="text-red-500">Change</a>
+                                           </div>
+                                           <hr class="border-gray-500">
+                                           <div class="flex items-start sl-flex-between">
+                                               <div class="md:flex">
+                                                   <h3 class="w-20">Ship to</h3>
+                                                   <p class="md:px-2">address, dhaka, 1229 bangladesh, address, dhaka, 1229 bangladesh, address, dhaka, 1229 bangladesh</p>
+                                               </div>
+                                               <a href="" class="text-red-500">Change</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="mt-10">
+                                           <h2 class="text-xl">contact information</h2>
+                                           <div class="mt-5 sl-flex-between border border-gray-500 rounded text-sm">
+                                               <div class="sl-flex-start gap-x-3 md:px-5 py-3 px-2">
+                                                   <input type="checkbox" checked class="w-4 h-4 appearance-none align-middle border border-gray-500 rounded-full cursor-pointer checked:border-[5px] checked:border-solid checked:border-red-600" id="checkShipping">
+                                                   <label for="checkShipping" class="cursor-pointer">Standard International Shipping</label>
+                                               </div>
+                                               <span class="px-5">$12.95</span>
+                                           </div>
+                                   </div>
+                                   <div class="sl-flex-between flex-wrap mt-10">
+                                        <a href="" class="sm:basis-auto basis-full mt-5 text-sm text-center text-red-500 sm:order-1 order-2">
+                                             <i class="fa-solid fa-chevron-left"></i>
+                                             <span>Return to information</span>
+                                           </a>
+                                        <button class="sl-btn capitalize py-3 sm:basis-auto basis-full sm:order-2 order-1">Continue to shipping</button>
+                                   </div>
+                              </form>
+                         </section>
+                         <footer class="absolute bottom-0 left-0 w-full lg:pr-[6%] px-4">
+                              <ul class="sl-flex-wrap max-w-2xl w-full mx-auto py-4 border-t border-slate-600">
+                                   <li><a href="" class="text-xs text-red-500 sm:mr-6 mr-2 mb-2">Refound policy</a></li>
+                                   <li><a href="" class="text-xs text-red-500 sm:mr-6 mr-2 mb-2">Privacy policy</a></li>
+                                   <li><a href="" class="text-xs text-red-500 sm:mr-6 mr-2 mb-2">Terms of service</a></li>
+                                   <li><a href="" class="text-xs text-red-500 mb-2">Purchase options cancellation policy</a></li>
+                              </ul>
+                         </footer>
                     </div>
-                    <a href="" class="font-roboto font-light text-[0.875rem] text-red-500 capitalize">change</a>
-                </div>
-                <hr class="border-gray-500">
-                <div class="flex items-start sl-flex-between">
-                    <div class="font-roboto font-light text-[0.875rem] text-white/80 capitalize md:flex">
-                        <h3 class="w-[80px]">ship to</h3>
-                        <p class="normal-case text-[0.875rem] md:px-2">address, dhaka, 1229 bangladesh</p>
+               </main>
+               <aside class="relative lg:block hidden lg:w-[38%] pt-16 pl-[4%] after:absolute after:top-0 after:left-0 after:bottom-0 after:w-[300%] after:-z-10 after:bg-slate-900">
+                    <div class="relative">
+                         <div class="mb-5">
+                              <table class="w-full">
+                                   <tbody>
+                                        <tr class="sl-flex-between">
+                                             <td class="flex items-center text-left">
+                                                  <div class="relative w-20 h-20 mx-4">
+                                                       <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
+                                                       <span class="absolute -top-[0.75rem] -right-[0.75rem] sl-flex-center h-7 w-7 bg-gray-500 font-medium text-sm rounded-full">1</span>
+                                                  </div>
+                                                  <div>
+                                                       <h2 class="text-sm">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
+                                                       <span class="text-xs text-white/80">Heather Navy / S</span>
+                                                  </div>
+                                             </td>
+                                             <td>
+                                                  <p class="font-medium text-sm">$28.95</p>
+                                             </td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                         </div>
+                         <div class="mb-5 pt-6 border-t-2 border-gray-500">
+                              <form class="flex">
+                                   <div class="relative w-full mr-4">
+                                        <input onkeydown="inputToggle(event)" type="text" id="card" placeholder="Gift card or discount code"
+                                             class="relative w-full h-14 text-sm px-4 border border-slate-600 rounded focus:border-red-600 z-10 sl-animated">
+                                        <label for="card" class="absolute top-2 left-0 invisible opacity-0 flex items-center px-4 text-xs text-gray-400 sl-animated-fade">Gift card or discount
+                                             code</label>
+                                   </div>
+                                   <button class="sl-btn bg-gray-400 hover:bg-gray-400 capitalize">apply</button>
+                              </form>
+                         </div>
+                         <div class="mb-5 pt-6 border-t border-gray-500">
+                              <table class="w-full">
+                                   <tbody>
+                                        <tr class="sl-flex-between text-white/80">
+                                             <th class="font-light">
+                                                  Subtotal
+                                             </th>
+                                             <td class="text-sm text-white">$28.95</td>
+                                        </tr>
+                                        <tr class="sl-flex-between text-white/80">
+                                             <th class="font-light">
+                                                  Shipping
+                                             </th>
+                                             <td class="text-sm font-light">Calculated at next step</td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                         </div>
+                         <div class="mb-5 pt-6 border-t border-gray-500">
+                              <table class="w-full">
+                                   <tbody>
+                                        <tr class="sl-flex-between">
+                                             <th class="font-light">
+                                                  Total
+                                             </th>
+                                             <td>
+                                                  <span class="text-sm mr-2 mb-2 text-white/80">usd</span>
+                                                  <span class="text-2xl font-medium tracking-tighter">$28.95</span>
+                                             </td>
+                                        </tr>
+                                   </tbody>
+                              </table>
+                         </div>
                     </div>
-                    <a href="" class="font-roboto font-light text-[0.875rem] text-red-500 capitalize">change</a>
-                </div>
-            </div>
-        </div>
+               </aside>
+          </div>
+     </div>
 
-        <div class="mt-10 font-roboto capitalize px-4 sm:px-10 md:px-20 lg:px-0">
-                <h2 class="text-[1.285rem] leading-[1.3rem]">contact information</h2>
-                <div class="mt-5 sl-flex-between border border-solid border-gray-500 rounded-[5px]">
-                    <div class="font-robot text-[14px] flex items-center justify-start gap-x-3 md:px-5 py-3 px-2 ">
-                        <input type="checkbox" checked class="w-4 h-4 appearance-none align-middle border border-solid border-gray-500 rounded-full cursor-pointer checked:border-[5px] checked:border-solid checked:border-red-600" id="checkShipping">
-                        <label for="checkShipping" class="cursor-pointer">Standard International Shipping</label>
-                    </div>
-                    <span class="px-5 text-[14px]">$12.95</span>
-                </div>
-        </div>
-        <div class="mt-10 mb-28 px-4 sm:px-10 md:px-20 lg:px-0 md:sl-flex-between text-center flex flex-col-reverse md:flex-row">
-                  <a href="" class="font-roboto text-[14px] text-red-500">
-                    <i class="fa-solid fa-chevron-left"></i>
-                    <span>Return to information</span>
-                  </a>
-                <button class="py-[1.4rem] px-[1.7rem] leading-none sl-btn normal-case mb-5">Continue to shipping</button>
-                
-        </div>
-        <footer class="sm:px-10 md:px-20 px-4 lg:px-0 mt-10 absolute bottom-0 sm:left-[5%] md:left-[8%]">
-          <ul
-            class="font-roboto font-light text-[0.775rem] text-red-500 capitalize flex items-center flex-wrap 2xl:flex-nowrap gap-x-3 py-4 border-t border-solid border-gray-500">
-            <li><a href="">refund policy</a></li>
-            <li><a href="">privacy policy</a></li>
-            <li><a href="">terms of service</a></li>
-            <li><a href="">purchase options cancellation policy</a></li>
-          </ul>
-        </footer>
-      </div>
-    </section>
-    <section class="hidden lg:block lg:w-[45%] h-auto bg-slate-700 lg:pt-[4rem] lg:pl-[4%] lg:pr-[4%] 2xl:pr-[20.5%] 2xl:pl-[2%]  border-l border-solid border-gray-500">
-        <div class="hidden lg:block mt-5 pt-5 sm:px-16 md:px-20 px-4 lg:px-0">
-        <div>
-          <table class="table-auto w-full border-b-2 border-solid border-gray-500">
-            <tbody class="text-start table-cell pb-5 ">
-              <tr class="font-roboto">
-                <td class="relative w-[15%]">
-                  <img src="./assets/images/information/HEATHER_NAVY_2.webp" class="w-full rounded-md" alt="">
-                  <span
-                    class="font-roboto font-medium text-[0.8571428571rem] leading-[1.75rem] absolute -top-[0.75rem] -right-[0.75rem] text-white min-w-[1.75rem] h-[1.75rem] bg-gray-500 text-center rounded-full">1</span>
-                </td>
-                <td class="px-3">
-                  <h2 class="font-roboto text-[0.857rem]">Deebo's Bike Rentals Men/Unisex T-Shirt</h2>
-                  <span class="font-roboto text-[0.75rem] text-white/80">Heather Navy / S</span>
-                </td>
-                <td class="px-3"></td>
-                <td class="font-roboto font-medium text-[0.857rem]">$28.95</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="py-6 flex gap-x-4 justify-between border-b border-solid border-gray-500">
-          <input type="text"
-            class="w-full font-roboto text-[0.82rem] px-[0.785rem] py-[0.82rem] border border-solid border-gray-500 rounded-[5px] placeholder:capitalize focus:outline-none focus:border-red-600"
-            placeholder="Gift card or discount code">
-          <button class="sl-btn capitalize">apply</button>
-        </div>
-        <div class="mt-5">
-          <table class="table-auto w-full border-b border-solid border-gray-500">
-            <tbody class="text-start pb-5 flex flex-col">
-              <tr class="font-roboto sl-flex-between text-white/80">
-                <th class="text-left font-light text-[0.94rem] capitalize">
-                  subtotal
-                </th>
-                <td class="font-roboto text-white text-[0.857rem]">$28.95</td>
-              </tr>
-              <tr class="font-roboto sl-flex-between text-white/80">
-                <th class="text-left font-light text-[0.94rem] capitalize">
-                  shipping
-                </th>
-                <td class="text-[0.82rem] font-light">Calculated at next step</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="mt-5">
-          <table class="table-auto w-full">
-            <tbody class="text-start pb-5 flex flex-col">
-              <tr class="font-roboto sl-flex-between">
-                <th class="text-left font-light capitalize">
-                  total
-                </th>
-                <td class="font-roboto">
-                  <span class="text-[0.857rem] mr-[0.5rem] text-white/80">usd</span>
-                  <span class="text-[1.5rem] font-medium -tracking-[0.04rem] leading-[1rem]">$28.95</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    /*TO TOGGLE NEWS LETTER SECTION WITH CHECKBOX*/
-    function toggleNewsletter() {
-      let checkValue = document.getElementById("checkNewsletter");
-      let content = document.getElementById("newLetterArea");
-      if (checkValue.checked == true) {
-        content.classList.add("block");
-        content.classList.remove("hidden");
-      } else {
-        content.classList.add("hidden");
-        content.classList.remove("block");
-      }
-    }
-
-    /*TO TOGGLE ORDER SUMMERY*/
-    function toggleOrderSummery(id) {
-      if (id.classList.contains("hidden")) {
-        id.classList.remove("hidden");
-        id.classList.add("block h-full");
-      } else {
-        id.classList.remove("block");
-        id.classList.add("hidden");
-      }
-    }
-  </script>
+     <script src="assets/js/app.js"></script>
 </body>
 
 </html>

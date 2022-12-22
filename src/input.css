@@ -68,12 +68,6 @@
     @apply bg-green-500 text-white;
   }
 
-    /*FLOATING INPUT PLACEHOLDER*/
-    .input-group input:focus + label{
-      @apply text-xs -translate-y-3 sl-animated-fade;
-    }
-
-
   /* BUTTON */
   .sl-btn {
     @apply bg-green-500 hover:bg-green-900 font-medium leading-10 text-sm rounded-[5px] px-8 uppercase sl-animated;
@@ -106,7 +100,7 @@
   @font-face {
     font-family: "MusticaPro";
     font-weight: 400;
-    src: url("../assets/fonts/MusticaPro-SemiBold.otf") format("otf");;
+    src: url("../assets/fonts/MusticaPro-SemiBold.otf") format("otf");
   }
 }
 
